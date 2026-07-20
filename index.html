@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestseller Books (2016–2025)</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --cp-bg: #f7f4ef;
+      --cp-bg-elevated: #fcfbf8;
+      --cp-surface: #ffffff;
+      --cp-surface-soft: #f5f5f5;
+      --cp-border: #dedede;
+      --cp-border-strong: #919191;
+      --cp-text: #242424;
+      --cp-text-muted: #5c5c5c;
+      --cp-text-soft: #6f6f6f;
+      --cp-accent: #b11f4b;
+      --cp-accent-hover: #9a1a41;
+      --cp-accent-soft: rgba(177, 31, 75, 0.08);
+      --cp-accent-fg: #ffffff;
+      --cp-success: #16a34a;
+      --cp-danger: #dc2626;
+      --cp-warning: #f59e0b;
+      --cp-link: #0078d4;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+      --cp-overlay: rgba(255, 255, 255, 0.8);
+      --cp-panel: rgba(255, 255, 255, 0.86);
+      --cp-panel-strong: rgba(255, 255, 255, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.55);
+      --cp-highlight: rgba(177, 31, 75, 0.12);
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --cp-bg: #3d3b3a;
+      --cp-bg-elevated: #343231;
+      --cp-surface: #292929;
+      --cp-surface-soft: #2e2e2e;
+      --cp-border: #474747;
+      --cp-border-strong: #5f5f5f;
+      --cp-text: #dedede;
+      --cp-text-muted: #919191;
+      --cp-text-soft: #b0b0b0;
+      --cp-accent: #fd8ea1;
+      --cp-accent-hover: #fb7b91;
+      --cp-accent-soft: rgba(253, 142, 161, 0.14);
+      --cp-accent-fg: #1a1a1a;
+      --cp-success: #4ade80;
+      --cp-danger: #f87171;
+      --cp-warning: #fbbf24;
+      --cp-link: #4da6ff;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+      --cp-overlay: rgba(41, 41, 41, 0.88);
+      --cp-panel: rgba(41, 41, 41, 0.72);
+      --cp-panel-strong: rgba(41, 41, 41, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.04);
+      --cp-highlight: rgba(253, 142, 161, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cp-bg);
+      color: var(--cp-text);
+      font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding: 24px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--cp-text);
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--cp-text-muted);
+      font-size: 1rem;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px 16px;
+      border: 1px solid var(--cp-border);
+      border-radius: 0.625rem;
+      background: var(--cp-surface);
+      color: var(--cp-text);
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--cp-accent);
+    }
+
+    .filter-select {
+      padding: 10px 16px;
+      border: 1px solid var(--cp-border);
+      border-radius: 0.625rem;
+      background: var(--cp-surface);
+      color: var(--cp-text);
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .stats {
+      color: var(--cp-text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--cp-surface);
+      border: 1px solid var(--cp-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+      transition: transform 0.15s, box-shadow 0.15s;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-color: var(--cp-accent);
+    }
+
+    .card-body {
+      display: flex;
+      gap: 16px;
+    }
+
+    .card-cover {
+      flex-shrink: 0;
+      width: 80px;
+      height: 120px;
+      border-radius: 0.625rem;
+      object-fit: cover;
+      background: var(--cp-surface-soft);
+      border: 1px solid var(--cp-border);
+    }
+
+    .card-cover-placeholder {
+      flex-shrink: 0;
+      width: 80px;
+      height: 120px;
+      border-radius: 0.625rem;
+      background: var(--cp-accent-soft);
+      border: 1px solid var(--cp-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .card-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .card-year {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--cp-accent);
+      background: var(--cp-accent-soft);
+      padding: 4px 10px;
+      border-radius: 0.625rem;
+      white-space: nowrap;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--cp-text);
+      margin-bottom: 4px;
+    }
+
+    .card-author {
+      font-size: 0.9rem;
+      color: var(--cp-text-muted);
+      margin-bottom: 8px;
+    }
+
+    .card-genre {
+      font-size: 0.8rem;
+      color: var(--cp-text-soft);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+
+    .card-description {
+      font-size: 0.82rem;
+      color: var(--cp-text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-link-hint {
+      font-size: 0.75rem;
+      color: var(--cp-link);
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .languages-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--cp-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .lang-tag {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 0.625rem;
+      background: var(--cp-surface-soft);
+      border: 1px solid var(--cp-border);
+      color: var(--cp-text-soft);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--cp-text-muted);
+    }
+
+    .empty-state h3 {
+      margin-bottom: 8px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .lang-btn {
+      padding: 6px 14px;
+      border: 1px solid var(--cp-border);
+      border-radius: 0.625rem;
+      background: var(--cp-surface);
+      color: var(--cp-text-muted);
+      font-size: 0.85rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--cp-accent);
+      color: var(--cp-accent);
+    }
+
+    .lang-btn.active {
+      background: var(--cp-accent);
+      color: var(--cp-accent-fg);
+      border-color: var(--cp-accent);
+    }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      .controls { flex-direction: column; }
+      .search-input { min-width: unset; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btnEn" onclick="setLang('en')">English</button>
+        <button class="lang-btn" id="btnZh" onclick="setLang('zh')">中文</button>
+      </div>
+      <h1 id="pageTitle">📚 Bestseller Books</h1>
+      <p id="pageSubtitle">Top-selling books from the past 10 years &amp; their available languages</p>
+    </header>
+
+    <div class="controls">
+      <input class="search-input" type="text" id="search" placeholder="Search by title, author, or language..." />
+      <select class="filter-select" id="countryFilter">
+        <option value="">All Countries</option>
+      </select>
+      <select class="filter-select" id="yearFilter">
+        <option value="">All Years</option>
+      </select>
+      <select class="filter-select" id="genreFilter">
+        <option value="">All Genres</option>
+      </select>
+      <select class="filter-select" id="langFilter">
+        <option value="">All Languages</option>
+      </select>
+    </div>
+
+    <div class="stats" id="stats"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <script>
+    const i18n = {
+      en: {
+        title: "📚 Bestseller Books",
+        subtitle: "Top-selling books from the past 10 years & their available languages",
+        searchPlaceholder: "Search by title, author, or language...",
+        allYears: "All Years",
+        allGenres: "All Genres",
+        showing: (n, total) => `Showing ${n} of ${total} books`,
+        langLabel: (n) => `Available in ${n} languages`,
+        viewGoodreads: "View on Goodreads →",
+        noBooks: "No books found",
+        noBooksHint: "Try adjusting your search or filters.",
+        by: "by",
+      },
+      zh: {
+        title: "📚 畅销书籍",
+        subtitle: "过去十年最畅销的书籍及其可用语言版本",
+        searchPlaceholder: "按书名、作者或语言搜索...",
+        allYears: "所有年份",
+        allGenres: "所有类别",
+        showing: (n, total) => `显示 ${n} / ${total} 本书`,
+        langLabel: (n) => `提供 ${n} 种语言版本`,
+        viewGoodreads: "在 Goodreads 上查看 →",
+        noBooks: "未找到书籍",
+        noBooksHint: "请尝试调整搜索条件或筛选器。",
+        by: "著",
+      }
+    };
+
+    const genreTranslations = {
+      "Literary Fiction": "文学小说",
+      "Self-Help": "自我提升",
+      "Memoir": "回忆录",
+      "Illustrated": "插画",
+      "Romance": "爱情",
+      "Thriller": "惊悚",
+      "Fantasy": "奇幻",
+      "Mystery": "悬疑",
+      "Science Fiction": "科幻",
+      "Historical Fiction": "历史小说",
+    };
+
+    let currentLang = "en";
+
+    const countries = [
+      { id: "US", name: "United States", nameZh: "美国", flag: "🇺🇸" },
+      { id: "CN", name: "China", nameZh: "中国", flag: "🇨🇳" },
+      { id: "JP", name: "Japan", nameZh: "日本", flag: "🇯🇵" },
+      { id: "RU", name: "Russia", nameZh: "俄罗斯", flag: "🇷🇺" },
+      { id: "IN", name: "India", nameZh: "印度", flag: "🇮🇳" },
+      { id: "GB", name: "United Kingdom", nameZh: "英国", flag: "🇬🇧" },
+      { id: "FR", name: "France", nameZh: "法国", flag: "🇫🇷" },
+      { id: "DE", name: "Germany", nameZh: "德国", flag: "🇩🇪" },
+      { id: "NL", name: "Netherlands", nameZh: "荷兰", flag: "🇳🇱" },
+      { id: "NO", name: "Norway", nameZh: "挪威", flag: "🇳🇴" },
+      { id: "IS", name: "Iceland", nameZh: "冰岛", flag: "🇮🇸" },
+      { id: "IT", name: "Italy", nameZh: "意大利", flag: "🇮🇹" },
+    ];
+
+    const books = [
+      { title: "Where the Crawdads Sing", titleZh: "蝲蛄吟唱的地方", author: "Delia Owens", authorZh: "迪莉娅·欧文斯", year: 2018, country: "US", genre: "Literary Fiction", isbn: "0735219109", description: "A haunting tale of a young woman who raised herself in the marshes of North Carolina, becoming a suspect in a murder case while navigating isolation and longing.", descriptionZh: "一个在北卡罗来纳州沼泽地独自长大的年轻女子的动人故事，她在孤独与渴望中成为一桩谋杀案的嫌疑人。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Italian", "Dutch", "Japanese", "Korean", "Chinese", "Polish", "Turkish"] },
+      { title: "Atomic Habits", titleZh: "原子习惯", author: "James Clear", authorZh: "詹姆斯·克利尔", year: 2018, country: "US", genre: "Self-Help", isbn: "0735211299", description: "A proven framework for improving every day through tiny changes in behavior, revealing how small habits compound into remarkable results over time.", descriptionZh: "一个经过验证的框架，通过微小的行为改变来每天进步，揭示小习惯如何随着时间积累成显著的成果。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Japanese", "Korean", "Chinese", "Arabic", "Russian", "Italian", "Dutch", "Polish", "Hindi", "Thai"] },
+      { title: "Becoming", titleZh: "成为", author: "Michelle Obama", authorZh: "米歇尔·奥巴马", year: 2018, country: "US", genre: "Memoir", isbn: "1524763136", description: "The former First Lady chronicles her journey from Chicago's South Side to the White House, reflecting on motherhood, public life, and finding her voice.", descriptionZh: "前第一夫人回顾了她从芝加哥南区到白宫的历程，反思母亲身份、公共生活以及找到自己声音的过程。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Italian", "Dutch", "Japanese", "Korean", "Chinese", "Arabic", "Swedish", "Danish"] },
+      { title: "The Midnight Library", titleZh: "午夜图书馆", author: "Matt Haig", authorZh: "马特·海格", year: 2020, country: "US", genre: "Literary Fiction", isbn: "0525559477", description: "Between life and death, Nora finds a library containing books that let her live alternate versions of her life, exploring what might have been.", descriptionZh: "在生与死之间，诺拉发现了一座图书馆，里面的书让她体验人生的不同版本，探索那些可能发生的事。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean", "Swedish", "Norwegian", "Finnish"] },
+      { title: "A Promised Land", titleZh: "应许之地", author: "Barack Obama", authorZh: "巴拉克·奥巴马", year: 2020, country: "US", genre: "Memoir", isbn: "1524763160", description: "The 44th President offers a compelling personal account of his political formation, pivotal moments of his presidency, and the power of democratic ideals.", descriptionZh: "第44任总统讲述了他的政治成长、总统任期中的关键时刻以及民主理想的力量。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Dutch", "Italian", "Japanese", "Chinese", "Korean", "Arabic", "Hebrew"] },
+      { title: "The Boy, the Mole, the Fox and the Horse", titleZh: "男孩、鼹鼠、狐狸和马", author: "Charlie Mackesy", authorZh: "查理·麦克西", year: 2019, country: "US", genre: "Illustrated", isbn: "0062976583", description: "A beautifully illustrated story of friendship between four unlikely companions, exploring life's big questions with warmth and simplicity.", descriptionZh: "一个关于四个不太可能的伙伴之间友谊的精美插画故事，以温暖和简洁探索人生的重大问题。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean", "Chinese"] },
+      { title: "Educated", titleZh: "你当像鸟飞往你的山", author: "Tara Westover", authorZh: "塔拉·韦斯特弗", year: 2018, country: "US", genre: "Memoir", isbn: "0399590501", description: "A woman raised in a survivalist family in Idaho recounts her struggle to educate herself, ultimately earning a PhD from Cambridge University.", descriptionZh: "一位在爱达荷州末日论家庭中长大的女性，讲述了她自我教育的奋斗历程，最终获得剑桥大学博士学位。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean", "Chinese", "Dutch", "Polish", "Russian"] },
+      { title: "It Ends with Us", titleZh: "以我们告终", author: "Colleen Hoover", authorZh: "科琳·胡佛", year: 2016, country: "US", genre: "Romance", isbn: "1501110365", description: "A young woman navigates a complicated new relationship while grappling with her painful past and the cycle of domestic violence she witnessed growing up.", descriptionZh: "一位年轻女性在应对复杂的新恋情的同时，与痛苦的过去以及她成长中目睹的家庭暴力循环作斗争。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Turkish", "Arabic", "Korean", "Japanese", "Chinese"] },
+      { title: "Verity", titleZh: "真相", author: "Colleen Hoover", authorZh: "科琳·胡佛", year: 2018, country: "US", genre: "Thriller", isbn: "1538724731", description: "A struggling writer discovers a chilling manuscript in a bestselling author's home that blurs the lines between fiction and reality with devastating consequences.", descriptionZh: "一位苦苦挣扎的作家在畅销书作者家中发现了一份令人毛骨悚然的手稿，模糊了虚构与现实的界限，产生了毁灭性的后果。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Polish", "Turkish", "Dutch", "Korean", "Japanese"] },
+      { title: "The Silent Patient", titleZh: "沉默的病人", author: "Alex Michaelides", authorZh: "亚历克斯·米凯利德斯", year: 2019, country: "US", genre: "Thriller", isbn: "1250301696", description: "A famous painter shoots her husband and then never speaks again. A therapist becomes obsessed with uncovering the truth behind her silence.", descriptionZh: "一位著名画家枪杀了丈夫后再也不说话。一位治疗师开始痴迷于揭开她沉默背后的真相。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean", "Chinese", "Polish", "Turkish", "Greek", "Russian"] },
+      { title: "A Court of Thorns and Roses", titleZh: "荆棘与玫瑰的法庭", author: "Sarah J. Maas", authorZh: "莎拉·J·马斯", year: 2016, country: "US", genre: "Fantasy", isbn: "1635575567", description: "A mortal huntress is dragged into a magical land and discovers that her captor is not what he seems, in this fairy-tale retelling filled with passion and danger.", descriptionZh: "一位凡人女猎手被拖入一片魔法之地，发现她的俘获者并非表面那样，这是一个充满激情与危险的童话再述。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Polish", "Dutch", "Turkish", "Japanese", "Korean"] },
+      { title: "Fourth Wing", titleZh: "第四翼", author: "Rebecca Yarros", authorZh: "丽贝卡·亚罗斯", year: 2023, country: "US", genre: "Fantasy", isbn: "1649374046", description: "At a war college for dragon riders, a fragile young woman must survive brutal training, ruthless competitors, and bond with a dragon—or die trying.", descriptionZh: "在龙骑士战争学院中，一位身体脆弱的年轻女性必须在残酷训练和无情竞争者中存活下来，并与一条龙建立联结——否则就会死去。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Turkish", "Korean"] },
+      { title: "Spare", titleZh: "备胎", author: "Prince Harry", authorZh: "哈里王子", year: 2023, country: "US", genre: "Memoir", isbn: "0593593804", description: "The Duke of Sussex shares his story of growing up in the royal family, military service, grief, and the events that led him to step back from royal duties.", descriptionZh: "苏塞克斯公爵分享了他在王室中成长、服兵役、丧亲之痛以及导致他退出王室职务的事件。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean", "Chinese", "Arabic", "Finnish", "Swedish", "Polish"] },
+      { title: "The Thursday Murder Club", titleZh: "周四谋杀俱乐部", author: "Richard Osman", authorZh: "理查德·奥斯曼", year: 2020, country: "US", genre: "Mystery", isbn: "1984880985", description: "Four retirees in a peaceful village meet weekly to investigate cold cases—until a real murder lands on their doorstep and they become unlikely detectives.", descriptionZh: "四位退休老人在一个宁静的村庄每周聚会调查悬案——直到一起真正的谋杀案降临在他们面前，他们成了不可能的侦探。", languages: ["English", "Spanish", "French", "German", "Italian", "Dutch", "Swedish", "Norwegian", "Danish", "Japanese"] },
+      { title: "Project Hail Mary", titleZh: "挽救计划", author: "Andy Weir", authorZh: "安迪·威尔", year: 2021, country: "US", genre: "Science Fiction", isbn: "0593135202", description: "A lone astronaut wakes up millions of miles from Earth with no memory, tasked with solving an extinction-level threat to humanity with only science and ingenuity.", descriptionZh: "一位独自的宇航员在距地球数百万英里处醒来，失去了记忆，必须仅凭科学和智慧解决人类面临的灭绝级威胁。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean", "Chinese", "Polish", "Czech", "Russian"] },
+      { title: "The Seven Husbands of Evelyn Hugo", titleZh: "伊芙琳·雨果的七任丈夫", author: "Taylor Jenkins Reid", authorZh: "泰勒·詹金斯·里德", year: 2017, country: "US", genre: "Historical Fiction", isbn: "1501161938", description: "A reclusive Hollywood icon finally tells the story of her glamorous and scandalous life, revealing the truth behind her seven marriages.", descriptionZh: "一位隐居的好莱坞传奇终于讲述了她光鲜而丑闻缠身的一生，揭示了七段婚姻背后的真相。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Turkish", "Korean", "Japanese"] },
+      { title: "Lessons in Chemistry", titleZh: "化学课", author: "Bonnie Garmus", authorZh: "邦妮·加尔姆斯", year: 2022, country: "US", genre: "Historical Fiction", isbn: "0385547345", description: "In the 1960s, a brilliant chemist turned cooking show host challenges the status quo and inspires women everywhere to rethink their place in society.", descriptionZh: "在1960年代，一位才华横溢的化学家转型为烹饪节目主持人，挑战现状并激励各地女性重新思考她们在社会中的地位。", languages: ["English", "Spanish", "French", "German", "Italian", "Dutch", "Portuguese", "Japanese", "Korean", "Swedish", "Norwegian"] },
+      { title: "Tomorrow, and Tomorrow, and Tomorrow", titleZh: "明天，又明天，又明天", author: "Gabrielle Zevin", authorZh: "加布里埃尔·泽文", year: 2022, country: "US", genre: "Literary Fiction", isbn: "0593321200", description: "Two creative partners navigate a decades-long relationship through the world of video game design, exploring love, art, identity, and loss.", descriptionZh: "两位创作伙伴在电子游戏设计的世界中维系着跨越数十年的关系，探索爱、艺术、身份和失去。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean", "Chinese", "Dutch"] },
+      { title: "The Housemaid", titleZh: "女佣", author: "Freida McFadden", authorZh: "弗雷达·麦克法登", year: 2022, country: "US", genre: "Thriller", isbn: "1538742578", description: "A woman with a dark past takes a live-in housemaid position for a wealthy family, only to discover the household harbors its own twisted secrets.", descriptionZh: "一位有着黑暗过去的女人在一个富裕家庭担任住家女佣，却发现这个家庭隐藏着自己扭曲的秘密。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Polish", "Turkish", "Dutch", "Korean"] },
+      { title: "Iron Flame", titleZh: "铁焰", author: "Rebecca Yarros", authorZh: "丽贝卡·亚罗斯", year: 2023, country: "US", genre: "Fantasy", isbn: "1649374178", description: "The sequel to Fourth Wing plunges deeper into a world of dragon warfare, political intrigue, and a relationship tested by devastating revelations.", descriptionZh: "《第四翼》的续集深入龙族战争、政治阴谋以及被毁灭性揭露考验的关系。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Turkish"] },
+      { title: "Holly", titleZh: "霍莉", author: "Stephen King", authorZh: "斯蒂芬·金", year: 2023, country: "US", genre: "Thriller", isbn: "1668016133", description: "Private investigator Holly Gibney takes on a missing persons case that leads her to a pair of diabolical professors hiding a horrifying secret.", descriptionZh: "私人侦探霍莉·吉布尼接手一桩失踪案，由此发现一对隐藏着可怕秘密的邪恶教授。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Polish", "Dutch", "Czech"] },
+      { title: "The Women", titleZh: "女人们", author: "Kristin Hannah", authorZh: "克里斯汀·汉娜", year: 2024, country: "US", genre: "Historical Fiction", isbn: "1250178630", description: "A young nurse volunteers for duty in Vietnam and returns to a country that doesn't acknowledge her service, finding strength in the bonds forged in war.", descriptionZh: "一位年轻护士自愿前往越南服役，回到一个不承认她贡献的国家，在战争中建立的纽带中找到力量。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Japanese"] },
+      { title: "Intermezzo", titleZh: "间奏曲", author: "Sally Rooney", authorZh: "萨莉·鲁尼", year: 2024, country: "US", genre: "Literary Fiction", isbn: "0374602638", description: "Two grieving brothers—one a chess prodigy, the other a lawyer—navigate love, loss, and their fractured relationship in modern-day Ireland.", descriptionZh: "两个悲伤的兄弟——一个国际象棋天才，一个律师——在现代爱尔兰中应对爱、失去和他们破裂的关系。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean", "Swedish", "Norwegian"] },
+      { title: "All the Light We Cannot See", titleZh: "所有我们看不见的光", author: "Anthony Doerr", authorZh: "安东尼·多尔", year: 2016, country: "US", genre: "Historical Fiction", isbn: "1501173219", description: "A blind French girl and a German boy's paths converge during WWII in occupied France, connected by a broadcast and the horrors and hopes of war.", descriptionZh: "一位失明的法国女孩和一位德国男孩的命运在二战被占领的法国交汇，通过一段广播连接着战争的恐惧与希望。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean", "Chinese", "Russian", "Polish", "Czech", "Swedish"] },
+      { title: "A Little Life", titleZh: "渺小的一生", author: "Hanya Yanagihara", authorZh: "柳原汉雅", year: 2016, country: "US", genre: "Literary Fiction", isbn: "0804172706", description: "Four college friends move to New York, where one man's traumatic past slowly surfaces, testing the bonds of friendship, love, and survival.", descriptionZh: "四位大学好友搬到纽约，其中一位男性的创伤过去逐渐浮现，考验着友谊、爱与生存的纽带。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean", "Russian", "Polish"] },
+      { title: "The Subtle Art of Not Giving a F*ck", titleZh: "重塑幸福：不在乎的精妙艺术", author: "Mark Manson", authorZh: "马克·曼森", year: 2016, country: "US", genre: "Self-Help", isbn: "0062457713", description: "A counterintuitive approach to living a good life by choosing what truly matters and letting go of everything else.", descriptionZh: "一种反直觉的生活方法，通过选择真正重要的事物并放下其他一切来过上好生活。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Italian", "Japanese", "Korean", "Chinese", "Arabic", "Russian", "Thai", "Vietnamese", "Turkish", "Polish"] },
+      { title: "It Starts with Us", titleZh: "从我们开始", author: "Colleen Hoover", authorZh: "科琳·胡佛", year: 2022, country: "US", genre: "Romance", isbn: "1668001225", description: "The sequel to It Ends with Us follows Lily as she reconnects with Atlas and navigates co-parenting while healing from her past.", descriptionZh: "《以我们告终》的续集，讲述莉莉重新与阿特拉斯联系，在共同抚养孩子的同时从过去的创伤中愈合。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Turkish", "Korean", "Japanese"] },
+      { title: "The Maid", titleZh: "女仆", author: "Nita Prose", authorZh: "尼塔·普罗斯", year: 2022, country: "US", genre: "Mystery", isbn: "0593356159", description: "A hotel maid with a unique way of seeing the world finds a dead body in a suite and becomes entangled in a murder investigation.", descriptionZh: "一位有着独特世界观的酒店女仆在套房中发现一具尸体，并卷入了一场谋杀调查。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean", "Dutch", "Swedish"] },
+      { title: "Greenlights", titleZh: "绿灯", author: "Matthew McConaughey", authorZh: "马修·麦康纳", year: 2020, country: "US", genre: "Memoir", isbn: "0593139135", description: "The actor shares stories, poems, and life lessons from his journals, offering an unconventional memoir about catching life's green lights.", descriptionZh: "这位演员分享了日记中的故事、诗歌和人生经验，提供了一本关于抓住人生绿灯的非传统回忆录。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish", "Japanese"] },
+      { title: "Wind and Truth", titleZh: "风与真理", author: "Brandon Sanderson", authorZh: "布兰登·桑德森", year: 2024, country: "US", genre: "Fantasy", isbn: "076532637X", description: "The epic fifth installment in the Stormlight Archive brings Dalinar's contest of champions and Szeth's reckoning to a breathtaking climax.", descriptionZh: "飓光志第五部史诗巨作将达利纳的冠军之战和泽斯的清算推向了令人窒息的高潮。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Polish", "Japanese"] },
+      { title: "Onyx Storm", titleZh: "玛瑙风暴", author: "Rebecca Yarros", authorZh: "丽贝卡·亚罗斯", year: 2025, country: "US", genre: "Fantasy", isbn: "1649374283", description: "The third installment in the Empyrean series escalates the dragon war as Violet faces impossible odds and earth-shattering revelations.", descriptionZh: "天域系列第三部升级了龙族战争，紫罗兰面临不可能的困难和惊天动地的揭露。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch"] },
+      { title: "The Let Them Theory", titleZh: "随他们去理论", author: "Mel Robbins", authorZh: "梅尔·罗宾斯", year: 2025, country: "US", genre: "Self-Help", isbn: "1401971520", description: "A life-changing framework for releasing control over others' actions and reclaiming your own peace, power, and happiness.", descriptionZh: "一个改变人生的框架，放下对他人行为的控制，重新获得自己的平静、力量和幸福。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Italian"] },
+
+      // China
+      { title: "The Three-Body Problem", titleZh: "三体", author: "Liu Cixin", authorZh: "刘慈欣", year: 2016, country: "CN", genre: "Science Fiction", isbn: "7536692930", description: "A secret military project contacts an alien civilization, setting off a chain of events that will determine Earth's fate across centuries.", descriptionZh: "一个秘密军事项目与外星文明取得联系，引发了一系列将决定地球命运的事件。", languages: ["Chinese", "English", "French", "German", "Japanese", "Korean", "Spanish", "Russian", "Polish", "Italian"] },
+      { title: "To Live", titleZh: "活着", author: "Yu Hua", authorZh: "余华", year: 2016, country: "CN", genre: "Literary Fiction", isbn: "7506365235", description: "A man's life story spanning decades of Chinese history, from wealth to poverty, witnessing the loss of everything he loves while finding the will to live.", descriptionZh: "一个人的人生故事跨越数十年中国历史，从富有到贫穷，目睹失去一切所爱却依然找到活下去的意志。", languages: ["Chinese", "English", "French", "German", "Japanese", "Korean", "Spanish", "Italian"] },
+      { title: "The Wandering Earth", titleZh: "流浪地球", author: "Liu Cixin", authorZh: "刘慈欣", year: 2019, country: "CN", genre: "Science Fiction", isbn: "7536693028", description: "Humanity builds massive engines to propel Earth away from the dying sun on a 2,500-year journey to a new star system.", descriptionZh: "人类建造巨大的发动机推动地球远离垂死的太阳，踏上2500年前往新星系的旅程。", languages: ["Chinese", "English", "Japanese", "Korean", "French", "German", "Russian"] },
+      { title: "Extra-Terrestrial", titleZh: "地球往事", author: "Liu Cixin", authorZh: "刘慈欣", year: 2017, country: "CN", genre: "Science Fiction", isbn: "7229030161", description: "The sequel in the Remembrance of Earth's Past trilogy explores humanity's response to knowing an alien fleet is on its way.", descriptionZh: "地球往事三部曲的续集探索了人类在得知外星舰队正在来袭时的反应。", languages: ["Chinese", "English", "Japanese", "Korean", "French", "German", "Spanish"] },
+      { title: "Brothers", titleZh: "兄弟", author: "Yu Hua", authorZh: "余华", year: 2016, country: "CN", genre: "Literary Fiction", isbn: "7506378647", description: "Two stepbrothers navigate China's transformation from the Cultural Revolution to modern capitalism in this epic tragicomic novel.", descriptionZh: "两个继兄弟在这部史诗悲喜剧小说中经历了中国从文化大革命到现代资本主义的巨变。", languages: ["Chinese", "English", "French", "German", "Japanese", "Italian", "Spanish"] },
+
+      // Japan
+      { title: "Convenience Store Woman", titleZh: "便利店人间", author: "Sayaka Murata", authorZh: "村田沙耶香", year: 2018, country: "JP", genre: "Literary Fiction", isbn: "4163906185", description: "A 36-year-old convenience store worker finds contentment in her routine life, resisting society's expectations of marriage and career advancement.", descriptionZh: "一位36岁的便利店店员在日常生活中找到满足，抵抗社会对婚姻和职业晋升的期望。", languages: ["Japanese", "English", "French", "German", "Spanish", "Korean", "Chinese", "Italian"] },
+      { title: "Before the Coffee Gets Cold", titleZh: "在咖啡冷掉之前", author: "Toshikazu Kawaguchi", authorZh: "川口俊和", year: 2019, country: "JP", genre: "Literary Fiction", isbn: "4763135554", description: "In a Tokyo café, customers can travel back in time—but only while their coffee stays warm—to confront regrets and say goodbye.", descriptionZh: "在东京一家咖啡馆里，顾客可以回到过去——但只在咖啡还温热的时候——去面对遗憾并道别。", languages: ["Japanese", "English", "Chinese", "Korean", "French", "German", "Spanish", "Italian", "Portuguese", "Dutch"] },
+      { title: "Klara and the Sun", titleZh: "克拉拉与太阳", author: "Kazuo Ishiguro", authorZh: "石黑一雄", year: 2021, country: "JP", genre: "Science Fiction", isbn: "0571364888", description: "An Artificial Friend observes human behavior from a store window, then accompanies a sick girl, exploring love and what it means to be human.", descriptionZh: "一位人工朋友从商店橱窗观察人类行为，然后陪伴一个生病的女孩，探索爱和做人的意义。", languages: ["Japanese", "English", "Chinese", "Korean", "French", "German", "Spanish", "Italian", "Portuguese"] },
+      { title: "The Memory Police", titleZh: "记忆警察", author: "Yoko Ogawa", authorZh: "小川洋子", year: 2019, country: "JP", genre: "Literary Fiction", isbn: "4062936070", description: "On a nameless island, objects and memories disappear one by one, enforced by the Memory Police, as a novelist tries to preserve what remains.", descriptionZh: "在一个无名的岛上，物体和记忆一个接一个地消失，由记忆警察执行，一位小说家试图保存所剩的一切。", languages: ["Japanese", "English", "Chinese", "Korean", "French", "German", "Spanish", "Italian"] },
+      { title: "Days at the Morisaki Bookshop", titleZh: "森崎书店的日子", author: "Satoshi Yagisawa", authorZh: "八木沢里志", year: 2023, country: "JP", genre: "Literary Fiction", isbn: "4344426894", description: "A heartbroken young woman moves in above her uncle's used bookshop in Tokyo's book district, finding healing through literature and community.", descriptionZh: "一位心碎的年轻女性搬进了叔叔在东京书店街的二手书店楼上，通过文学和社区找到了治愈。", languages: ["Japanese", "English", "Chinese", "Korean", "French", "German", "Spanish"] },
+
+      // Russia
+      { title: "The Aviator", titleZh: "飞行员", author: "Eugene Vodolazkin", authorZh: "叶夫根尼·沃多拉兹金", year: 2016, country: "RU", genre: "Literary Fiction", isbn: "5170904835", description: "A man wakes in a hospital with no memory, gradually realizing he was frozen in a Soviet prison camp and has awoken decades later.", descriptionZh: "一个人在医院醒来，没有记忆，逐渐意识到他曾在苏联劳改营中被冷冻，数十年后才苏醒。", languages: ["Russian", "English", "French", "German", "Italian", "Chinese", "Japanese"] },
+      { title: "Text", titleZh: "短信", author: "Dmitry Glukhovsky", authorZh: "德米特里·格鲁霍夫斯基", year: 2017, country: "RU", genre: "Thriller", isbn: "5170982569", description: "After seven years in prison on false drug charges, a young man kills the corrupt officer who framed him and assumes his digital identity through his phone.", descriptionZh: "在因虚假毒品指控入狱七年后，一名年轻人杀死了陷害他的腐败警官，并通过手机冒用了他的数字身份。", languages: ["Russian", "English", "French", "German", "Spanish", "Italian", "Chinese"] },
+      { title: "Zuleikha Opens Her Eyes", titleZh: "祖莱哈睁开了眼睛", author: "Guzel Yakhina", authorZh: "古泽尔·雅辛娜", year: 2016, country: "RU", genre: "Historical Fiction", isbn: "5170897863", description: "A Tatar peasant woman is deported to Siberia during dekulakization and discovers inner strength and freedom far from her oppressive former life.", descriptionZh: "一位鞑靼农妇在去富农化运动中被流放到西伯利亚，在远离压迫的旧生活中发现了内在力量和自由。", languages: ["Russian", "English", "French", "German", "Chinese", "Japanese", "Turkish"] },
+      { title: "The Heart of Parma", titleZh: "帕尔马之心", author: "Alexei Ivanov", authorZh: "阿列克谢·伊万诺夫", year: 2017, country: "RU", genre: "Historical Fiction", isbn: "5911817445", description: "An epic historical novel about the 15th-century conquest of the Komi-Permyak people, blending warfare, shamanism, and cultural clash.", descriptionZh: "一部关于15世纪征服科米-彼尔米亚克人的史诗历史小说，融合了战争、萨满教和文化冲突。", languages: ["Russian", "English", "French", "German"] },
+
+      // India
+      { title: "The God of Small Things", titleZh: "微物之神", author: "Arundhati Roy", authorZh: "阿兰达蒂·洛伊", year: 2017, country: "IN", genre: "Literary Fiction", isbn: "0679457313", description: "Twin siblings in Kerala navigate caste, forbidden love, and family secrets in this lyrical exploration of how small things affect great lives.", descriptionZh: "喀拉拉邦的一对双胞胎在种姓、禁忌之爱和家庭秘密中穿行，诗意地探索小事如何影响重大人生。", languages: ["English", "Hindi", "French", "German", "Spanish", "Italian", "Chinese", "Japanese", "Korean"] },
+      { title: "Sacred Games", titleZh: "神圣游戏", author: "Vikram Chandra", authorZh: "维克拉姆·钱德拉", year: 2016, country: "IN", genre: "Thriller", isbn: "0571231721", description: "A Mumbai police officer receives a tip from a notorious gangster that sets off a race against time to prevent a catastrophic attack on the city.", descriptionZh: "一名孟买警官从一个臭名昭著的黑帮头目那里收到情报，开始了一场阻止城市灾难性袭击的与时间赛跑。", languages: ["English", "Hindi", "French", "German", "Spanish", "Italian"] },
+      { title: "Tomb of Sand", titleZh: "沙之墓", author: "Geetanjali Shree", authorZh: "吉坦贾利·什里", year: 2022, country: "IN", genre: "Literary Fiction", isbn: "9390477565", description: "An eighty-year-old woman defies expectations after her husband's death, crossing the India-Pakistan border to confront memories of Partition.", descriptionZh: "一位八十岁的老妇人在丈夫去世后打破常规，跨越印巴边境面对分治的记忆。", languages: ["Hindi", "English", "French", "German", "Spanish", "Italian", "Korean"] },
+      { title: "The White Tiger", titleZh: "白虎", author: "Aravind Adiga", authorZh: "阿拉文德·阿迪加", year: 2016, country: "IN", genre: "Literary Fiction", isbn: "1416562605", description: "A darkly humorous tale of a village boy who becomes a chauffeur in Delhi and uses wit and ruthlessness to escape India's rigid class system.", descriptionZh: "一个乡村男孩在德里成为司机，用机智和无情逃脱印度严格的阶级制度的黑色幽默故事。", languages: ["English", "Hindi", "French", "German", "Spanish", "Italian", "Chinese", "Japanese", "Korean", "Dutch"] },
+
+      // United Kingdom
+      { title: "Normal People", titleZh: "正常人", author: "Sally Rooney", authorZh: "萨莉·鲁尼", year: 2018, country: "GB", genre: "Literary Fiction", isbn: "0571334652", description: "Two Irish students navigate an intense, complicated relationship from secondary school through university, shaped by class and insecurity.", descriptionZh: "两名爱尔兰学生从中学到大学经历了一段由阶级和不安全感塑造的复杂而热烈的关系。", languages: ["English", "French", "German", "Spanish", "Italian", "Chinese", "Japanese", "Korean", "Dutch", "Swedish"] },
+      { title: "Hamnet", titleZh: "哈姆内特", author: "Maggie O'Farrell", authorZh: "玛吉·奥法雷尔", year: 2020, country: "GB", genre: "Historical Fiction", isbn: "1472223802", description: "A reimagining of how Shakespeare's son Hamnet's death from plague inspired the writing of Hamlet, told through the eyes of his wife Agnes.", descriptionZh: "重新想象莎士比亚的儿子哈姆内特因瘟疫去世如何启发了《哈姆雷特》的创作，通过妻子艾格尼丝的视角讲述。", languages: ["English", "French", "German", "Spanish", "Italian", "Dutch", "Japanese", "Chinese"] },
+      { title: "Shuggie Bain", titleZh: "舒吉·贝恩", author: "Douglas Stuart", authorZh: "道格拉斯·斯图尔特", year: 2020, country: "GB", genre: "Literary Fiction", isbn: "0802148042", description: "A boy grows up in 1980s Glasgow with his charismatic but alcoholic mother, fighting to save her while searching for his own identity.", descriptionZh: "一个男孩在1980年代的格拉斯哥与有魅力但酗酒的母亲一起长大，努力拯救她同时寻找自己的身份。", languages: ["English", "French", "German", "Spanish", "Italian", "Dutch", "Japanese", "Chinese", "Korean"] },
+      { title: "The Salt Path", titleZh: "盐之路", author: "Raynor Winn", authorZh: "雷诺·温", year: 2018, country: "GB", genre: "Memoir", isbn: "0241349362", description: "A couple who lose their home and face a terminal diagnosis walk 630 miles along England's South West Coast Path, finding renewal in nature.", descriptionZh: "一对失去家园并面临绝症诊断的夫妇沿着英格兰西南海岸小径步行630英里，在大自然中找到重生。", languages: ["English", "French", "German", "Spanish", "Italian", "Dutch", "Japanese"] },
+
+      // France
+      { title: "The Anomaly", titleZh: "异常", author: "Hervé Le Tellier", authorZh: "埃尔维·勒泰利耶", year: 2020, country: "FR", genre: "Literary Fiction", isbn: "2072887283", description: "A flight from Paris to New York lands twice with identical passengers, forcing everyone—and the world—to confront the nature of reality.", descriptionZh: "一架从巴黎到纽约的航班降落了两次，乘客完全相同，迫使每个人——和整个世界——面对现实的本质。", languages: ["French", "English", "German", "Spanish", "Italian", "Chinese", "Japanese", "Korean", "Dutch"] },
+      { title: "Chanson Douce", titleZh: "温柔之歌", author: "Leïla Slimani", authorZh: "蕾拉·斯利马尼", year: 2016, country: "FR", genre: "Thriller", isbn: "2070196674", description: "A seemingly perfect nanny's relationship with a Parisian family descends into darkness in this chilling Prix Goncourt-winning novel.", descriptionZh: "一个看似完美的保姆与一个巴黎家庭的关系陷入黑暗，这部令人毛骨悚然的小说获得了龚古尔文学奖。", languages: ["French", "English", "German", "Spanish", "Italian", "Chinese", "Arabic", "Dutch", "Japanese"] },
+      { title: "Vernon Subutex", titleZh: "维尔农·苏比特", author: "Virginie Despentes", authorZh: "维吉妮·德彭特", year: 2018, country: "FR", genre: "Literary Fiction", isbn: "2246855810", description: "A former record store owner becomes homeless and drifts through Parisian society, connecting disparate lives in this panoramic social novel.", descriptionZh: "一位前唱片店老板成为流浪汉，在巴黎社会中漂泊，在这部全景式社会小说中连接不同的人生。", languages: ["French", "English", "German", "Spanish", "Italian", "Dutch", "Polish"] },
+      { title: "The Years", titleZh: "悠悠岁月", author: "Annie Ernaux", authorZh: "安妮·埃尔诺", year: 2022, country: "FR", genre: "Memoir", isbn: "2070400964", description: "A collective autobiography tracing French life from the postwar era to the present through photos, memories, and cultural touchstones.", descriptionZh: "一部集体自传，通过照片、记忆和文化标志追溯了从战后时代到现在的法国生活。", languages: ["French", "English", "German", "Spanish", "Italian", "Chinese", "Japanese", "Korean", "Swedish", "Norwegian"] },
+
+      // Germany
+      { title: "The Swarm", titleZh: "群", author: "Frank Schätzing", authorZh: "弗兰克·施茨廷", year: 2016, country: "DE", genre: "Science Fiction", isbn: "3462033743", description: "Marine life begins attacking humanity in coordinated ways, leading scientists to uncover an ancient intelligent species in the deep ocean.", descriptionZh: "海洋生物开始以协调的方式攻击人类，科学家们发现了深海中一种古老的智慧物种。", languages: ["German", "English", "French", "Spanish", "Italian", "Dutch", "Japanese", "Chinese", "Korean"] },
+      { title: "The Reader", titleZh: "朗读者", author: "Bernhard Schlink", authorZh: "本哈德·施林克", year: 2016, country: "DE", genre: "Literary Fiction", isbn: "3257229534", description: "A teenage boy's affair with an older woman takes on devastating dimensions when she reappears years later as a defendant in a Nazi war crimes trial.", descriptionZh: "一个少年与年长女性的恋情在她多年后作为纳粹战争罪被告重新出现时有了毁灭性的维度。", languages: ["German", "English", "French", "Spanish", "Italian", "Dutch", "Japanese", "Chinese", "Korean", "Russian", "Polish"] },
+      { title: "Origin", titleZh: "起源", author: "Dan Brown", authorZh: "丹·布朗", year: 2017, country: "DE", genre: "Thriller", isbn: "3785726120", description: "Robert Langdon races through Spain to uncover a discovery that answers humanity's two most fundamental questions about creation and destiny.", descriptionZh: "罗伯特·兰登在西班牙奔跑，揭示了一个回答人类关于创造和命运两个最根本问题的发现。", languages: ["German", "English", "French", "Spanish", "Italian", "Portuguese", "Dutch", "Japanese", "Chinese", "Korean", "Russian"] },
+      { title: "The Café on the Edge of the World", titleZh: "世界尽头的咖啡馆", author: "John Strelecky", authorZh: "约翰·斯特雷勒基", year: 2020, country: "DE", genre: "Self-Help", isbn: "3423209690", description: "A man stumbles into a small café and encounters three questions on the menu that challenge him to consider his life's purpose.", descriptionZh: "一个人偶然走进一家小咖啡馆，遇到菜单上三个问题，挑战他思考人生目的。", languages: ["German", "English", "French", "Spanish", "Italian", "Dutch", "Japanese", "Chinese", "Korean"] },
+
+      // Netherlands
+      { title: "The Dinner", titleZh: "晚餐", author: "Herman Koch", authorZh: "赫尔曼·科赫", year: 2016, country: "NL", genre: "Thriller", isbn: "9041411682", description: "Two couples meet for dinner at a fashionable restaurant, but beneath the pleasantries lies a horrifying secret about their teenage sons.", descriptionZh: "两对夫妇在一家时尚餐厅共进晚餐，但客套之下隐藏着关于他们十几岁儿子的可怕秘密。", languages: ["Dutch", "English", "French", "German", "Spanish", "Italian", "Chinese", "Japanese", "Korean"] },
+      { title: "The Discomfort of Evening", titleZh: "不安的夜晚", author: "Marieke Lucas Rijneveld", authorZh: "马里克·卢卡斯·里涅费尔德", year: 2020, country: "NL", genre: "Literary Fiction", isbn: "9025454259", description: "After a family tragedy on a Dutch farm, a young girl retreats into obsessive rituals and dark fantasies as her family disintegrates.", descriptionZh: "荷兰农场上一场家庭悲剧后，一个小女孩退缩到强迫性仪式和黑暗幻想中，她的家庭也在解体。", languages: ["Dutch", "English", "French", "German", "Spanish", "Italian", "Japanese"] },
+      { title: "Grand Hotel Europa", titleZh: "欧洲大酒店", author: "Ilja Leonard Pfeijffer", authorZh: "伊利亚·莱昂纳德·普费弗", year: 2022, country: "NL", genre: "Literary Fiction", isbn: "9029510625", description: "A writer checks into a fading grand hotel to work on a novel about mass tourism, as the hotel becomes a metaphor for Europe itself.", descriptionZh: "一位作家入住一家衰落的大酒店写一本关于大众旅游的小说，酒店本身成为欧洲的隐喻。", languages: ["Dutch", "English", "French", "German", "Italian", "Spanish"] },
+
+      // Norway
+      { title: "My Struggle", titleZh: "我的奋斗", author: "Karl Ove Knausgård", authorZh: "卡尔·奥韦·克瑙斯高", year: 2016, country: "NO", genre: "Memoir", isbn: "8249505158", description: "An unflinching autobiographical series exploring everyday life with radical honesty—fatherhood, writing, memory, and the meaning of art.", descriptionZh: "一部毫不退缩的自传系列，以激进的诚实探索日常生活——父亲身份、写作、记忆和艺术的意义。", languages: ["Norwegian", "English", "French", "German", "Spanish", "Italian", "Dutch", "Swedish", "Danish", "Japanese", "Chinese"] },
+      { title: "The Morning Star", titleZh: "晨星", author: "Karl Ove Knausgård", authorZh: "卡尔·奥韦·克瑙斯高", year: 2021, country: "NO", genre: "Literary Fiction", isbn: "8249523415", description: "A mysterious new star appears in the sky over Norway, and nine characters experience inexplicable events that blur the line between life and death.", descriptionZh: "一颗神秘的新星出现在挪威的天空上，九个人物经历了模糊生死界限的不可解释事件。", languages: ["Norwegian", "English", "French", "German", "Spanish", "Italian", "Dutch", "Swedish"] },
+      { title: "The Birds", titleZh: "鸟", author: "Tarjei Vesaas", authorZh: "塔尔耶·维索斯", year: 2016, country: "NO", genre: "Literary Fiction", isbn: "8205481636", description: "A beautifully spare novel about a man with an intellectual disability who lives in harmony with nature until his sister's marriage disrupts his world.", descriptionZh: "一部优美简练的小说，讲述一个有智力障碍的男人与自然和谐共处，直到姐姐的婚姻打破了他的世界。", languages: ["Norwegian", "English", "French", "German", "Swedish", "Danish"] },
+
+      // Iceland
+      { title: "Miss Iceland", titleZh: "冰岛小姐", author: "Auður Ava Ólafsdóttir", authorZh: "奥兹尔·阿娃·奥拉夫斯多蒂尔", year: 2019, country: "IS", genre: "Literary Fiction", isbn: "9979337443", description: "In 1963 Reykjavik, a young woman aspiring to be a writer refuses to enter a beauty pageant and fights for independence in a male-dominated society.", descriptionZh: "1963年的雷克雅未克，一位立志成为作家的年轻女性拒绝参加选美比赛，在男性主导的社会中争取独立。", languages: ["Icelandic", "English", "French", "German", "Spanish", "Italian", "Swedish", "Norwegian", "Danish"] },
+      { title: "Hotel Silence", titleZh: "沉默旅馆", author: "Auður Ava Ólafsdóttir", authorZh: "奥兹尔·阿娃·奥拉夫斯多蒂尔", year: 2018, country: "IS", genre: "Literary Fiction", isbn: "9979337320", description: "A man travels to a war-torn country planning to end his life, but finds unexpected purpose in rebuilding the hotel where he stays.", descriptionZh: "一个人去往一个饱受战争蹂躏的国家计划结束生命，但在重建他住的旅馆中找到了意想不到的目标。", languages: ["Icelandic", "English", "French", "German", "Italian", "Swedish", "Norwegian", "Danish"] },
+      { title: "The Darkness", titleZh: "黑暗", author: "Ragnar Jónasson", authorZh: "拉格纳尔·约纳松", year: 2021, country: "IS", genre: "Thriller", isbn: "9979337565", description: "A retired detective is drawn back into investigating when a suicide appears connected to a decades-old disappearance in remote northern Iceland.", descriptionZh: "一位退休侦探在一起自杀事件似乎与冰岛北部偏远地区数十年前的失踪案有关时重新投入调查。", languages: ["Icelandic", "English", "French", "German", "Spanish", "Italian", "Dutch", "Swedish", "Norwegian"] },
+
+      // Italy
+      { title: "My Brilliant Friend", titleZh: "我的天才女友", author: "Elena Ferrante", authorZh: "埃莱娜·费兰特", year: 2016, country: "IT", genre: "Literary Fiction", isbn: "8866325325", description: "Two girls growing up in a poor Naples neighborhood forge a fierce friendship that spans decades, shaped by violence, brilliance, and ambition.", descriptionZh: "两个在那不勒斯贫困社区长大的女孩建立了跨越数十年的激烈友谊，被暴力、才华和野心所塑造。", languages: ["Italian", "English", "French", "German", "Spanish", "Chinese", "Japanese", "Korean", "Dutch", "Swedish", "Norwegian"] },
+      { title: "The House in the Cerulean Sea", titleZh: "蔚蓝海之屋", author: "TJ Klune", authorZh: "TJ·克鲁恩", year: 2020, country: "IT", genre: "Fantasy", isbn: "1250217288", description: "A by-the-book caseworker is sent to evaluate a magical orphanage and discovers a found family that challenges everything he believes.", descriptionZh: "一位循规蹈矩的社工被派去评估一家魔法孤儿院，发现了一个挑战他所有信念的组建家庭。", languages: ["Italian", "English", "French", "German", "Spanish", "Portuguese", "Dutch", "Japanese"] },
+      { title: "The Order of Time", titleZh: "时间的秩序", author: "Carlo Rovelli", authorZh: "卡洛·罗韦利", year: 2018, country: "IT", genre: "Science Fiction", isbn: "8845931943", description: "A physicist unravels the mysteries of time, revealing that much of what we think we know about it—past, present, future—is an illusion.", descriptionZh: "一位物理学家揭示了时间的奥秘，表明我们认为知道的关于时间的许多东西——过去、现在、未来——都是幻觉。", languages: ["Italian", "English", "French", "German", "Spanish", "Chinese", "Japanese", "Korean", "Dutch", "Portuguese"] },
+      { title: "The Story of the Lost Child", titleZh: "失踪的孩子", author: "Elena Ferrante", authorZh: "埃莱娜·费兰特", year: 2016, country: "IT", genre: "Literary Fiction", isbn: "8866327956", description: "The final volume of the Neapolitan novels follows Elena and Lila into middle age as their intertwined destinies reach a devastating conclusion.", descriptionZh: "那不勒斯四部曲的最后一卷追随埃莱娜和莉拉步入中年，她们交织的命运达到了毁灭性的结局。", languages: ["Italian", "English", "French", "German", "Spanish", "Chinese", "Japanese", "Korean", "Dutch"] },
+    ];
+
+    const countryFilter = document.getElementById("countryFilter");
+    const yearFilter = document.getElementById("yearFilter");
+    const genreFilter = document.getElementById("genreFilter");
+    const langFilter = document.getElementById("langFilter");
+    const searchInput = document.getElementById("search");
+    const grid = document.getElementById("grid");
+    const stats = document.getElementById("stats");
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.getElementById("btnEn").classList.toggle("active", lang === "en");
+      document.getElementById("btnZh").classList.toggle("active", lang === "zh");
+      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+      updateUI();
+      render();
+    }
+
+    function updateUI() {
+      const t = i18n[currentLang];
+      document.getElementById("pageTitle").textContent = t.title;
+      document.getElementById("pageSubtitle").textContent = t.subtitle;
+      searchInput.placeholder = t.searchPlaceholder;
+
+      // Update year filter options
+      yearFilter.options[0].textContent = t.allYears;
+
+      // Update genre filter options
+      const genreOpts = genreFilter.options;
+      genreOpts[0].textContent = t.allGenres;
+      for (let i = 1; i < genreOpts.length; i++) {
+        const val = genreOpts[i].value;
+        genreOpts[i].textContent = currentLang === "zh" ? (genreTranslations[val] || val) : val;
+      }
+
+      // Update language filter label
+      langFilter.options[0].textContent = currentLang === "zh" ? "所有语言" : "All Languages";
+
+      // Update country filter
+      const countryOpts = countryFilter.options;
+      countryOpts[0].textContent = currentLang === "zh" ? "所有国家" : "All Countries";
+      for (let i = 1; i < countryOpts.length; i++) {
+        const c = countries.find(x => x.id === countryOpts[i].value);
+        if (c) countryOpts[i].textContent = `${c.flag} ${currentLang === "zh" ? c.nameZh : c.name}`;
+      }
+    }
+
+    // Populate country filter
+    countries.forEach(c => {
+      const opt = document.createElement("option");
+      opt.value = c.id;
+      opt.textContent = `${c.flag} ${c.name}`;
+      countryFilter.appendChild(opt);
+    });
+
+    // Populate filters
+    const years = [...new Set(books.map(b => b.year))].sort((a, b) => b - a);
+    years.forEach(y => {
+      const opt = document.createElement("option");
+      opt.value = y; opt.textContent = y;
+      yearFilter.appendChild(opt);
+    });
+
+    const genres = [...new Set(books.map(b => b.genre))].sort();
+    genres.forEach(g => {
+      const opt = document.createElement("option");
+      opt.value = g; opt.textContent = g;
+      genreFilter.appendChild(opt);
+    });
+
+    const nativeNames = {
+      "English": "English",
+      "Spanish": "Español",
+      "French": "Français",
+      "German": "Deutsch",
+      "Portuguese": "Português",
+      "Italian": "Italiano",
+      "Dutch": "Nederlands",
+      "Japanese": "日本語",
+      "Korean": "한국어",
+      "Chinese": "中文",
+      "Arabic": "العربية",
+      "Russian": "Русский",
+      "Polish": "Polski",
+      "Turkish": "Türkçe",
+      "Swedish": "Svenska",
+      "Norwegian": "Norsk",
+      "Danish": "Dansk",
+      "Finnish": "Suomi",
+      "Czech": "Čeština",
+      "Greek": "Ελληνικά",
+      "Hebrew": "עברית",
+      "Hindi": "हिन्दी",
+      "Thai": "ไทย",
+      "Vietnamese": "Tiếng Việt",
+      "Icelandic": "Íslenska",
+    };
+
+    const allLangs = [...new Set(books.flatMap(b => b.languages))].sort();
+    allLangs.forEach(l => {
+      const opt = document.createElement("option");
+      opt.value = l;
+      opt.textContent = nativeNames[l] || l;
+      langFilter.appendChild(opt);
+    });
+
+    function render() {
+      const t = i18n[currentLang];
+      const query = searchInput.value.toLowerCase();
+      const year = yearFilter.value;
+      const genre = genreFilter.value;
+      const lang = langFilter.value;
+      const country = countryFilter.value;
+
+      const filtered = books.filter(b => {
+        if (country && b.country !== country) return false;
+        if (year && b.year !== parseInt(year)) return false;
+        if (genre && b.genre !== genre) return false;
+        if (lang && !b.languages.includes(lang)) return false;
+        if (query) {
+          const hay = `${b.title} ${b.titleZh} ${b.author} ${b.authorZh} ${b.languages.join(" ")}`.toLowerCase();
+          if (!hay.includes(query)) return false;
+        }
+        return true;
+      });
+
+      stats.textContent = t.showing(filtered.length, books.length);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="empty-state"><h3>${t.noBooks}</h3><p>${t.noBooksHint}</p></div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(b => {
+        const title = currentLang === "zh" ? b.titleZh : b.title;
+        const author = currentLang === "zh" ? b.authorZh : b.author;
+        const desc = currentLang === "zh" ? b.descriptionZh : b.description;
+        const genreLabel = currentLang === "zh" ? (genreTranslations[b.genre] || b.genre) : b.genre;
+        const goodreadsUrl = `https://www.goodreads.com/search?q=${encodeURIComponent(b.title + " " + b.author)}`;
+        const c = countries.find(x => x.id === b.country);
+        const countryLabel = c ? c.flag : "";
+        return `
+        <a class="card" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
+          <div class="card-body">
+            <img class="card-cover" src="https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
+            <div class="card-info">
+              <div class="card-header">
+                <div>
+                  <div class="card-title">${title}</div>
+                  <div class="card-author">${t.by} ${author}</div>
+                  <div class="card-genre">${genreLabel}</div>
+                </div>
+                <span class="card-year">${countryLabel} ${b.year}</span>
+              </div>
+              <div class="card-description">${desc}</div>
+            </div>
+          </div>
+          <div class="languages-label">${t.langLabel(b.languages.length)}</div>
+          <div class="languages">
+            ${b.languages.map(l => `<span class="lang-tag">${l}</span>`).join("")}
+          </div>
+          <div class="card-link-hint">${t.viewGoodreads}</div>
+        </a>
+      `}).join("");
+    }
+
+    searchInput.addEventListener("input", render);
+    yearFilter.addEventListener("change", render);
+    genreFilter.addEventListener("change", render);
+    langFilter.addEventListener("change", render);
+    countryFilter.addEventListener("change", render);
+
+    render();
+  </script>
+</body>
+</html>
