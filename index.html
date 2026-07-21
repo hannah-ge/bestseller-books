@@ -663,7 +663,7 @@
         return `
         <a class="card" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
           <div class="card-body">
-            <img class="card-cover" src="https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
+            <img class="card-cover" src="${b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
             <div class="card-info">
               <div class="card-header">
                 <div>
@@ -691,7 +691,137 @@
     langFilter.addEventListener("change", render);
     countryFilter.addEventListener("change", render);
 
+    // Google Books API integration - enrich book data with live cover/language info
+    const CACHE_KEY = "bestseller_books_cache";
+    const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
+
+    function getCachedData() {
+      try {
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (!cached) return null;
+        const { timestamp, data } = JSON.parse(cached);
+        if (Date.now() - timestamp > CACHE_TTL) return null;
+        return data;
+      } catch { return null; }
+    }
+
+    function setCachedData(data) {
+      try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
+      } catch {}
+    }
+
+    async function fetchBookDetails(book) {
+      const query = encodeURIComponent(`${book.title} ${book.author}`);
+      const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=1&fields=items(volumeInfo(imageLinks,language,description))`;
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        const json = await res.json();
+        if (json.items && json.items.length > 0) {
+          return json.items[0].volumeInfo;
+        }
+      } catch {}
+      return null;
+    }
+
+    async function enrichBooks() {
+      const cached = getCachedData();
+      if (cached) {
+        applyEnrichment(cached);
+        return;
+      }
+
+      // Fetch in small batches to avoid rate limits
+      const enrichmentData = {};
+      const batchSize = 5;
+
+      for (let i = 0; i < books.length; i += batchSize) {
+        const batch = books.slice(i, i + batchSize);
+        const results = await Promise.all(batch.map(b => fetchBookDetails(b)));
+        batch.forEach((book, idx) => {
+          if (results[idx]) {
+            enrichmentData[book.title] = results[idx];
+          }
+        });
+        // Small delay between batches
+        if (i + batchSize < books.length) {
+          await new Promise(r => setTimeout(r, 200));
+        }
+      }
+
+      setCachedData(enrichmentData);
+      applyEnrichment(enrichmentData);
+    }
+
+    function applyEnrichment(data) {
+      let updated = false;
+      books.forEach(book => {
+        const info = data[book.title];
+        if (info) {
+          // Use Google Books cover if we don't have a working one
+          if (info.imageLinks) {
+            book.googleCover = (info.imageLinks.thumbnail || info.imageLinks.smallThumbnail || "").replace("http://", "https://");
+          }
+        }
+      });
+      render();
+    }
+
+    // Load dynamic books from data/books.json (updated weekly by GitHub Action)
+    async function loadDynamicBooks() {
+      try {
+        const res = await fetch('data/books.json');
+        if (!res.ok) return;
+        const json = await res.json();
+        if (!json.books || json.books.length === 0) return;
+
+        // Merge dynamic books (avoid duplicates by title)
+        const existingTitles = new Set(books.map(b => b.title.toLowerCase()));
+        let added = 0;
+        json.books.forEach(b => {
+          if (!existingTitles.has(b.title.toLowerCase())) {
+            books.push({
+              title: b.title,
+              titleZh: b.titleZh || "",
+              author: b.author,
+              authorZh: b.authorZh || "",
+              year: b.year,
+              country: b.country || "US",
+              genre: b.genre || "Fiction",
+              isbn: b.isbn || "",
+              description: b.description || "",
+              descriptionZh: b.descriptionZh || "",
+              languages: b.languages || ["English"],
+              googleCover: b.googleCover || "",
+            });
+            existingTitles.add(b.title.toLowerCase());
+            added++;
+          }
+        });
+
+        if (added > 0) {
+          // Re-populate year filter with any new years
+          const newYears = [...new Set(books.map(b => b.year))].sort((a, b) => b - a);
+          yearFilter.innerHTML = `<option value="">${i18n[currentLang].allYears}</option>`;
+          newYears.forEach(y => {
+            const opt = document.createElement("option");
+            opt.value = y; opt.textContent = y;
+            yearFilter.appendChild(opt);
+          });
+          render();
+          console.log(`Loaded ${added} new books from data/books.json`);
+        }
+      } catch (e) {
+        // Silent fail - static data still works
+        console.log("No dynamic book data available (data/books.json)");
+      }
+    }
+
+    // Initial render with static data, then enrich
     render();
+    loadDynamicBooks();
+    enrichBooks();
   </script>
 
   <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
