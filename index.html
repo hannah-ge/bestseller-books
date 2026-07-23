@@ -409,6 +409,7 @@
 
     const genreTranslations = {
       "Literary Fiction": "文学小说",
+      "Fiction": "小说",
       "Self-Help": "自我提升",
       "Memoir": "回忆录",
       "Illustrated": "插画",
@@ -420,6 +421,7 @@
       "Historical Fiction": "历史小说",
       "Classics": "经典文学",
       "Non-Fiction": "非虚构",
+      "Nonfiction": "非虚构",
     };
 
     let currentLang = "en";
@@ -472,6 +474,26 @@
       { title: "Wind and Truth", titleZh: "风与真理", author: "Brandon Sanderson", authorZh: "布兰登·桑德森", year: 2024, country: "US", genre: "Fantasy", isbn: "076532637X", description: "The epic fifth installment in the Stormlight Archive brings Dalinar's contest of champions and Szeth's reckoning to a breathtaking climax.", descriptionZh: "飓光志第五部史诗巨作将达利纳的冠军之战和泽斯的清算推向了令人窒息的高潮。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Polish", "Japanese"] },
       { title: "Onyx Storm", titleZh: "玛瑙风暴", author: "Rebecca Yarros", authorZh: "丽贝卡·亚罗斯", year: 2025, country: "US", genre: "Fantasy", isbn: "1649374283", description: "The third installment in the Empyrean series escalates the dragon war as Violet faces impossible odds and earth-shattering revelations.", descriptionZh: "天域系列第三部升级了龙族战争，紫罗兰面临不可能的困难和惊天动地的揭露。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch"] },
       { title: "The Let Them Theory", titleZh: "随他们去理论", author: "Mel Robbins", authorZh: "梅尔·罗宾斯", year: 2025, country: "US", genre: "Self-Help", isbn: "1401971520", description: "A life-changing framework for releasing control over others' actions and reclaiming your own peace, power, and happiness.", descriptionZh: "一个改变人生的框架，放下对他人行为的控制，重新获得自己的平静、力量和幸福。", languages: ["English", "Spanish", "French", "German", "Portuguese", "Italian"] },
+      { title: "The Widow", titleZh: "寡妇", author: "John Grisham", authorZh: "约翰·格里森姆", year: 2025, country: "US", genre: "Thriller", isbn: "0385549571", description: "A young widow uncovers her late husband's dark secrets while fighting powerful forces determined to keep the truth buried in a small Mississippi town.", descriptionZh: "一位年轻寡妇揭开亡夫的黑暗秘密，同时与决心掩盖真相的强大势力抗争。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese"] },
+      { title: "James", titleZh: "詹姆斯", author: "Percival Everett", authorZh: "珀西瓦尔·埃弗雷特", year: 2025, country: "US", genre: "Literary Fiction", isbn: "0385550367", description: "A brilliant reimagining of Adventures of Huckleberry Finn told from the perspective of the enslaved Jim, exploring language, identity, and freedom.", descriptionZh: "从被奴役的吉姆的视角重新讲述《哈克贝利·费恩历险记》，探索语言、身份与自由。", languages: ["English", "French", "German", "Spanish", "Italian", "Dutch"] },
+      { title: "Great Big Beautiful Life", titleZh: "美好盛大的人生", author: "Emily Henry", authorZh: "艾米莉·亨利", year: 2025, country: "US", genre: "Literary Fiction", isbn: "0593441281", description: "A woman's carefully constructed life unravels during a transformative summer that forces her to confront who she really is and what she truly wants.", descriptionZh: "一个女人精心构建的生活在一个变革性的夏天瓦解，迫使她直面真正的自己和真正的渴望。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Polish"] },
+      { title: "Never Flinch", titleZh: "绝不退缩", author: "Stephen King", authorZh: "斯蒂芬·金", year: 2025, country: "US", genre: "Thriller", isbn: "1668037718", description: "A collection of riveting stories from the master of horror that explore the darkest corners of ordinary life with King's signature tension and wit.", descriptionZh: "恐怖大师的一系列引人入胜的故事，以金氏标志性的紧张感和机智探索日常生活最黑暗的角落。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Polish"] },
+      { title: "Atmosphere", titleZh: "氛围", author: "Taylor Jenkins Reid", authorZh: "泰勒·詹金斯·里德", year: 2025, country: "US", genre: "Literary Fiction", isbn: "0593958802", description: "An emotionally charged story about love, loss, and the invisible forces that shape our connections to the people who matter most.", descriptionZh: "一个关于爱、失去以及塑造我们与最重要之人联系的无形力量的感人故事。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"] },
+      { title: "The Tenant", titleZh: "房客", author: "Freida McFadden", authorZh: "弗雷达·麦克法登", year: 2025, country: "US", genre: "Thriller", isbn: "1728296161", description: "A landlord rents out a room in her house to a seemingly perfect tenant, only to discover the terrifying truth hiding behind a friendly smile.", descriptionZh: "一位房东把房间出租给看似完美的房客，却发现友善微笑背后隐藏的可怕真相。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch"] },
+      { title: "Nightshade", titleZh: "夜影", author: "Michael Connelly", authorZh: "迈克尔·康纳利", year: 2025, country: "US", genre: "Thriller", isbn: "0316563633", description: "Detective Renée Ballard and Harry Bosch team up once more to tackle a cold case that leads them into the dangerous underworld of Los Angeles.", descriptionZh: "侦探蕾妮·巴拉德和哈里·博斯再次联手，调查一桩悬案，深入洛杉矶危险的地下世界。", languages: ["English", "Spanish", "French", "German", "Italian", "Japanese"] },
+      { title: "Katabasis", titleZh: "冥界之旅", author: "R. F. Kuang", authorZh: "匡灵秀", year: 2025, country: "US", genre: "Fantasy", isbn: "0063116510", description: "A genre-defying descent into the underworld that blends mythology, dark academia, and sharp social commentary.", descriptionZh: "一场突破类型界限的冥界之旅，融合神话、黑暗学院派和尖锐的社会评论。", languages: ["English", "Spanish", "French", "German", "Italian"] },
+      { title: "The Secret of Secrets", titleZh: "秘密中的秘密", author: "Dan Brown", authorZh: "丹·布朗", year: 2025, country: "US", genre: "Thriller", isbn: "0593727673", description: "Robert Langdon races against time to decode an ancient mystery that threatens to unravel the foundations of modern science and religion.", descriptionZh: "罗伯特·兰登与时间赛跑，破解一个威胁颠覆现代科学和宗教基础的古老谜团。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Chinese", "Korean", "Dutch"] },
+      { title: "The Anxious Generation", titleZh: "焦虑的一代", author: "Jonathan Haidt", authorZh: "乔纳森·海特", year: 2025, country: "US", genre: "Non-Fiction", isbn: "0593655036", description: "How the shift from play-based to phone-based childhood is causing an epidemic of mental illness among young people and what we can do about it.", descriptionZh: "从游戏童年到手机童年的转变如何在年轻人中引发心理疾病流行，以及我们能做些什么。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese", "Korean"] },
+      { title: "Outlive", titleZh: "超越百岁", author: "Peter Attia", authorZh: "彼得·阿提亚", year: 2025, country: "US", genre: "Non-Fiction", isbn: "0593236599", description: "A science-based guide to longevity that rethinks how we approach health, focusing on preventing chronic disease before it starts.", descriptionZh: "一本基于科学的长寿指南，重新审视我们对待健康的方式，专注于在慢性病开始之前预防。", languages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Chinese", "Japanese", "Korean"] },
+
+      // 2026 (from NYT bestseller lists)
+      { title: "Yesteryear", titleZh: "昔日时光", author: "Caro Claire Burke", authorZh: "卡罗·克莱尔·伯克", year: 2026, country: "US", genre: "Literary Fiction", isbn: "9780593804216", description: "A privileged tradwife social media influencer wakes up to find she is living in the comparatively difficult reality of 1855.", descriptionZh: "一位享有特权的传统主妇网红一觉醒来，发现自己生活在1855年相对艰苦的现实中。", languages: ["English", "Spanish", "French"] },
+      { title: "Whistler", titleZh: "惠斯勒", author: "Ann Patchett", authorZh: "安·帕切特", year: 2026, country: "US", genre: "Literary Fiction", isbn: "9780063511637", description: "Decades after their time together, a woman reconnects with her stepfather and they look back at the directions their lives have taken.", descriptionZh: "数十年后，一个女人与继父重新取得联系，回顾各自人生的方向。", languages: ["English", "Spanish", "French", "German"] },
+      { title: "The Calamity Club", titleZh: "灾难俱乐部", author: "Kathryn Stockett", authorZh: "凯瑟琳·斯托基特", year: 2026, country: "US", genre: "Historical Fiction", isbn: "9781954118812", description: "As things get tougher during the Depression, several women look for ways to improve their circumstances.", descriptionZh: "大萧条时期生活日益艰难，几位女性寻找改善处境的方法。", languages: ["English", "Spanish", "French", "German"] },
+      { title: "The Correspondent", titleZh: "通信者", author: "Virginia Evans", authorZh: "弗吉尼亚·埃文斯", year: 2026, country: "US", genre: "Literary Fiction", isbn: "9780593798430", description: "Letters from someone she used to know push Sybil Van Antwerp toward revisiting her past and finding a way to forgive.", descriptionZh: "来自故人的信件促使西比尔·范·安特卫普重新审视过去，寻找宽恕之道。", languages: ["English", "Spanish", "French"] },
+      { title: "Dungeon Crawler Carl", titleZh: "地牢爬行者卡尔", author: "Matt Dinniman", authorZh: "马特·迪尼曼", year: 2026, country: "US", genre: "Fantasy", isbn: "9780593820261", description: "Earth is transformed into a deadly dungeon, and Carl and his cat must fight their way through monster-filled levels in a reality show for alien entertainment.", descriptionZh: "地球变成致命地牢，卡尔和他的猫必须在充满怪物的关卡中战斗，成为外星人的真人秀娱乐。", languages: ["English", "Spanish", "German"] },
+      { title: "The Shampoo Effect", titleZh: "洗发水效应", author: "Jenny Jackson", authorZh: "珍妮·杰克逊", year: 2026, country: "US", genre: "Literary Fiction", isbn: "9798217059959", description: "When Caroline Lash is pushed out of a social circle in a small seaside town, she exposes secrets that rile up the residents.", descriptionZh: "当卡罗琳·拉什被一个海滨小镇的社交圈排挤后，她揭露了激怒居民的秘密。", languages: ["English", "Spanish"] },
+      { title: "Love You More", titleZh: "更爱你", author: "Emily Giffin", authorZh: "艾米莉·吉芬", year: 2026, country: "US", genre: "Literary Fiction", isbn: "9780593600320", description: "Shortly after becoming engaged, Billie receives a call from her first love that compels her to return to Wisconsin.", descriptionZh: "订婚不久后，比莉接到初恋的电话，促使她回到威斯康星州。", languages: ["English", "Spanish", "French"] },
 
       // China
       { title: "The Three-Body Problem", titleZh: "三体", author: "Liu Cixin", authorZh: "刘慈欣", year: 2016, country: "CN", genre: "Science Fiction", isbn: "7536692930", description: "A secret military project contacts an alien civilization, setting off a chain of events that will determine Earth's fate across centuries.", descriptionZh: "一个秘密军事项目与外星文明取得联系，引发了一系列将决定地球命运的事件。", languages: ["Chinese", "English", "French", "German", "Japanese", "Korean", "Spanish", "Russian", "Polish", "Italian"] },
@@ -742,9 +764,9 @@
       }
 
       grid.innerHTML = filtered.map(b => {
-        const title = currentLang === "zh" ? b.titleZh : b.title;
-        const author = currentLang === "zh" ? b.authorZh : b.author;
-        const desc = currentLang === "zh" ? b.descriptionZh : b.description;
+        const title = currentLang === "zh" ? (b.titleZh || b.title) : b.title;
+        const author = currentLang === "zh" ? (b.authorZh || b.author) : b.author;
+        const desc = currentLang === "zh" ? (b.descriptionZh || b.description) : b.description;
         const genreLabel = currentLang === "zh" ? (genreTranslations[b.genre] || b.genre) : b.genre;
         const goodreadsUrl = `https://www.goodreads.com/search?q=${encodeURIComponent(b.title + " " + b.author)}`;
         const c = countries.find(x => x.id === b.country);
@@ -918,3 +940,4 @@
           async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
+
