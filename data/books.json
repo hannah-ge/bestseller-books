@@ -15,7 +15,7 @@
         "English"
       ],
       "weeksOnList": 15,
-      "rank": 2,
+      "rank": 3,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -34,7 +34,7 @@
         "English"
       ],
       "weeksOnList": 7,
-      "rank": 3,
+      "rank": 6,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -109,8 +109,8 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 38,
-      "rank": 6,
+      "weeksOnList": 36,
+      "rank": 11,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -185,8 +185,8 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 17,
-      "rank": 14,
+      "weeksOnList": 28,
+      "rank": 8,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -319,7 +319,7 @@
         "English"
       ],
       "weeksOnList": 6,
-      "rank": 5,
+      "rank": 9,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -338,7 +338,7 @@
         "English"
       ],
       "weeksOnList": 3,
-      "rank": 6,
+      "rank": 8,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -356,7 +356,7 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 26,
+      "weeksOnList": 27,
       "rank": 3,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
@@ -376,7 +376,7 @@
         "English"
       ],
       "weeksOnList": 5,
-      "rank": 4,
+      "rank": 7,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -395,7 +395,7 @@
         "English"
       ],
       "weeksOnList": 8,
-      "rank": 7,
+      "rank": 10,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -414,7 +414,7 @@
         "English"
       ],
       "weeksOnList": 15,
-      "rank": 8,
+      "rank": 4,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -432,10 +432,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 8,
-      "rank": 8,
+      "weeksOnList": 12,
+      "rank": 14,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-23"
     },
     {
       "title": "THE ANXIOUS GENERATION",
@@ -451,8 +451,8 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 115,
-      "rank": 13,
+      "weeksOnList": 66,
+      "rank": 3,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -470,10 +470,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 34,
-      "rank": 10,
+      "weeksOnList": 2,
+      "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-23"
     },
     {
       "title": "AMERICA, U.S.A.",
@@ -546,10 +546,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 79,
-      "rank": 14,
+      "weeksOnList": 24,
+      "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-23"
     },
     {
       "title": "SUICIDAL EMPATHY",
@@ -604,7 +604,7 @@
         "English"
       ],
       "weeksOnList": 1,
-      "rank": 5,
+      "rank": 7,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -623,7 +623,7 @@
         "English"
       ],
       "weeksOnList": 1,
-      "rank": 7,
+      "rank": 10,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -641,8 +641,8 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 10,
+      "weeksOnList": 3,
+      "rank": 12,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -661,7 +661,7 @@
         "English"
       ],
       "weeksOnList": 1,
-      "rank": 11,
+      "rank": 9,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -699,7 +699,7 @@
         "English"
       ],
       "weeksOnList": 1,
-      "rank": 9,
+      "rank": 13,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -718,7 +718,7 @@
         "English"
       ],
       "weeksOnList": 1,
-      "rank": 10,
+      "rank": 11,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -755,8 +755,8 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 9,
-      "rank": 14,
+      "weeksOnList": 3,
+      "rank": 2,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
     },
@@ -778,11 +778,5845 @@
       "rank": 15,
       "source": "nyt",
       "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Rogue Lawyer",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385539432",
+      "description": "The attorney Sebastian Rudd is a “lone gunman” who hates injustice and the system and defends unpopular clients.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Martian",
+      "titleZh": "",
+      "author": "Andy Weir",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780553418026",
+      "description": "Abandoned by his crew, an astronaut embarks on a dogged quest to stay alive.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 31,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Cross Justice",
+      "titleZh": "",
+      "author": "James Patterson",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316407045",
+      "description": "Detective Alex Cross returns home, for the first time in 35 years, to help a cousin who has been accused of murder.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Girl on the Train",
+      "titleZh": "",
+      "author": "Paula Hawkins",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781594634024",
+      "description": "A psychological thriller set in the environs of London is full of complications and betrayals.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 83,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "All the Light We Cannot See",
+      "titleZh": "",
+      "author": "Anthony Doerr",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781476746586",
+      "description": "The lives of a blind French girl and a gadget-obsessed German boy before and during World War II.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 66,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing Reagan",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781627792417",
+      "description": "The host of “The O’Reilly Factor” recounts the events surrounding the attempted assassination of President Reagan in 1981.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 14,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Thomas Jefferson and the Tripoli Pirates",
+      "titleZh": "",
+      "author": "Brian Kilmeade and Don Yaeger",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781591848066",
+      "description": "The war against the Barbary pirates in 1801.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Humans of New York",
+      "titleZh": "",
+      "author": "Brandon Stanton",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250058904",
+      "description": "Photographs and interviews from the creator of the blog and the book “Humans of New York.”",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Between the World and Me",
+      "titleZh": "",
+      "author": "Ta-Nehisi Coates",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780812993547",
+      "description": "A meditation on race in America as well as a personal story by the Atlantic's national correspondent.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 24,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Boys in the Boat",
+      "titleZh": "",
+      "author": "Daniel James Brown",
+      "authorZh": "",
+      "year": 2015,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780143125471",
+      "description": "The story of the American rowers who pursued gold at the 1936 Berlin Olympic Games; the basis of the film.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 125,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Fool Me Once",
+      "titleZh": "",
+      "author": "Harlan Coben",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780698404175",
+      "description": "A retired Army helicopter pilot faces combat-related nightmares and mysteries concerning the deaths of her husband and sister.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Private Paris",
+      "titleZh": "",
+      "author": "James Patterson and Mark Sullivan",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316408998",
+      "description": "Jack Morgan, the head of the Private global investigative agency, probes the murders of members of the French cultural elite.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Nest",
+      "titleZh": "",
+      "author": "Cynthia D'Aprix Sweeney",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062414236",
+      "description": "Siblings in a dysfunctional New York family must grapple with a reduced inheritance.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Me Before You",
+      "titleZh": "",
+      "author": "Jojo Moyes",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780143130154",
+      "description": "A young woman who has barely been farther afield than her English village finds herself while caring for a wealthy, embittered quadriplegic.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 21,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Property of a Noblewoman",
+      "titleZh": "",
+      "author": "Danielle Steel",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780345531063",
+      "description": "Two New Yorkers searching for the owner of an abandoned safe-deposit box reconstruct the history of a young woman and a forbidden love affair at the time of World War II.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Miracles From Heaven",
+      "titleZh": "",
+      "author": "Christy Beam",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780316381857",
+      "description": "A mother tells the story of her once-sickly young daughter whose chronic disease disappeared after her near-death experience.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Seven Brief Lessons on Physics",
+      "titleZh": "",
+      "author": "Carlo Rovelli",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780399184413",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Dead Wake",
+      "titleZh": "",
+      "author": "Erik Larson",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780307408877",
+      "description": "The last voyage of the Lusitania, the passenger liner sunk by a German torpedo in 1915; by the author of “The Devil in the White City.”",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 29,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Frozen in Time",
+      "titleZh": "",
+      "author": "Mitchell Zuckoff",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062133410",
+      "description": "An account both of airmen’s fight for survival in the Arctic after a 1942 crash, and of a 2012 expedition to Greenland to find the remains of a plane that crashed in a rescue attempt.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "End of Watch",
+      "titleZh": "",
+      "author": "Stephen King",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501129742",
+      "description": "The conclusion of the Bill Hodges trilogy.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Pursuit",
+      "titleZh": "",
+      "author": "Janet Evanovich and Lee Goldberg",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780553392784",
+      "description": "The F.B.I. agent Kate O’Hare and her con man partner, Nick Fox, face off against a dangerous ex-Serbian military officer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Bay of Sighs",
+      "titleZh": "",
+      "author": "Nora Roberts",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780425280119",
+      "description": "In this second installment of the Guardians trilogy, Sawyer brings the group to the island of Capri, where he’s drawn to the mermaid Annika.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Here'S to Us",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316375153",
+      "description": "Sparks fly as a celebrity chef’s ex-wives pile into a small cabin in Nantucket to join his widow for the reading of his will.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Alexander Hamilton",
+      "titleZh": "",
+      "author": "Ron Chernow",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780143034759",
+      "description": "First published in 2004, this biography of a founding father has been turned into the Broadway hip-hop musical \"Hamilton.\"",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 26,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Bill O'Reilly'S Legends and Lies",
+      "titleZh": "",
+      "author": "David Fisher",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781627797894",
+      "description": "Stories of the American Revolution; a companion volume to the Fox News series.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Hamilton",
+      "titleZh": "",
+      "author": "Lin-Manuel Miranda and Jeremy McCarter",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781455539741",
+      "description": "The libretto of the award-winning musical, with backstage photos, a production history and interviews with the cast.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Grit",
+      "titleZh": "",
+      "author": "Angela Duckworth",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501111105",
+      "description": "A psychologist says passion and perseverance are the keys to success.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Home",
+      "titleZh": "",
+      "author": "Harlan Coben",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780698411449",
+      "description": "Myron Bolitar and his friend Win locate a boy who was kidnapped 10 years earlier; the 11th Myron Bolitar novel.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Kept Woman",
+      "titleZh": "",
+      "author": "Karin Slaughter",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062430236",
+      "description": "Will Trent of the Georgia Bureau of Investigation and his lover, the medical examiner Sara Linton, pursue a case involving a dirty Atlanta cop.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Magic Binds",
+      "titleZh": "",
+      "author": "Ilona Andrews",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780698136786",
+      "description": "The mercenary Kate Daniels and the man she loves decide to marry, but there are steep obstacles standing in the way to the altar.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Commonwealth",
+      "titleZh": "",
+      "author": "Ann Patchett",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062491794",
+      "description": "Five decades in the lives of two families remade by divorce.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing the Rising Sun",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781627790628",
+      "description": "The host of “The O’Reilly Factor” recounts the final years of World War II.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Love Warrior",
+      "titleZh": "",
+      "author": "Glennon Doyle Melton",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250128546",
+      "description": "After her husband confesses to multiple infidelities, a woman who has overcome bulimia and alcoholism struggles to grow — and so does he.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Girl With the Lower Back Tattoo",
+      "titleZh": "",
+      "author": "Amy Schumer",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501139888",
+      "description": "Humorous personal essays by the comedian, actor and writer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Hillbilly Elegy",
+      "titleZh": "",
+      "author": "JD Vance",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062300546",
+      "description": "A Yale Law School graduate looks at the struggles of the white working class through the story of his own childhood in the Rust Belt.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 48,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Hero of the Empire",
+      "titleZh": "",
+      "author": "Candice Millard",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385535731",
+      "description": "The young Winston Churchill’s adventures in Africa during the Boer War, including an escape from captivity in 1899.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Wrong Side of Goodbye",
+      "titleZh": "",
+      "author": "Michael Connelly",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316225953",
+      "description": "Harry Bosch helps track a serial rapist, while as a P.I. he aids a billionaire in search of a possible heir.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "No Man'S Land",
+      "titleZh": "",
+      "author": "David Baldacci",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781455586493",
+      "description": "John Puller, a special agent with the Army, searches for the truth about his mother, who disappeared 30 years ago.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Whistler",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385541206",
+      "description": "A whistleblower alerts a Florida investigator to judicial corruption involving the Mob and Indian casinos.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Dog'S Purpose",
+      "titleZh": "",
+      "author": "W. Bruce Cameron",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780765388117",
+      "description": "A canine narrator undergoes a series of reincarnations.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Crash and Burn",
+      "titleZh": "",
+      "author": "Fern Michaels",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781420140668",
+      "description": "In the Sisterhood's latest outing, the cohort faces a mudslinging Capitol Hill divorce.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Princess Diarist",
+      "titleZh": "",
+      "author": "Carrie Fisher",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780698188365",
+      "description": "Recollections of life on the set of the first Star Wars movie by the actress and writer, who died in December.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Wishful Drinking",
+      "titleZh": "",
+      "author": "Carrie Fisher",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781439153802",
+      "description": "A memoir based on Fisher’s one-woman autobiographical show. Originally published in 2008.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Undoing Project",
+      "titleZh": "",
+      "author": "Michael Lewis",
+      "authorZh": "",
+      "year": 2016,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780393254594",
+      "description": "How the psychologists Daniel Kahneman and Amos Tversky upended assumptions about the decision-making process and invented the field of behavioral economics.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Mississippi Blood",
+      "titleZh": "",
+      "author": "Greg Iles",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062311191",
+      "description": "Penn Cage, now the mayor of Natchez, Miss., investigates the secrets of his family and the South in order to save his and his father’s lives in the conclusion to the Natchez Burning trilogy.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Shack",
+      "titleZh": "",
+      "author": "William P. Young",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780964729230",
+      "description": "A man whose daughter was abducted is invited to an isolated shack, apparently by God.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Bound Together",
+      "titleZh": "",
+      "author": "Christine Feehan",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780399583940",
+      "description": "Viktor returns to Sea Haven to see the wife whose stepfather he killed.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Vicious Circle",
+      "titleZh": "",
+      "author": "C. J. Box",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780698410077",
+      "description": "Newly released from prison, Dallas Cates tries to exact revenge on the Wyoming game warden Joe Pickett, who put him there.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "If Not for You",
+      "titleZh": "",
+      "author": "Debbie Macomber",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780553391978",
+      "description": "An unlikely relationship is put to the test.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Zookeeper’S Wife",
+      "titleZh": "",
+      "author": "Diane Ackerman",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780393354256",
+      "description": "How a Warsaw couple sheltered Jews and members of the Resistance during World War II. Originally published in 2007; now the basis of a movie.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Book of Joy",
+      "titleZh": "",
+      "author": "the Dalai Lama and Desmond Tutu with Douglas Abrams",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780399185069",
+      "description": "A discussion between two spiritual leaders about how to find joy in the face of suffering.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 17,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Hidden Figures",
+      "titleZh": "",
+      "author": "Margot Lee Shetterly",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062363619",
+      "description": "he story, based in part on interviews, of the black women mathematicians who were hired as “computers” by the precursor of NASA during World War II. The basis of the movie.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 24,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Colony in a Nation",
+      "titleZh": "",
+      "author": "Chris Hayes",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780393254228",
+      "description": "The MSNC host discusses race relations with a focus on the differences in policing in the white nation and its black colony.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Camino Island",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781524797157",
+      "description": "A search for stolen rare manuscripts leads to a Florida island.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 17,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Dangerous Minds",
+      "titleZh": "",
+      "author": "Janet Evanovich",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780553392753",
+      "description": "Emerson Knight, an eccentric millionaire, and Riley Moon, a financial analyst, search for a missing island.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Silent Corner",
+      "titleZh": "",
+      "author": "Dean Koontz",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780345546784",
+      "description": "An F.B.I. agent investigates an alarming surge in suicides, including her husband's.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Identicals",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316375207",
+      "description": "Complications in the lives of identical twins who were raised by their divorced parents, one on Nantucket, one on Martha’s Vineyard.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Handmaid'S Tale",
+      "titleZh": "",
+      "author": "Margaret Atwood",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385490818",
+      "description": "In the Republic of Gilead's dystopian future, men and women perform the services assigned to them.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 14,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Astrophysics for People in a Hurry",
+      "titleZh": "",
+      "author": "Neil deGrasse Tyson",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780393609400",
+      "description": "A straightforward, easy-to-understand introduction to the laws that govern the universe.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 34,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Al Franken, Giant of the Senate",
+      "titleZh": "",
+      "author": "Al Franken",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781455540419",
+      "description": "A memoir by the Democratic senator from Minnesota and former “Saturday Night Live” writer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Understanding Trump",
+      "titleZh": "",
+      "author": "Newt Gingrich",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781478923084",
+      "description": "The former House speaker explains the president’s philosophy and political agenda.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killers of the Flower Moon",
+      "titleZh": "",
+      "author": "David Grann",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780307742483",
+      "description": "The story of a murder spree in 1920s Oklahoma that targeted Osage Indians, whose lands contained oil. The fledgling F.B.I. intervened, ineffectively.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 109,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Sleeping Beauties",
+      "titleZh": "",
+      "author": "Stephen King and Owen King",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501163401",
+      "description": "Women who fall asleep become shrouded in mysterious cocoons while the men battle one another.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Don'T Let Go",
+      "titleZh": "",
+      "author": "Harlan Coben",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780698411661",
+      "description": "Det. Napoleon Dumas investigates a murder and uncovers clues about personal events that happened 15 years ago.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "It",
+      "titleZh": "",
+      "author": "Stephen King",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501175466",
+      "description": "The fears of seven teenagers are rekindled in their adult lives by the terrifying title character.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Column of Fire",
+      "titleZh": "",
+      "author": "Ken Follett",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525954972",
+      "description": "A pair of lovers find themselves on opposite sides of a conflict while Queen Elizabeth fights to maintain her throne.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Cuban Affair",
+      "titleZh": "",
+      "author": "Nelson DeMille",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501101748",
+      "description": "A Miami lawyer solicits an Army veteran to go on a secret mission to recover $60 million stashed away in Cuba.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing England",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781627790642",
+      "description": "Major events and battles during the Revolutionary War are told from several perspectives.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "What Happened",
+      "titleZh": "",
+      "author": "Hillary Clinton",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501175565",
+      "description": "An inside look at her campaign and how she recovered in its aftermath.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Unbelievable",
+      "titleZh": "",
+      "author": "Katy Tur",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062684929",
+      "description": "The NBC News correspondent describes her work covering the 2016 campaign of the Republican nominee for president and his behavior toward her.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Hit Refresh",
+      "titleZh": "",
+      "author": "Satya Nadella with Greg Shaw and Jill Tracie Nichols",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062652508",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The People Vs. Alex Cross",
+      "titleZh": "",
+      "author": "James Patterson",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316508827",
+      "description": "Detective Cross takes on a case even though he has been suspended from the department and taken to federal court to stand trial on murder charges.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Two Kinds of Truth",
+      "titleZh": "",
+      "author": "Michael Connelly",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316225915",
+      "description": "While he investigates the murder of two pharmacists, an old case comes back to haunt Harry Bosch.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Origin",
+      "titleZh": "",
+      "author": "Dan Brown",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385514231",
+      "description": "A symbology professor goes on a perilous quest with a beautiful museum director.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 13,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Wanted",
+      "titleZh": "",
+      "author": "Robert Crais",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780399573903",
+      "description": "A single mother hires Elvis Cole to investigate her teenage son who is on the run after a deadly crime spree.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Twisted",
+      "titleZh": "",
+      "author": "Helen Hardt",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781943893737",
+      "description": "The eighth book in the Steel Brothers Saga series.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Leonardo Da Vinci",
+      "titleZh": "",
+      "author": "Walter Isaacson",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501139154",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 11,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Grant",
+      "titleZh": "",
+      "author": "Ron Chernow",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781594204876",
+      "description": "A biography of the Union general of the Civil War and two-term president of the United States.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Last Black Unicorn",
+      "titleZh": "",
+      "author": "Tiffany Haddish",
+      "authorZh": "",
+      "year": 2017,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501181825",
+      "description": "The comedian recounts growing up in South Central Los Angeles and finding success after a period of homelessness.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Disappeared",
+      "titleZh": "",
+      "author": "C.J. Box",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780698410114",
+      "description": "A Wyoming game warden teams up with his daughter to find a missing British businesswoman.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Red Alert",
+      "titleZh": "",
+      "author": "James Patterson and Marshall Karp",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316395588",
+      "description": "The fifth book in the NYPD Red series. Detectives Zach Jordan and Kylie MacDonald investigate the death of a documentary filmmaker and an explosion at a charity benefit.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Ready Player One",
+      "titleZh": "",
+      "author": "Ernest Cline",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780307887443",
+      "description": "It’s 2044, life on a resource-depleted Earth has grown increasingly grim, and the key to a vast fortune is hidden in a virtual-reality world.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 19,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Great Alone",
+      "titleZh": "",
+      "author": "Kristin Hannah",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781250165619",
+      "description": "A former prisoner of war returns from Vietnam and moves his family to Alaska, where they face tough conditions.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "This Is Me",
+      "titleZh": "",
+      "author": "Chrissy Metz",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062837875",
+      "description": "A star of “This Is Us” describes her journey toward self-acceptance.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Brief History of Time",
+      "titleZh": "",
+      "author": "Stephen Hawking",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780553380163",
+      "description": "The British cosmologist reviews efforts to create a unified theory of the universe; first published in 1988.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Russian Roulette",
+      "titleZh": "",
+      "author": "Michael Isikoff and David Corn",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781538728758",
+      "description": "Details of the 2016 presidential election, with an emphasis on Russia's possible involvement.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Dear Madam President",
+      "titleZh": "",
+      "author": "Jennifer Palmieri",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781538713457",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Tiger Woods",
+      "titleZh": "",
+      "author": "Jeff Benedict and Armen Keteyian",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501126420",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The President Is Missing",
+      "titleZh": "",
+      "author": "James Patterson and Bill Clinton",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316412698",
+      "description": "President Jonathan Duncan takes on adversaries at home and abroad.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "All We Ever Wanted",
+      "titleZh": "",
+      "author": "Emily Giffin",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780399178931",
+      "description": "A scandal sends members of two Nashville families into chaos.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Woman in the Window",
+      "titleZh": "",
+      "author": "A.J. Finn",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062678447",
+      "description": "A recluse who drinks heavily and takes prescription drugs may have witnessed a crime across from her Harlem townhouse.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Perfect Couple",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316375245",
+      "description": "A body is found in Nantucket Harbor hours before a picture-perfect wedding.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Rooster Bar",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781101967706",
+      "description": "Three students at a sleazy for-profit law school hope to expose the student-loan banker who runs it.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Kitchen Confidential",
+      "titleZh": "",
+      "author": "Anthony Bourdain",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780060899226",
+      "description": "A memoir-exposé of the restaurant world. Originally published in 2000.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Calypso",
+      "titleZh": "",
+      "author": "David Sedaris",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780316392389",
+      "description": "A collection of comedic stories on mortality, middle age and a beach house dubbed the Sea Section.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Educated",
+      "titleZh": "",
+      "author": "Tara Westover",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780399590504",
+      "description": "The daughter of survivalists, who is kept out of school, educates herself enough to leave home for university.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 110,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Things That Matter",
+      "titleZh": "",
+      "author": "Charles Krauthammer",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385349192",
+      "description": "Three decades’ worth of essays from the conservative columnist.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 21,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Soul of America",
+      "titleZh": "",
+      "author": "Jon Meacham",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780399589812",
+      "description": "The present political climate is contextualized through the lens of difficult moments in American history.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Vince Flynn",
+      "titleZh": "",
+      "author": "Kyle Mills",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501190650",
+      "description": "When America’s power grid is shut down, Mitch Rapp goes after a cyber terrorist.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "An Absolutely Remarkable Thing",
+      "titleZh": "",
+      "author": "Hank Green",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781524743444",
+      "description": "After posting a video that goes viral, April May must deal with the pressures of becoming an internet sensation.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Transcription",
+      "titleZh": "",
+      "author": "Kate Atkinson",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316479752",
+      "description": "Ten years later, figures from a BBC radio producer’s past as an M15 recruit in 1940 confront her.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Crazy Rich Asians",
+      "titleZh": "",
+      "author": "Kevin Kwan",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780345803788",
+      "description": "A New Yorker gets a surprise when she spends the summer with her boyfriend in Singapore.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Lethal White",
+      "titleZh": "",
+      "author": "Robert Galbraith",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316422741",
+      "description": "The fourth book in the Cormoran Strike series. Detectives Strike and Ellacott investigate a crime a young man may have witnessed as a child; by J. K. Rowling, writing pseudonymously.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Fear",
+      "titleZh": "",
+      "author": "Bob Woodward",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501175510",
+      "description": "Based on hours of interviews with sources, the Pulitzer Prize-winning journalist describes debates and decision-making within the Trump White House.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "In Pieces",
+      "titleZh": "",
+      "author": "Sally Field",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781538763025",
+      "description": "A memoir by the two-time Academy Award and three-time Emmy Award winner.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Dichotomy of Leadership",
+      "titleZh": "",
+      "author": "Jocko Willink and Leif Babin",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250195777",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Leadership",
+      "titleZh": "",
+      "author": "Doris Kearns Goodwin",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781476795928",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Long Road to Mercy",
+      "titleZh": "",
+      "author": "David Baldacci",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538761557",
+      "description": "Atlee Pine, an F.B.I. agent who is haunted by the childhood kidnapping of her twin sister, must choose between protecting her career or the United States' democracy.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Reckoning",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525620938",
+      "description": "A decorated World War II veteran shoots and kills a pastor inside a Mississippi church.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 20,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Where the Crawdads Sing",
+      "titleZh": "",
+      "author": "Delia Owens",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780735219106",
+      "description": "In a quiet town on the North Carolina coast in 1969, a young woman who survived alone in the marsh becomes a murder suspect.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 179,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Tattooist of Auschwitz",
+      "titleZh": "",
+      "author": "Heather Morris",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062797155",
+      "description": "A concentration camp detainee tasked with permanently marking fellow prisoners falls in love with one of them.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Fire and Blood",
+      "titleZh": "",
+      "author": "George R.R. Martin",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781524796280",
+      "description": "Set 300 years before the events of “A Game of Thrones,” this is the first volume of the two-part history of the Targaryens in Westeros.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Becoming",
+      "titleZh": "",
+      "author": "Michelle Obama",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781524763145",
+      "description": "The former first lady describes her journey from the South Side of Chicago to the White House, and how she balanced work, family and her husband’s political ascent.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 102,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Point of It All",
+      "titleZh": "",
+      "author": "Charles Krauthammer, edited by Daniel Krauthammer",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781984825483",
+      "description": "A collection of essays, speeches and unpublished writings by the late conservative columnist.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Sapiens",
+      "titleZh": "",
+      "author": "Yuval Noah Harari",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062316110",
+      "description": "How Homo sapiens became Earth’s dominant species.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 53,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing the Ss",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2018,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250165541",
+      "description": "A look at the postwar manhunt for members of Hitler’s inner circle.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Supermarket",
+      "titleZh": "",
+      "author": "Bobby Hall",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781982127138",
+      "description": "A depressed young man’s secrets are exposed when the grocery store where he works becomes a crime scene.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Tiamat'S Wrath",
+      "titleZh": "",
+      "author": "James S.A. Corey",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316332866",
+      "description": "The eighth book in the Expanse series.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Wild Card",
+      "titleZh": "",
+      "author": "Stuart Woods",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780735219304",
+      "description": "The 49th book in the Stone Barrington series.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Cornwalls Are Gone",
+      "titleZh": "",
+      "author": "James Patterson and Brendan DuBois",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316485555",
+      "description": "An Army intelligence officer must commit a crime or lose her kidnapped husband and daughter.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Right Side of History",
+      "titleZh": "",
+      "author": "Ben Shapiro",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062857903",
+      "description": "The conservative political commentator reflects upon what he considers most impactful to Western civilization.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Bad Blood",
+      "titleZh": "",
+      "author": "John Carreyrou",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781524731663",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 34,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Doing Justice",
+      "titleZh": "",
+      "author": "Preet Bharara",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780525521129",
+      "description": "The former U.S. Attorney for the Southern District of New York describes some of his career highlights and gives insights into our legal system.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Backlash",
+      "titleZh": "",
+      "author": "Brad Thor",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781982104054",
+      "description": "Cut off from any support, Scot Harvath fights to get his revenge.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Lost and Found",
+      "titleZh": "",
+      "author": "Danielle Steel",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780399179488",
+      "description": "A photographer embarks on a road trip to reconnect with three men she might have married.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Summer of '69",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316420013",
+      "description": "The Levin family undergoes dramatic events with a son in Vietnam, a daughter in protests and dark secrets hiding beneath the surface.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Pioneers",
+      "titleZh": "",
+      "author": "David McCullough",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501168680",
+      "description": "The Pulitzer Prize-winning historian tells the story of the settling of the Northwest Territory through five main characters.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Unfreedom of the Press",
+      "titleZh": "",
+      "author": "Mark R. Levin",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781476773094",
+      "description": "The conservative commentator and radio host makes his case that the press is aligned with political ideology.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Mueller Report",
+      "titleZh": "",
+      "author": "with related materials by The Washington Post",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982129736",
+      "description": "Redacted findings from the special counsel’s investigation into Russian interference in the 2016 presidential election and potential obstruction of justice by the president.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Water Dancer",
+      "titleZh": "",
+      "author": "Ta-Nehisi Coates",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780399590597",
+      "description": "A young man who was gifted with a mysterious power becomes part of a war between slavers and the enslaved.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Institute",
+      "titleZh": "",
+      "author": "Stephen King",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781982110567",
+      "description": "Children with special talents are abducted and sequestered in an institution where the sinister staff seeks to extract their gifts through harsh methods.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Dutch House",
+      "titleZh": "",
+      "author": "Ann Patchett",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062963673",
+      "description": "A sibling relationship is impacted when the family goes from poverty to wealth and back again over the course of many decades.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Inside Out",
+      "titleZh": "",
+      "author": "Demi Moore",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062049537",
+      "description": "The Hollywood star chronicles the rocky relationships, body image issues and public perceptions that affected her attempts to balance family and fame.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The United States of Trump",
+      "titleZh": "",
+      "author": "Bill O'Reilly",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250237224",
+      "description": "The conservative commentator weaves interviews and personal history to portray the power and influence of the 45th president.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Talking to Strangers",
+      "titleZh": "",
+      "author": "Malcolm Gladwell",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780316478526",
+      "description": "Famous examples of miscommunication serve as the backdrop to explain potential conflicts and misunderstandings.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 16,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Over the Top",
+      "titleZh": "",
+      "author": "Jonathan Van Ness",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062906373",
+      "description": "How the hairstylist, comedian and \"Queer Eye\" star overcame ridicule and trauma.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Know My Name",
+      "titleZh": "",
+      "author": "Chanel Miller",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780735223707",
+      "description": "A sexual assault victim reclaims her identity and challenges our culture and criminal justice system as they relate to this issue.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Guardians",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525620945",
+      "description": "Cullen Post, a lawyer and Episcopal minister, antagonizes some ruthless killers when he takes on a wrongful conviction case.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 21,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Last Wish",
+      "titleZh": "",
+      "author": "Andrzej Sapkowski",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316055086",
+      "description": "Linked stories follow the exploits of Geralt of Rivia, a monster-slaying mercenary.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Night Fire",
+      "titleZh": "",
+      "author": "Michael Connelly",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316457484",
+      "description": "Harry Bosch and Renée Ballard return to take up a case that held the attention of Bosch’s mentor.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Me",
+      "titleZh": "",
+      "author": "Elton John",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250147608",
+      "description": "The multi-award-winning solo artist's first autobiography chronicles his career, relationships and private struggles.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 11,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Sam Houston and the Alamo Avengers",
+      "titleZh": "",
+      "author": "Brian Kilmeade",
+      "authorZh": "",
+      "year": 2019,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780525540533",
+      "description": "The \"Fox & Friends” host gives an account of the battle against the Mexican Army in 1836.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Little Fires Everywhere",
+      "titleZh": "",
+      "author": "Celeste Ng",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780735224315",
+      "description": "An artist with a mysterious past and a disregard for the status quo upends a quiet town outside Cleveland.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 59,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Boy From the Woods",
+      "titleZh": "",
+      "author": "Harlan Coben",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538748145",
+      "description": "When a girl goes missing, a private investigator’s feral childhood becomes an asset in the search.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Sinner",
+      "titleZh": "",
+      "author": "J.R. Ward",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501195099",
+      "description": "The 18th book in the Black Dagger Brotherhood series. Jo Early is attracted to a potentially dangerous stranger.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Last Odyssey",
+      "titleZh": "",
+      "author": "James Rollins",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062892898",
+      "description": "The 15th book in the Sigma Force series. Catastrophic dangers might be set in motion when a medieval ship is discovered in Greenland.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Splendid and the Vile",
+      "titleZh": "",
+      "author": "Erik Larson",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385348737",
+      "description": "An examination of the leadership of the prime minister Winston Churchill.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 39,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Untamed",
+      "titleZh": "",
+      "author": "Glennon Doyle",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781984801258",
+      "description": "The activist and public speaker describes her journey of listening to her inner voice.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 68,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Lady in Waiting",
+      "titleZh": "",
+      "author": "Anne Glenconner",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780306846366",
+      "description": "A memoir that provides a look into the royal family by a lady-in-waiting to Princess Margaret.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Great Influenza",
+      "titleZh": "",
+      "author": "John M. Barry",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780143036494",
+      "description": "An overview of the 1918 flu epidemic and cautionary tale for similar kinds of large-scale outbreaks.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "28 Summers",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316420044",
+      "description": "A relationship that started in 1993 between Mallory Blessing and Jake McCloud comes to light while she is on her deathbed and his wife runs for president.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Vanishing Half",
+      "titleZh": "",
+      "author": "Brit Bennett",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525536291",
+      "description": "The lives of twin sisters who run away from a Southern Black community at age 16 diverge as one returns and the other takes on a different racial identity but their fates intertwine.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 30,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Camino Winds",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385545938",
+      "description": "The line between fact and fiction becomes blurred when an author of thrillers is found dead after a hurricane hits Camino Island.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Room Where It Happened",
+      "titleZh": "",
+      "author": "John Bolton",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982148034",
+      "description": "The former national security advisor gives his account of the 17 months he spent working for President Trump.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "White Fragility",
+      "titleZh": "",
+      "author": "Robin DiAngelo",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780807047415",
+      "description": "Historical and cultural analyses on what causes defensive moves by white people and how this inhibits cross-racial dialogue.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 14,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "How to Be an Antiracist",
+      "titleZh": "",
+      "author": "Ibram X. Kendi",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780525509288",
+      "description": "A primer for creating a more just and equitable society through identifying and opposing racism.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Stamped From the Beginning",
+      "titleZh": "",
+      "author": "Ibram X. Kendi",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781568585987",
+      "description": "Winner of the 2016 National Book Award for nonfiction. A look at anti-Black racist ideas and their effect on the course of American history.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "So You Want to Talk About Race",
+      "titleZh": "",
+      "author": "Ijeoma Oluo",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781580058827",
+      "description": "A look at the contemporary racial landscape of the United States.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Book of Two Ways",
+      "titleZh": "",
+      "author": "Jodi Picoult",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781984818355",
+      "description": "After surviving a plane crash, a death doula travels to Egypt to reconnect with an old flame who is an archaeologist.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Coast-to-Coast Murders",
+      "titleZh": "",
+      "author": "James Patterson and J.D. Barker",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316457422",
+      "description": "A detective and an F.B.I. agent are baffled by a cross-country killing spree.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Evening and the Morning",
+      "titleZh": "",
+      "author": "Ken Follett",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525954989",
+      "description": "In a prequel to “The Pillars of the Earth,” a boatbuilder, a Norman noblewoman and a monk live in England under attack by the Welsh and the Vikings.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Next to Last Stand",
+      "titleZh": "",
+      "author": "Craig Johnson",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525522546",
+      "description": "The 16th book in the Longmire series. A million dollars in a shoebox and a piece of a painting might be clues to an art heist.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Rage",
+      "titleZh": "",
+      "author": "Bob Woodward",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982131739",
+      "description": "Based on 17 on-the-record interviews with President Trump and other reporting, the Pulitzer Prize-winning journalist details the president’s perspective on multiple crises.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "My Own Words",
+      "titleZh": "",
+      "author": "Ruth Bader Ginsburg with Mary Hartnett and Wendy W. Williams",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501145254",
+      "description": "A collection of articles and speeches by the Supreme Court justice.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Blackout",
+      "titleZh": "",
+      "author": "Candace Owens",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982133276",
+      "description": "The conservative commentator makes her case that Black Americans should part ways with the Democratic Party.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing Crazy Horse",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781627797047",
+      "description": "The ninth book in the conservative commentator’s Killing series focuses on conflicts with Native Americans.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Caste",
+      "titleZh": "",
+      "author": "Isabel Wilkerson",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593230251",
+      "description": "The Pulitzer Prize-winning journalist examines aspects of caste systems across civilizations and reveals a rigid hierarchy in America today.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 34,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Time for Mercy",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385545969",
+      "description": "The third book in the Jake Brigance series. A 16-year-old is accused of killing a deputy in Clanton, Miss., in 1990.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 11,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Ready Player Two",
+      "titleZh": "",
+      "author": "Ernest Cline",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781524761332",
+      "description": "In a sequel to “Ready Player One,” Wade Watts discovers a technological advancement and goes on a new quest.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Deadly Cross",
+      "titleZh": "",
+      "author": "James Patterson",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316420259",
+      "description": "The 28th book in the Alex Cross series. An investigation of a double homicide sends Alex Cross to Alabama.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Return",
+      "titleZh": "",
+      "author": "Nicholas Sparks",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538728574",
+      "description": "A doctor serving in the Navy in Afghanistan goes back to North Carolina where two women change his life.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 13,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Promised Land",
+      "titleZh": "",
+      "author": "Barack Obama",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781524763169",
+      "description": "In the first volume of his presidential memoirs, Barack Obama offers personal reflections on his formative years and pivotal moments through his first term.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Greenlights",
+      "titleZh": "",
+      "author": "Matthew McConaughey",
+      "authorZh": "",
+      "year": 2020,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593139134",
+      "description": "The Academy Award-winning actor shares snippets from the diaries he kept over the last 35 years.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 49,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Four Winds",
+      "titleZh": "",
+      "author": "Kristin Hannah",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781250178602",
+      "description": "As dust storms roll during the Great Depression, Elsa must choose between saving the family and farm or heading West.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Win",
+      "titleZh": "",
+      "author": "Harlan Coben",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538748213",
+      "description": "Windsor Horne Lockwood III might rectify cold cases connected to his family that have eluded the F.B.I. for decades.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Consequences of Fear",
+      "titleZh": "",
+      "author": "Jacqueline Winspear",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062868039",
+      "description": "The 16th book in the Maisie Dobbs series. As Nazi occupation increases, Maisie looks into a possible murder that might affect Britain’s war efforts.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Double Jeopardy",
+      "titleZh": "",
+      "author": "Stuart Woods",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593188408",
+      "description": "The 57th book in the Stone Barrington series. A double threat with friends in high places awaits Stone in Maine.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Bounty",
+      "titleZh": "",
+      "author": "Janet Evanovich and Steve Hamilton",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781982157159",
+      "description": "The seventh book in the Fox and O’Hare series. Kate and Nick seek help from their fathers as they go after a shadowy international organization in search of a lost train full of Nazi gold.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Code Breaker",
+      "titleZh": "",
+      "author": "Walter Isaacson",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982115852",
+      "description": "How the Nobel Prize winner Jennifer Doudna and her colleagues invented CRISPR, a tool that can edit DNA.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Body Keeps the Score",
+      "titleZh": "",
+      "author": "Bessel van der Kolk",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780143127741",
+      "description": "How trauma affects the body and mind, and innovative treatments for recovery.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 304,
+      "rank": 6,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Last Thing He Told Me",
+      "titleZh": "",
+      "author": "Laura Dave",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501171345",
+      "description": "Hannah Hall discovers truths about her missing husband and bonds with his daughter from a previous relationship.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The President'S Daughter",
+      "titleZh": "",
+      "author": "James Patterson and Bill Clinton",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316540711",
+      "description": "Matthew Keating, a past president and former Navy SEAL, goes on his own to find his abducted teenage daughter.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Malibu Rising",
+      "titleZh": "",
+      "author": "Taylor Jenkins Reid",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781524798659",
+      "description": "An epic party has serious outcomes for four famous siblings.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "People We Meet on Vacation",
+      "titleZh": "",
+      "author": "Emily Henry",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781984806758",
+      "description": "Opposites Poppy and Alex meet to vacation together one more time in hopes of saving their relationship.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing the Mob",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250273659",
+      "description": "The 10th book in the conservative commentator’s Killing series looks at organized crime in the United States during the 20th century.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Bomber Mafia",
+      "titleZh": "",
+      "author": "Malcolm Gladwell",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780316296618",
+      "description": "A look at the key players and outcomes of precision bombing during World War II.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Apples Never Fall",
+      "titleZh": "",
+      "author": "Liane Moriarty",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781250220257",
+      "description": "The Delaney siblings suspect their father of causing the disappearance of their mother.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Jailhouse Lawyer",
+      "titleZh": "",
+      "author": "James Patterson and Nancy Allen",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316276627",
+      "description": "A young lawyer winds up in an Alabama jail that remains mysteriously crowded.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Daughter of the Morning Star",
+      "titleZh": "",
+      "author": "Craig Johnson",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593297261",
+      "description": "The 17th book in the Longmire Mystery series. A player on the Lame Deer Lady Stars High School basketball team receives threats.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Harlem Shuffle",
+      "titleZh": "",
+      "author": "Colson Whitehead",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385545136",
+      "description": "Ray Carney, a family man who sells furniture on 125th Street, gets a new clientele made up of vicious and unsavory characters.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Peril",
+      "titleZh": "",
+      "author": "Bob Woodward and Robert Costa",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982182915",
+      "description": "The Washington Post journalists detail the dangers and challenges during the transition to the Biden presidency.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Vanderbilt",
+      "titleZh": "",
+      "author": "Anderson Cooper and Katherine Howe",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062964618",
+      "description": "",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "American Marxism",
+      "titleZh": "",
+      "author": "Mark R. Levin",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501135972",
+      "description": "The Fox News host gives his take on the Green New Deal, critical race theory and social activism.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 11,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Yours Cruelly, Elvira",
+      "titleZh": "",
+      "author": "Cassandra Peterson",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780306874352",
+      "description": "The actress details the moments from her life and career that shaped the creation of her character Elvira, Mistress of the Dark.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Judge'S List",
+      "titleZh": "",
+      "author": "John Grisham",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385546027",
+      "description": "The second book in the Whistler series. Investigator Lacy Stoltz goes after a serial killer and closes in on a sitting judge.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Stranger in the Lifeboat",
+      "titleZh": "",
+      "author": "Mitch Albom",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062888341",
+      "description": "After a ship explodes, 10 people struggling to survive pull a man who claims to be the Lord out of the sea.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "It Ends With Us",
+      "titleZh": "",
+      "author": "Colleen Hoover",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501110368",
+      "description": "A battered wife raised in a violent home attempts to halt the cycle of abuse.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 140,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Lincoln Highway",
+      "titleZh": "",
+      "author": "Amor Towles",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780735222359",
+      "description": "Two friends who escaped from a juvenile work farm take Emmett Watson on an unexpected journey to New York City in 1954.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Call Us What We Carry",
+      "titleZh": "",
+      "author": "Amanda Gorman",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593465066",
+      "description": "A debut collection of poems on identity and history by the presidential inaugural poet who wrote “The Hill We Climb.”",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Storyteller",
+      "titleZh": "",
+      "author": "Dave Grohl",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063076099",
+      "description": "A memoir by the musician known for his work with Foo Fighters and Nirvana.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Will",
+      "titleZh": "",
+      "author": "Will Smith with Mark Manson",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781984877925",
+      "description": "The actor, producer and musician tells his life story and lessons he learned along the way.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The 1619 Project",
+      "titleZh": "",
+      "author": "Nikole Hannah-Jones, Caitlin Roper, Ilena Silverman and Jake Silverstein",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593230572",
+      "description": "Viewing America’s entanglement with slavery and its legacy, in essays adapted and expanded from The New York Times Magazine.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 19,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Lyrics",
+      "titleZh": "",
+      "author": "Paul McCartney",
+      "authorZh": "",
+      "year": 2021,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781631492563",
+      "description": "A two-volume celebration of 154 songs, with handwritten texts, paintings and photographs from the songwriter’s archives.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Run, Rose, Run",
+      "titleZh": "",
+      "author": "Dolly Parton and James Patterson",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780759554344",
+      "description": "A singer-songwriter goes to Nashville seeking stardom but is followed by her dark past.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Recovery Agent",
+      "titleZh": "",
+      "author": "Janet Evanovich",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781982154943",
+      "description": "When her family’s home is threatened, Gabriela Rose goes with her ex-husband to seek lost treasure in the jungles of Peru.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Verity",
+      "titleZh": "",
+      "author": "Colleen Hoover",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538724736",
+      "description": "Lowen Ashleigh is hired by the husband of an injured writer to complete her popular series and uncovers a horrifying truth.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 56,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "One Damn Thing After Another",
+      "titleZh": "",
+      "author": "William P. Barr",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063158603",
+      "description": "The former attorney general for George H.W. Bush and Donald Trump gives his account of those two tenures.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Crying in H Mart",
+      "titleZh": "",
+      "author": "Michelle Zauner",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780525657743",
+      "description": "The daughter of a Korean mother and Jewish-American father, and leader of the indie rock project Japanese Breakfast, describes creating her own identity after losing her mother to cancer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 26,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Hotel Nantucket",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316258678",
+      "description": "The new general manager of a hotel far from its Gilded Age heyday deals with the complicated pasts of her guests and staff.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Ugly Love",
+      "titleZh": "",
+      "author": "Colleen Hoover",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781476753188",
+      "description": "A casual sexual relationship between Tate and Miles becomes more complicated than they expected.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 24,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Battle for the American Mind",
+      "titleZh": "",
+      "author": "Pete Hegseth with David Goodwin",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063215047",
+      "description": "The \"Fox & Friends Weekend\" host makes his case for what he calls classical Christian education.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "An Immense World",
+      "titleZh": "",
+      "author": "Ed Yong",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593133231",
+      "description": "The Pulitzer Prize–winning science writer explains the sensory perceptions and ways of communication used by a variety of animals.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Happy-Go-Lucky",
+      "titleZh": "",
+      "author": "David Sedaris",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780316392457",
+      "description": "The humorist portrays personal and public upheavals of his life in its seventh decade and the world in the time of a pandemic.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing the Killers",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250279255",
+      "description": "The 11th book in the conservative commentator’s Killing series gives an account of the global war against terrorists.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Dreamland",
+      "titleZh": "",
+      "author": "Nicholas Sparks",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593449554",
+      "description": "Musicians from different backgrounds are attracted to each other and a mother flees with her son from an abusive husband.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Fairy Tale",
+      "titleZh": "",
+      "author": "Stephen King",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668002179",
+      "description": "A high school kid inherits a shed that is a portal to another world where good and evil are at war.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "I'M Glad My Mom Died",
+      "titleZh": "",
+      "author": "Jennette McCurdy",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982185824",
+      "description": "The actress and filmmaker describes her eating disorders and difficult relationship with her mother.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 46,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Divider",
+      "titleZh": "",
+      "author": "Peter Baker and Susan Glasser",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385546539",
+      "description": "The married journalists who write for The New York Times and The New Yorker posit that Donald Trump began to emulate the foreign autocrats he admired.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Starry Messenger",
+      "titleZh": "",
+      "author": "Neil deGrasse Tyson",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250861504",
+      "description": "The astrophysicist and director of the Hayden Planetarium delves into subjects including politics, religion, gender and race.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Dinners With Ruth",
+      "titleZh": "",
+      "author": "Nina Totenberg",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982188085",
+      "description": "The NPR legal affairs correspondent details her professional accomplishments and friendship with the late Supreme Court Justice Ruth Bader Ginsburg.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "It Starts With Us",
+      "titleZh": "",
+      "author": "Colleen Hoover",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668001226",
+      "description": "In the sequel to “It Ends With Us,” Lily deals with her jealous ex-husband as she reconnects with her first boyfriend.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 23,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Lessons in Chemistry",
+      "titleZh": "",
+      "author": "Bonnie Garmus",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385547345",
+      "description": "A scientist and single mother living in California in the 1960s becomes a star on a TV cooking show.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 60,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Seven Husbands of Evelyn Hugo",
+      "titleZh": "",
+      "author": "Taylor Jenkins Reid",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781501161933",
+      "description": "A movie icon recounts stories of her loves and career to a struggling magazine writer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 78,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Light We Carry",
+      "titleZh": "",
+      "author": "Michelle Obama",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593237465",
+      "description": "The former first lady shares personal stories and the tools she uses to deal with difficult situations.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The January 6 Report",
+      "titleZh": "",
+      "author": "the House January 6th Committee",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063315501",
+      "description": "The final report of the Select Committee to Investigate the Jan. 6. Attack on the United States Capitol; with a foreword by Ari Melber.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The January 6th Report",
+      "titleZh": "",
+      "author": "the Select Committee to Investigate the Jan. 6 Attack on the United States Capitol",
+      "authorZh": "",
+      "year": 2022,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250877529",
+      "description": "The final report of the Select Committee to Investigate the Jan. 6. Attack on the United States Capitol; with a preface by David Remnick and epilogue by Representative Jamie Raskin.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Daisy Jones & the Six",
+      "titleZh": "",
+      "author": "Taylor Jenkins Reid",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781524798642",
+      "description": "A fictional oral history charting the rise and fall of a ’70s rock ’n’ roll band.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Countdown",
+      "titleZh": "",
+      "author": "James Patterson and Brendan DuBois",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316457378",
+      "description": "A botched field operation and a terrorist plot endanger Amy Cornwall and her family.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Poverty, by America",
+      "titleZh": "",
+      "author": "Matthew Desmond",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593239919",
+      "description": "The Pulitzer Prize-winning author of “Evicted” examines the ways in which affluent Americans keep poor people poor.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Saved",
+      "titleZh": "",
+      "author": "Benjamin Hall",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063309661",
+      "description": "The Fox News journalist gives his account of the injuries he sustained from a Russian attack while covering the war in Ukraine.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Spare",
+      "titleZh": "",
+      "author": "Prince Harry",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593593806",
+      "description": "The Duke of Sussex details his struggles with the royal family, loss of his mother, service in the British Army and marriage to Meghan Markle.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 11,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Five-Star Weekend",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316259187",
+      "description": "After a tragedy, a popular food blogger brings friends from distinct times in her life to spend a weekend in Nantucket.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 13,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Happy Place",
+      "titleZh": "",
+      "author": "Emily Henry",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593441275",
+      "description": "A former couple pretend to be together for the sake of their friends during their annual getaway in Maine.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Fourth Wing",
+      "titleZh": "",
+      "author": "Rebecca Yarros",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781649374042",
+      "description": "Violet Sorrengail is urged by the commanding general, who also is her mother, to become a candidate for the elite dragon riders.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 88,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Outlive",
+      "titleZh": "",
+      "author": "Peter Attia with Bill Gifford",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593236598",
+      "description": "A look at recent scientific research on aging and longevity.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 13,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Wager",
+      "titleZh": "",
+      "author": "David Grann",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385534260",
+      "description": "The survivors of a shipwrecked British vessel on a secret mission during an imperial war with Spain have different accounts of events.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 36,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Running Grave",
+      "titleZh": "",
+      "author": "Robert Galbraith",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316572132",
+      "description": "The seventh book in the Cormoran Strike series. Strike's business partner, Robin Ellacott, goes inside a cult to rescue someone who has joined it.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Armor of Light",
+      "titleZh": "",
+      "author": "Ken Follett",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593655320",
+      "description": "The fifth book in the Kingsbridge series. Change and turmoil affect various aspects of society in the latter part of the 18th century.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "12 Months to Live",
+      "titleZh": "",
+      "author": "James Patterson and Mike Lupica",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316405690",
+      "description": "A criminal defense attorney who received a terminal diagnosis might be in danger of being murdered.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "House of Sky and Breath",
+      "titleZh": "",
+      "author": "Sarah J. Maas",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781639732876",
+      "description": "The second book in the Crescent City series. Bryce Quinlan and Hunt Athalar must choose to fight or stay silent.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Enough",
+      "titleZh": "",
+      "author": "Cassidy Hutchinson",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668028285",
+      "description": "The former special assistant to President Trump and his chief of staff, Mark Meadows, details events surrounding the crisis of conscience she faced.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Killing the Witches",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250283320",
+      "description": "The 13th book in the conservative commentator’s Killing series gives a portrayal of the events of 1692 and 1693 in Salem Village, Mass.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Democrat Party Hates America",
+      "titleZh": "",
+      "author": "Mark R. Levin",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781501183157",
+      "description": "The Fox News host and author of “American Marxism” argues for the defeat of the Democratic Party.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Democracy Awakening",
+      "titleZh": "",
+      "author": "Heather Cox Richardson",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593652961",
+      "description": "The historian and author of the newsletter “Letters From an American” shares her views on the current political moment.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Elon Musk",
+      "titleZh": "",
+      "author": "Walter Isaacson",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982181284",
+      "description": "The author of “The Code Breaker” traces Musk’s life and summarizes his work on electric vehicles, private space exploration and artificial intelligence.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Iron Flame",
+      "titleZh": "",
+      "author": "Rebecca Yarros",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781649374172",
+      "description": "The second book in the Empyrean series. Violet Sorrengail’s next round of training might require her to betray the man she loves.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 21,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Heaven & Earth Grocery Store",
+      "titleZh": "",
+      "author": "James McBride",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593422946",
+      "description": "Secrets held by the residents of a dilapidated neighborhood come to life when a skeleton is found at the bottom of a well.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Icebreaker",
+      "titleZh": "",
+      "author": "Hannah Grace",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668026038",
+      "description": "Anastasia might need the help of the captain of a college hockey team to get on the Olympic figure skating team.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 28,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Oath and Honor",
+      "titleZh": "",
+      "author": "Liz Cheney",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780316572064",
+      "description": "The former congresswoman from Wyoming recounts how she helped lead the Select Committee to Investigate the Jan. 6. Attack on the United States Capitol.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Woman in Me",
+      "titleZh": "",
+      "author": "Britney Spears",
+      "authorZh": "",
+      "year": 2023,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668009048",
+      "description": "The Grammy Award-winning pop star details her personal and professional experiences, including the years she spent under a conservatorship overseen by her father.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Women",
+      "titleZh": "",
+      "author": "Kristin Hannah",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781250178633",
+      "description": "In 1965, a nursing student follows her brother to serve during the Vietnam War and returns to a divided America.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 47,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Truth About the Devlins",
+      "titleZh": "",
+      "author": "Lisa Scottoline",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525539704",
+      "description": "Seeking to turn around a troubled past, TJ Devlin joins his family’s law firm as an investigator and learns that his brother murdered a client.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Three-Body Problem",
+      "titleZh": "",
+      "author": "Cixin Liu",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780765382030",
+      "description": "Different groups form to help or fight a crumbling alien civilization coming to invade Earth; the basis of the streaming series. Translated by Ken Liu.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Age of Revolutions",
+      "titleZh": "",
+      "author": "Fareed Zakaria",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780393239232",
+      "description": "The CNN host draws out lessons for the present polarized era from the 17th-century Netherlands, the French Revolution and the Industrial Revolution.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Becky Lynch",
+      "titleZh": "",
+      "author": "Rebecca Quin",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781982157258",
+      "description": "The WWE star describes her journey from her Catholic upbringing in Ireland to her success in the wrestling ring.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Get It Together",
+      "titleZh": "",
+      "author": "Jesse Watters",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063252035",
+      "description": "The Fox News host gives his take on some people whose political views differ from the ones to which he subscribes.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Reading the Constitution",
+      "titleZh": "",
+      "author": "Stephen Breyer",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668021538",
+      "description": "A former associate justice of the Supreme Court puts forth his philosophy for interpreting the Constitution.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "All the Colors of the Dark",
+      "titleZh": "",
+      "author": "Chris Whitaker",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593798881",
+      "description": "Questions arise when a boy saves the daughter of a wealthy family amid a string of disappearances in a Missouri town in 1975.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Housemaid Is Watching",
+      "titleZh": "",
+      "author": "Freida McFadden",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781464221132",
+      "description": "The third book in the Housemaid series. Dangers lurk in a quiet neighborhood.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Swan Song",
+      "titleZh": "",
+      "author": "Elin Hilderbrand",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316258876",
+      "description": "Nantucket residents are alarmed when a home, recently sold at an exorbitant price, goes up in flames and someone goes missing.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Housemaid",
+      "titleZh": "",
+      "author": "Freida McFadden",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538742570",
+      "description": "Troubles surface when a woman looking to make a fresh start takes a job in the home of the Winchesters.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 77,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "On Call",
+      "titleZh": "",
+      "author": "Anthony S. Fauci",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593657478",
+      "description": "The physician-scientist and immunologist chronicles his six decades of public service, including his work during the AIDS crisis and the Covid-19 pandemic.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Demon of Unrest",
+      "titleZh": "",
+      "author": "Erik Larson",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385348744",
+      "description": "The author of “The Splendid and the Vile” portrays the months between the election of Abraham Lincoln and the beginning of the Civil War.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Singularity Is Nearer",
+      "titleZh": "",
+      "author": "Ray Kurzweil",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780399562761",
+      "description": "A look at the potentially positive and negative aspects of biotechnology, nanotechnology and artificial intelligence.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Friends, Lovers, and the Big Terrible Thing",
+      "titleZh": "",
+      "author": "Matthew Perry",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250866455",
+      "description": "The late actor, known for playing Chandler Bing on “Friends,” shares stories from his childhood and his struggles with sobriety.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 29,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Counting Miracles",
+      "titleZh": "",
+      "author": "Nicholas Sparks",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593449592",
+      "description": "A man in search of the father he never knew encounters a single mom and rumors circulate of the nearby appearance of a white deer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Intermezzo",
+      "titleZh": "",
+      "author": "Sally Rooney",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780374602635",
+      "description": "After the passing of their father, seemingly different brothers engage in relationships and seek ways to cope.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Small and the Mighty",
+      "titleZh": "",
+      "author": "Sharon McMahon",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593541678",
+      "description": "A former high school government and law teacher profiles lesser-known Americans who made an impact.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Truths",
+      "titleZh": "",
+      "author": "Vivek Ramaswamy",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668078433",
+      "description": "The entrepreneur and former Republican presidential candidate shares his opinions on a variety of issues.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Confronting the Presidents",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Martin Dugard",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250346414",
+      "description": "The conservative commentator evaluates the legacies of American presidents.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Targeted",
+      "titleZh": "",
+      "author": "Jack Carr and James M. Scott",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668024355",
+      "description": "An account of the attack of the U.S. Marine barracks in Beirut, Lebanon, in 1983.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "James",
+      "titleZh": "",
+      "author": "Percival Everett",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385550369",
+      "description": "A reimagining of “Adventures of Huckleberry Finn” shines a different light on Mark Twain's classic, revealing new facets of the character of Jim.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Wicked",
+      "titleZh": "",
+      "author": "Gregory Maguire",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780062852847",
+      "description": "A misunderstood girl named Elphaba is declared a witch; the basis of the musical and the film.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Backyard Bird Chronicles",
+      "titleZh": "",
+      "author": "Amy Tan",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593536131",
+      "description": "Essays and drawings by the author of “The Joy Luck Club” and “The Bonesetter's Daughter,” which depict a search for peace through birding.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Cher",
+      "titleZh": "",
+      "author": "Cher",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780062863102",
+      "description": "In the first part of her memoir, the multiple award-winning pop culture icon traces her childhood and forays into the world of entertainment.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 6,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Framed",
+      "titleZh": "",
+      "author": "John Grisham and Jim McCloskey",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780385550444",
+      "description": "Our criminal justice system viewed through the struggles of 10 wrongfully convicted people to achieve exoneration.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 11,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Be Ready When the Luck Happens",
+      "titleZh": "",
+      "author": "Ina Garten",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593799895",
+      "description": "A memoir by the cookbook author and Food Network host known as the Barefoot Contessa.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 13,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Melania",
+      "titleZh": "",
+      "author": "Melania Trump",
+      "authorZh": "",
+      "year": 2024,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781510782693",
+      "description": "The first lady describes her work as a fashion model, marriage to Donald Trump and time in the White House.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 12,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Lethal Prey",
+      "titleZh": "",
+      "author": "John Sandford",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593718421",
+      "description": "The 35th book in the Prey series. True-crime bloggers complicate Lucas Davenport and Virgil Flowers’s search for a killer.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Onyx Storm",
+      "titleZh": "",
+      "author": "Rebecca Yarros",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781649377159",
+      "description": "The third book in the Empyrean series. As enemies gain traction, Violet Sorrengail goes beyond the Aretian wards in search of allies.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Nobody'S Fool",
+      "titleZh": "",
+      "author": "Harlan Coben",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538756386",
+      "description": "The private investigator Sami Kierce tracks down clues to solve a mystery from his past.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Summer in the City",
+      "titleZh": "",
+      "author": "Alex Aster",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780063411661",
+      "description": "A screenwriter seeking inspiration coincidentally moves next door to the billionaire with whom she hooked up a couple years ago.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Abundance",
+      "titleZh": "",
+      "author": "Ezra Klein and Derek Thompson",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668023488",
+      "description": "A New York Times opinion columnist and a staff writer at The Atlantic evaluate obstacles to American progress.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "When the Going Was Good",
+      "titleZh": "",
+      "author": "Graydon Carter with James Fox",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593655900",
+      "description": "The co-creator of Spy and former editor of Vanity Fair retraces his storied career.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Don'T Let Him in",
+      "titleZh": "",
+      "author": "Lisa Jewell",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668033876",
+      "description": "A man with dark secrets in his past may cause trouble for three women who did not heed the warning about him.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Mother'S Love",
+      "titleZh": "",
+      "author": "Danielle Steel",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593498736",
+      "description": "After her handbag is stolen during a trip to Paris, a best-selling author with a traumatic past determines not to be a victim.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Atmosphere",
+      "titleZh": "",
+      "author": "Taylor Jenkins Reid",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593158715",
+      "description": "In the summer of 1980, Joan Goodwin begins training with a group of candidates for NASA’s space shuttle program.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 4,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "One Golden Summer",
+      "titleZh": "",
+      "author": "Carley Fortune",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593638910",
+      "description": "A photographer returns to a place where she spent a summer as a teenager and runs into the guy she had a crush on back then.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Severed Heart",
+      "titleZh": "",
+      "author": "Kate Stewart",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781496757012",
+      "description": "The second book in the Ravenhood Legacy series. Tyler gets his friend’s aunt to help him on his quest to become a man before his time.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Behind the Badge",
+      "titleZh": "",
+      "author": "Johnny Joey Jones",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063432109",
+      "description": "The Fox News military analyst extols the first responders among his friends and family.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Not My Type",
+      "titleZh": "",
+      "author": "E. Jean Carroll",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250381682",
+      "description": "The journalist shares moments from her life and the two trials in which she accused President Trump of sexual assault and defamation.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Mark Twain",
+      "titleZh": "",
+      "author": "Ron Chernow",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780525561729",
+      "description": "The Pulitzer Prize-winning biographer portrays the life and career of the literary celebrity and political pundit.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 7,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Alchemised",
+      "titleZh": "",
+      "author": "SenLinYu",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593972700",
+      "description": "After the war, an imprisoned alchemist is sent to a necromancer to recover her lost memories.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Primal of Blood and Bone",
+      "titleZh": "",
+      "author": "Jennifer L. Armentrout",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781963135480",
+      "description": "The sixth book in the Blood and Ash series. The Blood Crown has fallen and the Primal of Death must be stopped.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Secret of Secrets",
+      "titleZh": "",
+      "author": "Dan Brown",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385546898",
+      "description": "As he searches for the missing noetic scientist he has been seeing, Robert Langdon discovers something regarding a secret project.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Circle of Days",
+      "titleZh": "",
+      "author": "Ken Follett",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781538772799",
+      "description": "A priestess envisions a great stone circle put together by divided tribes, but drought and violence may impede its creation.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Tourist Season",
+      "titleZh": "",
+      "author": "Brynne Weaver",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781638932109",
+      "description": "When a true crime investigator comes to Cape Carnage in search of a serial killer, a local gardener and a handsome tourist pause their deadly ways.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "107 Days",
+      "titleZh": "",
+      "author": "Kamala Harris",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668211656",
+      "description": "The former vice president recounts her abbreviated campaign to become president in 2024.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Poems & Prayers",
+      "titleZh": "",
+      "author": "Matthew McConaughey",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781984862105",
+      "description": "The actor and author of “Greenlights” explores elements of belief and reason that make up our lives.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Awake",
+      "titleZh": "",
+      "author": "Jen Hatmaker",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668083680",
+      "description": "The host of the \"For the Love\" podcast describes major shifts in her life after her marriage of 26 years ended.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Confronting Evil",
+      "titleZh": "",
+      "author": "Bill O'Reilly and Josh Hammer",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250374042",
+      "description": "O'Reilly and Hammer profile some of history's nefarious characters.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 3,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Softly, as I Leave You",
+      "titleZh": "",
+      "author": "Priscilla Beaulieu Presley with Mary Jane Ross",
+      "authorZh": "",
+      "year": 2025,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780306836480",
+      "description": "Presley recounts her tribulations and search for identity after spending a decade with Elvis.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Theo of Golden",
+      "titleZh": "",
+      "author": "Allen Levi",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668236512",
+      "description": "A man travels to a small Southern town, where he purchases pencil drawings of local residents and exchanges them for stories.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 33,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "Project Hail Mary",
+      "titleZh": "",
+      "author": "Andy Weir",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593135228",
+      "description": "Ryland Grace awakes from a long sleep alone and far from home, and the fate of humanity rests on his shoulders; the basis of the movie.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 58,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Deal",
+      "titleZh": "",
+      "author": "Elle Kennedy",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781775293934",
+      "description": "Hannah Wells makes a deal with the captain of the college hockey team in exchange for tutoring him that may complicate their relationship.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 10,
+      "rank": 14,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "The Divorce",
+      "titleZh": "",
+      "author": "Freida McFadden",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781464249631",
+      "description": "After her husband ends their marriage and she turns her attention to his new girlfriend, Naomi suspects she might be in danger.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 8,
+      "rank": 15,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
+    },
+    {
+      "title": "A Marriage at Sea",
+      "titleZh": "",
+      "author": "Sophie Elmhirst",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593854297",
+      "description": "In 1972, an incident with a breaching whale turns a couple’s dream of sailing on a boat into a monthslong struggle for survival on a raft.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 9,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-07-23"
     }
   ],
-  "lastUpdated": "2026-07-23T23:26:34.154Z",
+  "lastUpdated": "2026-07-23T23:58:40.484Z",
   "sources": [
     "NYT Books API",
     "Google Books API"
-  ]
+  ],
+  "historyFetched": true
 }
