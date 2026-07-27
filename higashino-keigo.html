@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keigo Higashino · 东野圭吾 — The World's Bookshelf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #171717;
+      --muted: #737373;
+      --line: rgba(23,23,23,0.12);
+      --paper: #f7f3ed;
+      --accent: #a9193f;
+      --gold: #c89c5c;
+      --cp-surface: #ffffff;
+      --cp-surface-soft: #f5f5f5;
+      --cp-border: #dedede;
+      --cp-text: #242424;
+      --cp-text-muted: #5c5c5c;
+      --cp-text-soft: #6f6f6f;
+      --cp-accent-soft: rgba(169,25,63,0.08);
+      --cp-link: #0078d4;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "DM Sans", "Segoe UI", sans-serif;
+    }
+
+    /* Topbar */
+    .topbar {
+      height: 80px;
+      padding: 0 4.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(18px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--ink);
+      text-decoration: none;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .back-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: opacity .2s;
+    }
+
+    .back-link:hover { opacity: .7; }
+
+    .language-toggle {
+      display: flex;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.74);
+    }
+
+    .language-toggle button {
+      min-width: 80px;
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 11px;
+      color: #555;
+      background: transparent;
+      font: inherit;
+      cursor: pointer;
+      transition: .2s ease;
+      font-size: 0.85rem;
+    }
+
+    .language-toggle button.active {
+      color: white;
+      background: linear-gradient(135deg, #b21f49, #941333);
+      box-shadow: 0 6px 16px rgba(169,25,63,.22);
+    }
+
+    /* Hero */
+    .author-hero {
+      padding: 80px 7vw 60px;
+      background: linear-gradient(135deg, #1a1a1a, #2d2826);
+      color: #e8e0d4;
+      text-align: center;
+    }
+
+    .author-hero .candle { font-size: 2.5rem; margin-bottom: 20px; }
+
+    .author-name {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 600;
+      margin: 0 0 8px;
+      color: #fff;
+    }
+
+    .author-name-zh {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 500;
+      color: var(--gold);
+      margin: 0 0 16px;
+    }
+
+    .author-dates {
+      font-size: 1rem;
+      color: #a09080;
+      margin-bottom: 32px;
+      letter-spacing: 0.1em;
+    }
+
+    .author-bio {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #c8bfb2;
+    }
+
+    .bio-zh {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #a09888;
+    }
+
+    .gold-rule {
+      width: 58px;
+      height: 4px;
+      margin: 32px auto;
+      border-radius: 999px;
+      background: var(--gold);
+    }
+
+    /* Books Grid */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--ink);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--cp-surface);
+      border: 1px solid var(--cp-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform .2s ease, box-shadow .2s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+      border-bottom: 3px solid rgba(0,0,0,0.08);
+    }
+
+    .card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.12);
+      border-color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .card-year {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--cp-accent-soft);
+      padding: 4px 10px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+
+    .card-genre {
+      font-size: 0.75rem;
+      color: var(--cp-text-soft);
+      background: var(--cp-surface-soft);
+      padding: 4px 10px;
+      border-radius: 10px;
+    }
+
+    .card-title-en {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--cp-text);
+      margin-bottom: 4px;
+    }
+
+    .card-title-zh {
+      font-size: 1rem;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--cp-text-muted);
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .card-desc-zh {
+      font-size: 0.82rem;
+      color: var(--cp-text-soft);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .card-link {
+      font-size: 0.75rem;
+      color: var(--cp-link);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Footer */
+    .page-footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 700px) {
+      .author-hero { padding: 60px 24px 40px; }
+      .grid { grid-template-columns: 1fr; }
+      .topbar { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="topbar">
+    <a class="brand" href="bestseller-books.html">📚 The World's Bookshelf</a>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a class="back-link" href="bestseller-books.html" id="backLink">← Back to collection</a>
+      <div class="language-toggle">
+        <button class="active" id="btnEn" onclick="setLang('en')">English</button>
+        <button id="btnZh" onclick="setLang('zh')">中文</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="author-hero">
+    <div class="candle">🕯️</div>
+    <h1 class="author-name">Keigo Higashino</h1>
+    <p class="author-name-zh">东野圭吾</p>
+    <p class="author-dates">February 4, 1958 — July 23, 2026</p>
+    <div class="gold-rule"></div>
+    <div class="author-bio" id="bioEn">
+      Keigo Higashino was one of Japan's most celebrated and prolific mystery authors, born in Osaka and initially trained as an engineer before winning the prestigious Edogawa Rampo Prize for his debut novel <em>After School</em> (1985). He is best known internationally for <em>The Devotion of Suspect X</em>, which earned him the Naoki Prize, and for his beloved "Detective Galileo" and "Detective Kaga" series. Over a career spanning more than 40 years, he published over 100 books and sold more than 100 million copies in Japan alone.
+    </div>
+    <div class="author-bio bio-zh" id="bioZh">
+      东野圭吾，日本著名推理小说家，出生于大阪，毕业于大阪府立大学工学部，后凭借处女作《放课后》荣获第31届江户川乱步奖，从此走上专职写作的道路。代表作包括《嫌疑人X的献身》《白夜行》《解忧杂货店》等，其中《嫌疑人X的献身》荣获第134届直木奖。他的作品以精密的逻辑构架和深刻的人性洞察著称，多部小说被改编为电影与电视剧，深受全球读者喜爱。
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="section-title" id="sectionTitle">Selected Works · 代表作品</h2>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <footer class="page-footer" id="footer">
+    A tribute from The World's Bookshelf · Rest in peace, Master of Mystery
+  </footer>
+
+  <script>
+    let currentLang = 'en';
+
+    const books = [
+      {
+        titleEn: "The Devotion of Suspect X",
+        titleZh: "嫌疑人X的献身",
+        year: 2005,
+        genre: "Mystery",
+        genreZh: "推理",
+        goodreads: "https://www.goodreads.com/book/show/8686068",
+        descEn: "When single mother Yasuko accidentally kills her abusive ex-husband, her reclusive genius mathematician neighbor Ishigami constructs an airtight alibi — but physicist \"Detective Galileo\" Yukawa suspects the alibi is too perfect. A devastating emotional revelation redefines the mystery genre.",
+        descZh: "单身母亲花冈靖子失手杀死前夫，邻居天才数学家石神主动为其设计了一套无懈可击的不在场证明。物理学家汤川学察觉到其中蹊跷——这是一场智识与情感交织的终极较量，结局令人心碎又震撼。"
+      },
+      {
+        titleEn: "Journey Under the Midnight Sun",
+        titleZh: "白夜行",
+        year: 1999,
+        genre: "Psychological Thriller",
+        genreZh: "心理悬疑",
+        goodreads: "https://www.goodreads.com/book/show/19256975",
+        descEn: "When a pawnshop owner is found murdered in 1973 Osaka, detective Sasagaki becomes obsessed with two children connected to the case. Spanning over two decades, the novel traces how the unsolved crime warps their intertwined lives in increasingly dark ways.",
+        descZh: "1973年，大阪一废弃建筑中发现男尸，刑警笹垣对与案件相关的两个孩子始终难以释怀。小说横跨二十余年，将两人命运紧密缠绕，在黑暗与光明之间揭示人性最幽深的角落。"
+      },
+      {
+        titleEn: "Malice",
+        titleZh: "恶意",
+        year: 1996,
+        genre: "Mystery",
+        genreZh: "推理",
+        goodreads: "https://www.goodreads.com/book/show/20613611",
+        descEn: "Novelist Kunihiko Hidaka is found murdered the night before emigrating to Vancouver; his best friend appears innocent. Detective Kaga suspects otherwise — the investigation becomes a masterful battle of wits over the nature of malice itself.",
+        descZh: "著名小说家日高邦彦在移居加拿大前夜被杀于书房，好友野野口修看似清白。然而刑警加贺恭一郎从往日的师生情谊中嗅出端倪——这不是寻找凶手的游戏，而是一次探究\"恶意\"根源的较量。"
+      },
+      {
+        titleEn: "The Miracles of the Namiya General Store",
+        titleZh: "解忧杂货店",
+        year: 2012,
+        genre: "Magical Realism",
+        genreZh: "奇幻现实",
+        goodreads: "https://www.goodreads.com/book/show/44287550",
+        descEn: "Three young delinquents hiding in an abandoned general store find themselves receiving letters from decades in the past. As they respond, they discover unexpected connections between the lives they've touched and their own troubled present.",
+        descZh: "三个少年在抢劫后躲入废弃的浪矢杂货店，却意外收到从过去寄来的求助信件。随着他们一一作答，一段段跨越时空、彼此交织的人生故事徐徐展开，展现出善意与温情如何在不经意间改变命运。"
+      },
+      {
+        titleEn: "Salvation of a Saint",
+        titleZh: "圣女的救济",
+        year: 2008,
+        genre: "Mystery",
+        genreZh: "推理",
+        goodreads: "https://www.goodreads.com/book/show/13506866",
+        descEn: "When Yoshitaka is found dead from arsenic-poisoned coffee, his wife is the obvious suspect — except she was hundreds of miles away. Detective Galileo must solve what seems to be a physically impossible murder.",
+        descZh: "丈夫吉孝被人以砒霜毒死，妻子绫音却身在数百里之外，完美不在场。\"神探伽利略\"汤川学必须从逻辑和科学中找到那个看似不可能存在的答案。"
+      },
+      {
+        titleEn: "A Midsummer's Equation",
+        titleZh: "盛夏的方程式",
+        year: 2011,
+        genre: "Mystery",
+        genreZh: "推理",
+        goodreads: "https://www.goodreads.com/book/show/23847971",
+        descEn: "Physicist Yukawa visits a declining seaside resort during a debate over underwater mining, only for a former detective to turn up dead. The case forces Yukawa to navigate tangled politics and hidden secrets while forming an unlikely bond with a young boy.",
+        descZh: "汤川学来到海滨小镇玻璃浦，参与一场关于海底矿藏开发的争议听证。一名前刑警的死亡搅动了小镇的平静。伽利略在破案过程中与少年恭平结下深厚情谊，案件真相深藏着关于守护与牺牲的往事。"
+      },
+      {
+        titleEn: "Newcomer",
+        titleZh: "新参者",
+        year: 2009,
+        genre: "Police Procedural",
+        genreZh: "刑侦",
+        goodreads: "https://www.goodreads.com/book/show/33602102",
+        descEn: "Newly transferred to Tokyo's Nihonbashi precinct, Detective Kaga investigates the murder of a divorced woman through interlocking stories of the neighborhood's shopkeepers, showcasing his distinctive method of healing those touched by crime.",
+        descZh: "刚调任东京日本桥辖区的刑警加贺恭一郎，调查一名独居女性的离奇死亡案。小说以连环短篇的形式，带领读者走进街巷小店，在人情冷暖中抽丝剥茧，展现加贺独特的\"以情破案\"风格。"
+      },
+      {
+        titleEn: "Naoko (Secret)",
+        titleZh: "秘密",
+        year: 1998,
+        genre: "Psychological Drama",
+        genreZh: "心理剧",
+        goodreads: "https://www.goodreads.com/book/show/201271",
+        descEn: "After a tragic bus accident kills his wife but leaves their daughter physically alive, Heisuke discovers his wife's consciousness has taken over their daughter's body. A haunting exploration of identity, grief, and impossible love.",
+        descZh: "一场大巴事故夺走了妻子直子的生命，却让她的意识寄居于女儿藻奈美的身体之中。丈夫杉田平介面对这既是妻子又是女儿的存在，在伦理、爱情与亲情的交叠中无所适从。"
+      }
+    ];
+
+    function render() {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = books.map(b => `
+        <a class="card" href="${b.goodreads}" target="_blank" rel="noopener">
+          <div class="card-header">
+            <span class="card-year">${b.year}</span>
+            <span class="card-genre">${currentLang === 'zh' ? b.genreZh : b.genre}</span>
+          </div>
+          <div class="card-title-en">${b.titleEn}</div>
+          <div class="card-title-zh">${b.titleZh}</div>
+          <div class="card-desc">${currentLang === 'zh' ? b.descZh : b.descEn}</div>
+          <div class="card-desc-zh">${currentLang === 'zh' ? b.descEn : b.descZh}</div>
+          <div class="card-link">View on Goodreads →</div>
+        </a>
+      `).join('');
+    }
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+      document.getElementById('btnZh').classList.toggle('active', lang === 'zh');
+      document.getElementById('backLink').textContent = lang === 'zh' ? '← 返回书架' : '← Back to collection';
+      document.getElementById('sectionTitle').textContent = lang === 'zh' ? '代表作品 · Selected Works' : 'Selected Works · 代表作品';
+      document.getElementById('footer').textContent = lang === 'zh'
+        ? '来自「世界书架」的致敬 · 安息吧，推理大师'
+        : "A tribute from The World's Bookshelf · Rest in peace, Master of Mystery";
+      render();
+    }
+
+    render();
+  </script>
+</body>
+</html>

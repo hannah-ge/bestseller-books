@@ -520,6 +520,29 @@
       color: var(--muted);
     }
 
+    /* Tribute Banner */
+    .tribute-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+      color: #e8e0d4;
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .tribute-banner a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity .2s;
+    }
+
+    .tribute-banner a:hover { opacity: .8; }
+
     .feedback-item-message {
       color: var(--cp-text-muted);
       font-size: 0.88rem;
@@ -573,6 +596,13 @@
       <button id="btnZh" onclick="setLang('zh')">中文</button>
     </div>
   </nav>
+
+  <!-- Tribute Banner -->
+  <div class="tribute-banner" id="tributeBanner">
+    <span>🕯️</span>
+    <span id="tributeText">In loving memory of <strong>Keigo Higashino (东野圭吾)</strong> · 1958 – 2026 · Japan's master of mystery</span>
+    <a href="higashino-keigo.html" id="tributeLink">Explore his works →</a>
+  </div>
 
   <!-- Hero -->
   <section class="hero" id="heroSection">
@@ -663,6 +693,8 @@
         feedbackName: "Your name",
         feedbackMessage: "Write your feedback...",
         feedbackSubmit: "Post Feedback",
+        tributeText: 'In loving memory of <strong>Keigo Higashino (东野圭吾)</strong> · 1958 – 2026 · Japan\'s master of mystery',
+        tributeLink: "Explore his works →",
       },
       zh: {
         title: "世界\n书架",
@@ -682,6 +714,8 @@
         feedbackName: "您的姓名",
         feedbackMessage: "写下您的反馈...",
         feedbackSubmit: "发布反馈",
+        tributeText: '缅怀<strong>东野圭吾</strong> · 1958 – 2026 · 日本推理大师',
+        tributeLink: "探索他的作品 →",
       }
     };
 
@@ -959,6 +993,10 @@
       document.getElementById("feedbackName").placeholder = t.feedbackName;
       document.getElementById("feedbackMessage").placeholder = t.feedbackMessage;
       document.getElementById("feedbackSubmitBtn").textContent = t.feedbackSubmit;
+
+      // Update tribute banner
+      document.getElementById("tributeText").innerHTML = t.tributeText;
+      document.getElementById("tributeLink").textContent = t.tributeLink;
     }
 
     // Populate country filter
