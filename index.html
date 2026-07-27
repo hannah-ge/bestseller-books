@@ -414,6 +414,118 @@
     .empty-state { text-align: center; padding: 60px 20px; color: var(--cp-text-muted); }
     .empty-state h3 { margin-bottom: 8px; }
 
+    /* Feedback Section */
+    .feedback-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .feedback-container {
+      background: var(--cp-surface);
+      border: 1px solid var(--cp-border);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    }
+
+    .feedback-title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0 0 8px;
+      color: var(--ink);
+    }
+
+    .feedback-subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 28px;
+    }
+
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .feedback-input,
+    .feedback-textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--cp-border);
+      border-radius: 12px;
+      background: var(--cp-surface-soft);
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color .2s;
+    }
+
+    .feedback-input:focus,
+    .feedback-textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .feedback-textarea { resize: vertical; min-height: 80px; }
+
+    .feedback-submit {
+      align-self: flex-start;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #b21f49, #941333);
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .feedback-submit:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(169,25,63,.25);
+    }
+
+    .feedback-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .feedback-item {
+      padding: 16px 20px;
+      background: var(--cp-surface-soft);
+      border: 1px solid var(--cp-border);
+      border-radius: 12px;
+    }
+
+    .feedback-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .feedback-item-name {
+      font-weight: 600;
+      color: var(--ink);
+      font-size: 0.9rem;
+    }
+
+    .feedback-item-date {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .feedback-item-message {
+      color: var(--cp-text-muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
     /* Responsive */
     @media (max-width: 1280px) {
       .hero { grid-template-columns: 1fr 280px; }
@@ -515,6 +627,20 @@
     <div class="grid" id="grid"></div>
   </div>
 
+  <!-- Feedback Section -->
+  <section class="feedback-section">
+    <div class="feedback-container">
+      <h2 class="feedback-title" id="feedbackTitle">💬 Reader Feedback</h2>
+      <p class="feedback-subtitle" id="feedbackSubtitle">Share your thoughts about the collection</p>
+      <form class="feedback-form" id="feedbackForm">
+        <input type="text" id="feedbackName" class="feedback-input" placeholder="Your name" required />
+        <textarea id="feedbackMessage" class="feedback-textarea" placeholder="Write your feedback..." rows="3" required></textarea>
+        <button type="submit" class="feedback-submit" id="feedbackSubmitBtn">Post Feedback</button>
+      </form>
+      <div class="feedback-list" id="feedbackList"></div>
+    </div>
+  </section>
+
 </div><!-- /.page -->
 
   <script>
@@ -532,6 +658,11 @@
         noBooks: "No books found",
         noBooksHint: "Try adjusting your search or filters.",
         by: "by",
+        feedbackTitle: "💬 Reader Feedback",
+        feedbackSubtitle: "Share your thoughts about the collection",
+        feedbackName: "Your name",
+        feedbackMessage: "Write your feedback...",
+        feedbackSubmit: "Post Feedback",
       },
       zh: {
         title: "世界\n书架",
@@ -546,6 +677,11 @@
         noBooks: "未找到书籍",
         noBooksHint: "请尝试调整搜索条件或筛选器。",
         by: "著",
+        feedbackTitle: "💬 读者反馈",
+        feedbackSubtitle: "分享您对书籍收藏的想法",
+        feedbackName: "您的姓名",
+        feedbackMessage: "写下您的反馈...",
+        feedbackSubmit: "发布反馈",
       }
     };
 
@@ -816,6 +952,13 @@
         const c = countries.find(x => x.id === countryOpts[i].value);
         if (c) countryOpts[i].textContent = `${c.flag} ${currentLang === "zh" ? c.nameZh : c.name}`;
       }
+
+      // Update feedback section
+      document.getElementById("feedbackTitle").textContent = t.feedbackTitle;
+      document.getElementById("feedbackSubtitle").textContent = t.feedbackSubtitle;
+      document.getElementById("feedbackName").placeholder = t.feedbackName;
+      document.getElementById("feedbackMessage").placeholder = t.feedbackMessage;
+      document.getElementById("feedbackSubmitBtn").textContent = t.feedbackSubmit;
     }
 
     // Populate country filter
@@ -1079,6 +1222,62 @@
 
     // Initialize Lucide icons
     if (typeof lucide !== 'undefined') lucide.createIcons();
+
+    // ─── Feedback System (localStorage-based) ───
+    const feedbackForm = document.getElementById('feedbackForm');
+    const feedbackList = document.getElementById('feedbackList');
+    const feedbackNameInput = document.getElementById('feedbackName');
+    const feedbackMessageInput = document.getElementById('feedbackMessage');
+
+    function getFeedbacks() {
+      try { return JSON.parse(localStorage.getItem('bookshelf_feedback') || '[]'); }
+      catch { return []; }
+    }
+
+    function saveFeedbacks(items) {
+      localStorage.setItem('bookshelf_feedback', JSON.stringify(items));
+    }
+
+    function renderFeedbacks() {
+      const items = getFeedbacks();
+      if (items.length === 0) {
+        feedbackList.innerHTML = '<p style="color:var(--muted);font-size:0.9rem;">No feedback yet. Be the first to share!</p>';
+        return;
+      }
+      feedbackList.innerHTML = items.map(fb => `
+        <div class="feedback-item">
+          <div class="feedback-item-header">
+            <span class="feedback-item-name">${escapeHtml(fb.name)}</span>
+            <span class="feedback-item-date">${fb.date}</span>
+          </div>
+          <div class="feedback-item-message">${escapeHtml(fb.message)}</div>
+        </div>
+      `).join('');
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    feedbackForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = feedbackNameInput.value.trim();
+      const message = feedbackMessageInput.value.trim();
+      if (!name || !message) return;
+
+      const items = getFeedbacks();
+      items.unshift({
+        name,
+        message,
+        date: new Date().toLocaleDateString(currentLang === 'zh' ? 'zh-CN' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+      });
+      saveFeedbacks(items);
+      feedbackNameInput.value = '';
+      feedbackMessageInput.value = '';
+      renderFeedbacks();
+    });
+
+    renderFeedbacks();
   </script>
 
   <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
