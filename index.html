@@ -520,6 +520,92 @@
       color: var(--muted);
     }
 
+    /* Page Footer */
+    .page-footer {
+      text-align: center;
+      padding: 32px 24px 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+
+    .footer-release {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.6);
+      color: var(--ink);
+      font-size: 0.78rem;
+    }
+
+    .footer-release strong { color: var(--accent); font-weight: 600; }
+
+    .footer-tagline { margin-top: 14px; }
+
+    /* Floating scroll button */
+    .scroll-fab {
+      position: fixed;
+      left: 50%;
+      bottom: 28px;
+      z-index: 60;
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: var(--ink);
+      box-shadow: 0 6px 22px rgba(62, 45, 28, 0.16);
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, 10px);
+      transition: opacity .25s ease, transform .25s ease, visibility .25s,
+                  border-color .2s ease, color .2s ease, box-shadow .2s ease;
+    }
+
+    .scroll-fab.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+
+    .scroll-fab:hover {
+      border-color: var(--gold);
+      color: var(--accent);
+      transform: translate(-50%, -2px);
+      box-shadow: 0 10px 26px rgba(62, 45, 28, 0.22);
+    }
+
+    .scroll-fab:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .scroll-fab svg {
+      width: 20px;
+      height: 20px;
+      transition: transform .3s ease;
+    }
+
+    .scroll-fab.is-top svg { transform: rotate(180deg); }
+
+    @media (max-width: 620px) {
+      .scroll-fab { bottom: 16px; width: 42px; height: 42px; }
+      .scroll-fab svg { width: 18px; height: 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-fab, .scroll-fab svg { transition: none; }
+    }
+
     /* Tribute Banner */
     .tribute-banner {
       display: flex;
@@ -671,7 +757,23 @@
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="page-footer">
+    <span class="footer-release">
+      🗓️ <span id="footerRelease">Released <strong>July 28, 2026</strong></span>
+    </span>
+    <div class="footer-tagline" id="footerTagline">The World's Bookshelf · Bestsellers &amp; timeless classics from around the globe</div>
+  </footer>
+
 </div><!-- /.page -->
+
+<!-- Floating scroll button -->
+<button class="scroll-fab" id="scrollFab" type="button" aria-label="Scroll down" title="Scroll down">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <polyline points="19 12 12 19 5 12"></polyline>
+  </svg>
+</button>
 
   <script>
     const i18n = {
@@ -695,6 +797,10 @@
         feedbackSubmit: "Post Feedback",
         tributeText: 'In loving memory of <strong>Keigo Higashino (东野圭吾)</strong> · 1958 – 2026 · Japan\'s master of mystery',
         tributeLink: "Explore his works →",
+        footerRelease: 'Released <strong>July 28, 2026</strong>',
+        footerTagline: "The World's Bookshelf · Bestsellers & timeless classics from around the globe",
+        scrollDown: "Scroll down",
+        scrollTop: "Back to top",
       },
       zh: {
         title: "世界\n书架",
@@ -716,6 +822,10 @@
         feedbackSubmit: "发布反馈",
         tributeText: '缅怀<strong>东野圭吾</strong> · 1958 – 2026 · 日本推理大师',
         tributeLink: "探索他的作品 →",
+        footerRelease: '发布于 <strong>2026年7月28日</strong>',
+        footerTagline: "世界书架 · 汇聚全球畅销书与经典名著",
+        scrollDown: "向下滚动",
+        scrollTop: "回到顶部",
       }
     };
 
@@ -997,6 +1107,13 @@
       // Update tribute banner
       document.getElementById("tributeText").innerHTML = t.tributeText;
       document.getElementById("tributeLink").textContent = t.tributeLink;
+
+      // Update footer
+      document.getElementById("footerRelease").innerHTML = t.footerRelease;
+      document.getElementById("footerTagline").textContent = t.footerTagline;
+
+      // Update floating scroll button label
+      updateScrollFab();
     }
 
     // Populate country filter
@@ -1316,6 +1433,58 @@
     });
 
     renderFeedbacks();
+
+    // ─── Floating scroll button ───
+    const scrollFab = document.getElementById('scrollFab');
+    const FAB_EDGE = 80;
+
+    function fabScrollable() {
+      return document.documentElement.scrollHeight - window.innerHeight;
+    }
+
+    function atPageBottom() {
+      return window.scrollY >= fabScrollable() - FAB_EDGE;
+    }
+
+    function updateScrollFab() {
+      // Looked up inline, not via the const above: updateUI() calls this during
+      // initial render, before that const is initialized (temporal dead zone).
+      const fab = document.getElementById('scrollFab');
+      if (!fab) return;
+
+      // Hide entirely when there is not enough page to scroll
+      if (fabScrollable() < 120) {
+        fab.classList.remove('is-visible');
+        return;
+      }
+      fab.classList.add('is-visible');
+
+      const bottom = atPageBottom();
+      fab.classList.toggle('is-top', bottom);
+
+      const t = i18n[currentLang] || i18n.en;
+      const label = bottom ? t.scrollTop : t.scrollDown;
+      fab.setAttribute('aria-label', label);
+      fab.title = label;
+    }
+
+    scrollFab.addEventListener('click', () => {
+      if (atPageBottom()) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.scrollBy({ top: Math.round(window.innerHeight * 0.9), behavior: 'smooth' });
+      }
+    });
+
+    window.addEventListener('scroll', updateScrollFab, { passive: true });
+    window.addEventListener('resize', updateScrollFab);
+
+    // Book grid loads asynchronously, so recheck when page height changes
+    if (typeof ResizeObserver !== 'undefined') {
+      new ResizeObserver(updateScrollFab).observe(document.body);
+    }
+
+    updateScrollFab();
   </script>
 
   <!-- GoatCounter analytics (privacy-friendly, no cookies) -->

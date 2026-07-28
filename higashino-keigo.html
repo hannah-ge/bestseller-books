@@ -304,8 +304,9 @@
     <div class="grid" id="grid"></div>
   </div>
 
-  <footer class="page-footer" id="footer">
-    A tribute from The World's Bookshelf · Rest in peace, Master of Mystery
+  <footer class="page-footer">
+    <div id="footer">A tribute from The World's Bookshelf · Rest in peace, Master of Mystery</div>
+    <div style="margin-top:12px;font-size:0.78rem;opacity:.8;" id="footerRelease">Released July 28, 2026</div>
   </footer>
 
   <script>
@@ -420,6 +421,9 @@
       document.getElementById('footer').textContent = lang === 'zh'
         ? '来自「世界书架」的致敬 · 安息吧，推理大师'
         : "A tribute from The World's Bookshelf · Rest in peace, Master of Mystery";
+      document.getElementById('footerRelease').textContent = lang === 'zh'
+        ? '发布于 2026年7月28日'
+        : 'Released July 28, 2026';
       render();
     }
 
