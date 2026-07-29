@@ -880,7 +880,7 @@
   <!-- Footer -->
   <footer class="page-footer">
     <span class="footer-release">
-      🗓️ <span id="footerRelease">Released <strong>July 28, 2026</strong></span>
+      🗓️ <span id="footerRelease"></span>
     </span>
     <div class="footer-tagline" id="footerTagline">The World's Bookshelf · Bestsellers &amp; timeless classics from around the globe</div>
   </footer>
@@ -920,7 +920,7 @@
         feedbackSubmit: "Post Feedback",
         tributeText: 'In loving memory of <strong>Keigo Higashino (东野圭吾)</strong> · 1958 – 2026 · Japan\'s master of mystery',
         tributeLink: "Explore his works →",
-        footerRelease: 'Released <strong>July 28, 2026</strong>',
+        footerRelease: (d) => `Last released <strong>${d}</strong>`,
         footerTagline: "The World's Bookshelf · Bestsellers & timeless classics from around the globe",
         scrollDown: "Scroll down",
         scrollTop: "Back to top",
@@ -952,7 +952,7 @@
         feedbackSubmit: "发布反馈",
         tributeText: '缅怀<strong>东野圭吾</strong> · 1958 – 2026 · 日本推理大师',
         tributeLink: "探索他的作品 →",
-        footerRelease: '发布于 <strong>2026年7月28日</strong>',
+        footerRelease: (d) => `最后发布于 <strong>${d}</strong>`,
         footerTagline: "世界书架 · 汇聚全球畅销书与经典名著",
         scrollDown: "向下滚动",
         scrollTop: "回到顶部",
@@ -1196,6 +1196,24 @@
     const grid = document.getElementById("grid");
     const stats = document.getElementById("stats");
 
+    // When this page was last published. document.lastModified reflects the
+    // Last-Modified response header, which GitHub Pages sets to the deploy
+    // time — so the footer updates itself on every release with no edits.
+    // Shown in each visitor's own timezone.
+    function formatPublished(lang) {
+      const d = new Date(document.lastModified);
+      if (isNaN(d.getTime())) return lang === "zh" ? "未知" : "unknown";
+      return d.toLocaleString(lang === "zh" ? "zh-CN" : "en-US", {
+        year: "numeric", month: "long", day: "numeric",
+        hour: "numeric", minute: "2-digit",
+      });
+    }
+
+    function updateFooterRelease() {
+      const el = document.getElementById("footerRelease");
+      if (el) el.innerHTML = i18n[currentLang].footerRelease(formatPublished(currentLang));
+    }
+
     function setLang(lang) {
       currentLang = lang;
       document.getElementById("btnEn").classList.toggle("active", lang === "en");
@@ -1245,8 +1263,10 @@
       document.getElementById("tributeText").innerHTML = t.tributeText;
       document.getElementById("tributeLink").textContent = t.tributeLink;
 
-      // Update footer
-      document.getElementById("footerRelease").innerHTML = t.footerRelease;
+      // Update footer. document.lastModified is the file's Last-Modified
+      // header, which on GitHub Pages is the moment the site was deployed —
+      // so this stays correct on its own after every publish.
+      updateFooterRelease();
       document.getElementById("footerTagline").textContent = t.footerTagline;
 
       // Update floating scroll button label
@@ -1732,8 +1752,11 @@
       }
     }
 
-    // Initial render with static data, then enrich
+    // Initial render with static data, then enrich.
+    // updateUI() only runs on language switch, so the footer timestamp has
+    // to be filled in here too or it stays blank until someone toggles language.
     render();
+    updateFooterRelease();
     loadDynamicBooks();
     enrichBooks();
     loadRemoteVotes();
