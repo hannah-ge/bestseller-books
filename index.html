@@ -346,7 +346,6 @@
       padding: 24px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 10px 20px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
       transition: transform .2s ease, box-shadow .2s ease;
-      cursor: pointer;
       text-decoration: none;
       display: block;
       color: inherit;
@@ -398,6 +397,88 @@
     }
 
     .card-link-hint { font-size: 0.75rem; color: var(--cp-link); margin-top: 12px; display: flex; align-items: center; gap: 4px; }
+
+    /* Card link wrapper — only this area navigates to Goodreads */
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    /* Star rating & voting */
+    .card-rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--cp-border);
+    }
+
+    .stars {
+      position: relative;
+      display: inline-block;
+      font-size: 0.95rem;
+      line-height: 1;
+      letter-spacing: 1.5px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .stars-empty { color: rgba(23, 23, 23, 0.16); }
+
+    .stars-full {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      color: var(--gold);
+    }
+
+    .rating-score { font-size: 0.8rem; font-weight: 700; color: var(--cp-text); }
+    .rating-meta { font-size: 0.72rem; color: var(--cp-text-soft); }
+
+    .vote-group { display: flex; gap: 6px; margin-left: auto; }
+
+    .vote-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px;
+      border: 1px solid var(--cp-border);
+      border-radius: 999px;
+      background: var(--cp-surface);
+      color: var(--cp-text-muted);
+      font-size: 0.75rem;
+      line-height: 1;
+      transition: background .15s ease, border-color .15s ease, color .15s ease, transform .1s ease;
+    }
+
+    .vote-btn:hover { border-color: var(--gold); color: var(--cp-text); }
+    .vote-btn:active { transform: scale(0.94); }
+    .vote-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    .vote-btn.is-active[data-vote="up"] {
+      background: rgba(22, 163, 74, 0.10);
+      border-color: #16a34a;
+      color: #15803d;
+    }
+
+    .vote-btn.is-active[data-vote="down"] {
+      background: var(--cp-accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .vote-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .vote-btn { transition: none; }
+    }
 
     .languages-label {
       font-size: 0.8rem; font-weight: 600; color: var(--cp-text-muted);
@@ -606,6 +687,45 @@
       .scroll-fab, .scroll-fab svg { transition: none; }
     }
 
+    /* Transient vote messages */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 88px;
+      z-index: 70;
+      max-width: min(88vw, 380px);
+      padding: 11px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: var(--ink);
+      font-size: 0.88rem;
+      line-height: 1.45;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(62, 45, 28, 0.18);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translate(-50%, 10px);
+      transition: opacity .25s ease, transform .25s ease, visibility .25s;
+    }
+
+    .toast.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 620px) {
+      .toast { bottom: 70px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .toast { transition: none; }
+    }
+
     /* Tribute Banner */
     .tribute-banner {
       display: flex;
@@ -775,6 +895,9 @@
   </svg>
 </button>
 
+<!-- Transient vote messages (outside .page so position:fixed is reliable) -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <script>
     const i18n = {
       en: {
@@ -801,6 +924,13 @@
         footerTagline: "The World's Bookshelf · Bestsellers & timeless classics from around the globe",
         scrollDown: "Scroll down",
         scrollTop: "Back to top",
+        voteUp: "Upvote this book",
+        voteDown: "Downvote this book",
+        ratingNone: "No ratings yet",
+        voteCount: (n) => `${n} vote${n === 1 ? "" : "s"}`,
+        ratingAria: (s) => `Rated ${s} out of 5 stars`,
+        voteBlocked: "Someone on this network has already voted for this book.",
+        voteFailed: "Couldn't save your vote. Please try again.",
       },
       zh: {
         title: "世界\n书架",
@@ -826,6 +956,13 @@
         footerTagline: "世界书架 · 汇聚全球畅销书与经典名著",
         scrollDown: "向下滚动",
         scrollTop: "回到顶部",
+        voteUp: "点赞这本书",
+        voteDown: "点踩这本书",
+        ratingNone: "暂无评分",
+        voteCount: (n) => `${n} 票`,
+        ratingAria: (s) => `5 星中的 ${s} 星`,
+        voteBlocked: "该网络上已有人为这本书投过票。",
+        voteFailed: "投票未能保存，请重试。",
       }
     };
 
@@ -1177,6 +1314,228 @@
       langFilter.appendChild(opt);
     });
 
+    // ─── Book voting & star ratings ───
+    // Ratings are shared globally via Supabase. If Supabase is unreachable
+    // (e.g. opening this file over file://, which browsers block via CORS)
+    // votes fall back to localStorage so the page still works offline.
+    const SUPABASE_URL = "https://ktnkntayvmcphcatwkpc.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_motWp6SFTzpeArsAvPti7g_z_3MxU5f";  // publishable key — safe to commit
+
+    const VOTES_KEY = "bookshelf_votes";          // local fallback tallies
+    const MY_VOTES_KEY = "bookshelf_my_votes";    // which way *this* browser voted
+    const VOTER_ID_KEY = "bookshelf_voter_id";    // stable per-device ballot id
+
+    // key -> {up, down} from the server. null means "not loaded / unavailable"
+    let remoteVotes = null;
+
+    function remoteEnabled() {
+      return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+    }
+
+    function supabaseHeaders() {
+      const h = {
+        "apikey": SUPABASE_ANON_KEY,
+        "Content-Type": "application/json",
+      };
+      // Legacy `anon` keys are JWTs and expect a Bearer header. The newer
+      // sb_publishable_* keys are NOT JWTs and can be rejected there, so
+      // only send Authorization when the key actually looks like a JWT.
+      if (SUPABASE_ANON_KEY.startsWith("eyJ")) {
+        h["Authorization"] = `Bearer ${SUPABASE_ANON_KEY}`;
+      }
+      return h;
+    }
+
+    // Stable across data refreshes; isbn is missing on some NYT-sourced books
+    function bookKey(b) {
+      return `${b.title}::${b.author}`.toLowerCase().replace(/\s+/g, " ").trim();
+    }
+
+    // Identifies this browser to the server so one device can't vote twice.
+    // The server independently checks the IP, so losing this only ever buys
+    // one more vote, never unlimited ones.
+    function voterId() {
+      let id = "";
+      try { id = localStorage.getItem(VOTER_ID_KEY) || ""; } catch {}
+      if (!id) {
+        id = (window.crypto && crypto.randomUUID)
+          ? crypto.randomUUID()
+          : "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+              const r = (Math.random() * 16) | 0;
+              return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
+            });
+        try { localStorage.setItem(VOTER_ID_KEY, id); } catch {}
+      }
+      return id;
+    }
+
+    let toastTimer = null;
+    function showToast(msg) {
+      const el = document.getElementById("toast");
+      if (!el) return;
+      el.textContent = msg;
+      el.classList.add("is-visible");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove("is-visible"), 4000);
+    }
+
+    function readStore(key) {
+      try { return JSON.parse(localStorage.getItem(key) || "{}") || {}; }
+      catch { return {}; }
+    }
+
+    function writeStore(key, val) {
+      try { localStorage.setItem(key, JSON.stringify(val)); } catch {}
+    }
+
+    function tallyFor(key) {
+      const source = remoteVotes || readStore(VOTES_KEY);
+      const v = source[key];
+      return { up: (v && v.up) || 0, down: (v && v.down) || 0 };
+    }
+
+    function setTally(key, up, down) {
+      if (remoteVotes) {
+        remoteVotes[key] = { up, down };
+      } else {
+        const local = readStore(VOTES_KEY);
+        local[key] = { up, down };
+        writeStore(VOTES_KEY, local);
+      }
+    }
+
+    async function loadRemoteVotes() {
+      if (!remoteEnabled()) return;
+      try {
+        const res = await fetch(
+          `${SUPABASE_URL}/rest/v1/book_votes?select=book_key,up,down`,
+          { headers: supabaseHeaders() }
+        );
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const rows = await res.json();
+        remoteVotes = {};
+        rows.forEach(r => { remoteVotes[r.book_key] = { up: r.up || 0, down: r.down || 0 }; });
+        render();
+      } catch (err) {
+        remoteVotes = null;
+        console.warn("Global ratings unavailable — falling back to local votes.", err);
+      }
+    }
+
+    function ratingMarkup(key) {
+      const t = i18n[currentLang];
+      const { up, down } = tallyFor(key);
+      const total = up + down;
+      const pct = total ? (up / total) * 100 : 0;
+      const score = (pct / 20).toFixed(1);
+      const mine = readStore(MY_VOTES_KEY)[key];
+      const safeKey = escapeHtml(key);
+
+      const meta = total
+        ? `<span class="rating-score">${score}</span><span class="rating-meta">${t.voteCount(total)}</span>`
+        : `<span class="rating-meta">${t.ratingNone}</span>`;
+
+      return `
+        <div class="card-rating" data-rating-key="${safeKey}">
+          <span class="stars" role="img" aria-label="${total ? t.ratingAria(score) : t.ratingNone}">
+            <span class="stars-empty">★★★★★</span>
+            <span class="stars-full" style="width:${pct}%">★★★★★</span>
+          </span>
+          ${meta}
+          <span class="vote-group">
+            <button type="button" class="vote-btn${mine === "up" ? " is-active" : ""}" data-vote="up" data-key="${safeKey}" title="${t.voteUp}" aria-label="${t.voteUp}" aria-pressed="${mine === "up"}">👍<span class="vote-count">${up}</span></button>
+            <button type="button" class="vote-btn${mine === "down" ? " is-active" : ""}" data-vote="down" data-key="${safeKey}" title="${t.voteDown}" aria-label="${t.voteDown}" aria-pressed="${mine === "down"}">👎<span class="vote-count">${down}</span></button>
+          </span>
+        </div>`;
+    }
+
+    // Repaint every visible row for this book (the same title can't appear twice,
+    // but this also survives the row being replaced mid-flight)
+    function refreshRatingRow(key) {
+      document
+        .querySelectorAll(`.card-rating[data-rating-key="${CSS.escape(key)}"]`)
+        .forEach(row => { row.outerHTML = ratingMarkup(key); });
+    }
+
+    async function castVote(key, dir) {
+      const mine = readStore(MY_VOTES_KEY);
+      const prev = mine[key];
+
+      let upDelta = 0, downDelta = 0;
+      let direction;
+      if (prev === dir) {
+        // Clicking your active vote clears it
+        if (dir === "up") upDelta = -1; else downDelta = -1;
+        direction = 0;
+        delete mine[key];
+      } else {
+        if (dir === "up") upDelta = 1; else downDelta = 1;
+        if (prev === "up") upDelta -= 1;
+        if (prev === "down") downDelta -= 1;
+        direction = dir === "up" ? 1 : -1;
+        mine[key] = dir;
+      }
+      writeStore(MY_VOTES_KEY, mine);
+
+      const before = tallyFor(key);
+      const optimistic = {
+        up: Math.max(0, before.up + upDelta),
+        down: Math.max(0, before.down + downDelta),
+      };
+      setTally(key, optimistic.up, optimistic.down);
+      refreshRatingRow(key);
+
+      if (!remoteVotes) return; // local-only mode
+
+      // Undo the optimistic update and this browser's recorded vote
+      const rollback = () => {
+        setTally(key, before.up, before.down);
+        const revert = readStore(MY_VOTES_KEY);
+        if (prev) revert[key] = prev; else delete revert[key];
+        writeStore(MY_VOTES_KEY, revert);
+        refreshRatingRow(key);
+      };
+
+      try {
+        const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/vote_book`, {
+          method: "POST",
+          headers: supabaseHeaders(),
+          body: JSON.stringify({ p_key: key, p_voter: voterId(), p_direction: direction }),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const row = Array.isArray(data) ? data[0] : data;
+
+        // Another device on this IP already voted for this book
+        if (row && row.status === "ip_taken") {
+          rollback();
+          if (typeof row.up === "number") {
+            setTally(key, row.up, row.down);
+            refreshRatingRow(key);
+          }
+          showToast(i18n[currentLang].voteBlocked);
+          return;
+        }
+
+        if (row && typeof row.up === "number") {
+          setTally(key, row.up, row.down);   // server value wins
+          refreshRatingRow(key);
+        }
+      } catch (err) {
+        rollback();
+        showToast(i18n[currentLang].voteFailed);
+        console.warn("Vote failed to save.", err);
+      }
+    }
+
+    // Delegated so votes keep working after every filter re-render
+    grid.addEventListener("click", (e) => {
+      const btn = e.target.closest(".vote-btn");
+      if (!btn) return;
+      e.preventDefault();
+      castVote(btn.dataset.key, btn.dataset.vote);
+    });
+
     function render() {
       const t = i18n[currentLang];
       const query = searchInput.value.toLowerCase();
@@ -1213,27 +1572,30 @@
         const c = countries.find(x => x.id === b.country);
         const countryLabel = c ? c.flag : "";
         return `
-        <a class="card" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
-          <div class="card-body">
-            <img class="card-cover" src="${b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
-            <div class="card-info">
-              <div class="card-header">
-                <div>
-                  <div class="card-title">${title}</div>
-                  <div class="card-author">${t.by} ${author}</div>
-                  <div class="card-genre">${genreLabel}</div>
+        <article class="card">
+          <a class="card-link" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
+            <div class="card-body">
+              <img class="card-cover" src="${b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
+              <div class="card-info">
+                <div class="card-header">
+                  <div>
+                    <div class="card-title">${title}</div>
+                    <div class="card-author">${t.by} ${author}</div>
+                    <div class="card-genre">${genreLabel}</div>
+                  </div>
+                  <span class="card-year">${countryLabel} ${b.year}</span>
                 </div>
-                <span class="card-year">${countryLabel} ${b.year}</span>
+                <div class="card-description">${desc}</div>
               </div>
-              <div class="card-description">${desc}</div>
             </div>
-          </div>
-          <div class="languages-label">${t.langLabel(b.languages.length)}</div>
-          <div class="languages">
-            ${b.languages.map(l => `<span class="lang-tag">${l}</span>`).join("")}
-          </div>
-          <div class="card-link-hint">${t.viewGoodreads}</div>
-        </a>
+            <div class="languages-label">${t.langLabel(b.languages.length)}</div>
+            <div class="languages">
+              ${b.languages.map(l => `<span class="lang-tag">${l}</span>`).join("")}
+            </div>
+            <div class="card-link-hint">${t.viewGoodreads}</div>
+          </a>
+          ${ratingMarkup(bookKey(b))}
+        </article>
       `}).join("");
     }
 
@@ -1374,6 +1736,7 @@
     render();
     loadDynamicBooks();
     enrichBooks();
+    loadRemoteVotes();
 
     // Initialize Lucide icons
     if (typeof lucide !== 'undefined') lucide.createIcons();
