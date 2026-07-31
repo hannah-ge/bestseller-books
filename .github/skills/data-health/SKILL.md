@@ -1,6 +1,6 @@
 ---
 name: data-health
-description: Diagnose the health of the bestseller data pipeline and the live site for The World's Bookshelf. Reports coverage gaps, probes the upstream Google Books and NYT APIs to find silent failures, and checks the deployed site. Use when asked why covers, languages, or Chinese translations are missing, or for a general data quality report.
+description: Diagnose the health of the bestseller data pipeline and the live site for The World's Bookshelf. Reports coverage gaps, probes the upstream OpenLibrary and NYT APIs to find silent failures, and checks the deployed site. Use when asked why covers, languages, or Chinese translations are missing, or for a general data quality report.
 ---
 
 # Data health
@@ -23,7 +23,22 @@ For machine-readable output: `node scripts/validate-books.js --json`.
 ## 2. Probe upstream before blaming the data
 
 A metric at or near 100% missing almost always means the upstream call is failing,
-not that the data genuinely lacks the field. Confirm with a real request:
+not that the data genuinely lacks the field. Confirm with a real request.
+
+OpenLibrary is the primary enrichment source (keyless, aggregates all editions):
+
+```bash
+curl -s -H "User-Agent: worlds-bookshelf/1.0" \
+  "https://openlibrary.org/search.json?q=dune+herbert&fields=language,cover_i&limit=5" \
+  | head -c 400
+```
+
+- Empty `docs` — the query is too noisy. NYT titles often carry subtitles and
+  series text; strip them before searching.
+- A non-200, or a hang — check https://openlibrary.org/status before assuming
+  the script is at fault.
+
+Google Books is only used as a supplement when `GOOGLE_BOOKS_KEY` is set:
 
 ```bash
 curl -s -o /dev/null -w "google-books: %{http_code}\n" \
@@ -31,9 +46,9 @@ curl -s -o /dev/null -w "google-books: %{http_code}\n" \
 ```
 
 - `429` — rate limited. The keyless endpoint is shared across CI runner IPs.
-  Fix by adding an API key and backing off on retry, not by ignoring it.
-- `200` but empty `items` — the title/author query is too noisy; NYT titles often
-  carry subtitles and series text.
+  This is exactly what silently emptied the catalogue before; it is why
+  OpenLibrary is now primary and why `httpJson` retries with backoff rather
+  than swallowing the error.
 
 Check the NYT side too if book counts look wrong:
 

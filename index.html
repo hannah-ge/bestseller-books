@@ -1324,15 +1324,46 @@
       "Icelandic": "Íslenska",
       "Bengali": "বাংলা",
       "Indonesian": "Bahasa Indonesia",
+      "Hungarian": "Magyar",
+      "Romanian": "Română",
+      "Croatian": "Hrvatski",
+      "Serbian": "Српски",
+      "Slovak": "Slovenčina",
+      "Slovenian": "Slovenščina",
+      "Bulgarian": "Български",
+      "Ukrainian": "Українська",
+      "Belarusian": "Беларуская",
+      "Latvian": "Latviešu",
+      "Lithuanian": "Lietuvių",
+      "Estonian": "Eesti",
+      "Catalan": "Català",
+      "Persian": "فارسی",
+      "Afrikaans": "Afrikaans",
+      "Welsh": "Cymraeg",
+      "Irish": "Gaeilge",
+      "Latin": "Latina",
+      "Tamil": "தமிழ்",
+      "Malay": "Bahasa Melayu",
     };
 
-    const allLangs = [...new Set(books.flatMap(b => b.languages))].sort();
-    allLangs.forEach(l => {
-      const opt = document.createElement("option");
-      opt.value = l;
-      opt.textContent = nativeNames[l] || l;
-      langFilter.appendChild(opt);
-    });
+    // Rebuilt after data/books.json loads, because enrichment adds languages the
+    // curated list never had. Without the rebuild the dropdown would silently
+    // omit them and the translations would be unreachable.
+    function populateLangFilter() {
+      const previous = langFilter.value;
+      const allLangs = [...new Set(books.flatMap(b => b.languages || []))].sort();
+      langFilter.innerHTML =
+        `<option value="">${currentLang === "zh" ? "所有语言" : "All Languages"}</option>`;
+      allLangs.forEach(l => {
+        const opt = document.createElement("option");
+        opt.value = l;
+        opt.textContent = nativeNames[l] || l;
+        langFilter.appendChild(opt);
+      });
+      if (allLangs.includes(previous)) langFilter.value = previous;
+    }
+
+    populateLangFilter();
 
     // ─── Book voting & star ratings ───
     // Ratings are shared globally via Supabase. If Supabase is unreachable
@@ -1595,7 +1626,7 @@
         <article class="card">
           <a class="card-link" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
             <div class="card-body">
-              <img class="card-cover" src="${b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
+              <img class="card-cover" src="${b.coverUrl || b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
               <div class="card-info">
                 <div class="card-header">
                   <div>
@@ -1727,7 +1758,7 @@
               description: b.description || "",
               descriptionZh: b.descriptionZh || "",
               languages: b.languages || ["English"],
-              googleCover: b.googleCover || "",
+              coverUrl: b.coverUrl || b.googleCover || "",
             });
             existingTitles.add(b.title.toLowerCase());
             added++;
@@ -1743,6 +1774,7 @@
             opt.value = y; opt.textContent = y;
             yearFilter.appendChild(opt);
           });
+          populateLangFilter();
           render();
           console.log(`Loaded ${added} new books from data/books.json`);
         }

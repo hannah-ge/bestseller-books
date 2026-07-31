@@ -76,19 +76,46 @@ These each cost real debugging time. Read before editing.
 
 ## Known data debt
 
-The weekly pipeline is currently degraded, and the gate reports it as warnings
-rather than blocking, so the Action stays green:
+Fixed (2026) — kept here because the failure mode is the interesting part:
 
-- Google Books enrichment returns **HTTP 429** (keyless, shared runner IP), which
-  `fetchGoogleBooksLanguages` swallows — so `languages` is `["English"]` and
-  `googleCover` is empty for **every** fetched book.
+- Enrichment used to call Google Books keyless, which returns **HTTP 429** from a
+  shared runner IP. `fetchGoogleBooksLanguages` swallowed it and returned
+  `{ languages: [], cover: "" }`, so a completely failed run still produced a
+  green Action and a live commit. Every fetched book ended up `["English"]` with
+  no cover, for weeks, unnoticed.
+  Now **OpenLibrary** is the primary source — keyless, unthrottled, and it
+  aggregates *all editions*, which is exactly what a site about translations
+  needs. Google Books is only consulted if `GOOGLE_BOOKS_KEY` is set.
+  Result: multi-language 0% → 43%, covers 0% → 83%, 0 failures over 348 books.
+- Titles are re-normalised through `toTitleCase` on **every** run, not just on
+  insert, so the 41 legacy ALL-CAPS titles are gone and cannot come back.
+- The year now comes from the *requested* date, not `bestsellers_date` — a
+  Jan-15 list is dated to the prior December, which is what put books in 2015.
+- `data/books.json` no longer grows without bound: the current-week fetch is
+  capped to the same top-5 as the historical sampler, and books older than the
+  window are pruned.
+
+Still outstanding:
+
 - `GOOGLE_TRANSLATE_KEY` is unset, so `titleZh`/`descriptionZh` are all empty.
-- 41 titles are stored ALL-CAPS: `toTitleCase` was added later and the merge path
-  only refreshes `rank`/`weeksOnList`, never the title.
-- 10 books are dated 2015 — a Jan-15 list's `bestsellers_date` falls in the prior year.
-- `data/books.json` only grows; there is no removal path.
+  This one genuinely cannot be fixed in code — it needs the secret. The script
+  says so loudly and the gate tracks the percentage.
+- ~17% of books still have no cover and ~57% resolve to English only. That is
+  usually a genuinely single-edition book, not a bug.
 
 Fixing any of these lowers the percentage, which the gate then locks in.
+
+### Two traps worth knowing
+
+- **The prune floor has a year of slack** (`PRUNE_SLACK_YEARS`). Removing it
+  looks harmless and is not: because January lists carry December dates, a
+  strict 10-year floor deletes the boundary year — which on the first run meant
+  The Martian, The Girl on the Train and All the Light We Cannot See, three of
+  the best-translated books in the set.
+- **OpenLibrary returns MARC 21 codes, not ISO 639-1** — `fre` not `fra`, `ger`
+  not `deu`, `chi` not `zho`. `MARC_TO_NAME` maps them to the display names the
+  filter uses; an unmapped code is dropped rather than shown raw. If you add a
+  language, add it to `nativeNames` in `index.html` too or it appears in English.
 
 ## Verifying a change
 

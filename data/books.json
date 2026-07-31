@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "title": "YESTERYEAR",
+      "title": "Yesteryear",
       "titleZh": "",
       "author": "Caro Claire Burke",
       "authorZh": "",
@@ -17,10 +17,11 @@
       "weeksOnList": 15,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
-      "title": "WHISTLER",
+      "title": "Whistler",
       "titleZh": "",
       "author": "Ann Patchett",
       "authorZh": "",
@@ -36,10 +37,11 @@
       "weeksOnList": 7,
       "rank": 6,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15234903-L.jpg"
     },
     {
-      "title": "THE CALAMITY CLUB",
+      "title": "The Calamity Club",
       "titleZh": "",
       "author": "Kathryn Stockett",
       "authorZh": "",
@@ -55,10 +57,11 @@
       "weeksOnList": 11,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
-      "title": "THE EXQUISITE TORMENT OF LOVING YOUR ENEMY",
+      "title": "The Exquisite Torment of Loving Your Enemy",
       "titleZh": "",
       "author": "Brigitte Knightley",
       "authorZh": "",
@@ -74,10 +77,11 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-22",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15234917-L.jpg"
     },
     {
-      "title": "LOVE YOU MORE",
+      "title": "Love You More",
       "titleZh": "",
       "author": "Emily Giffin",
       "authorZh": "",
@@ -96,7 +100,7 @@
       "lastUpdated": "2026-07-23"
     },
     {
-      "title": "THE CORRESPONDENT",
+      "title": "The Correspondent",
       "titleZh": "",
       "author": "Virginia Evans",
       "authorZh": "",
@@ -107,15 +111,53 @@
       "description": "Letters from someone she used to know push Sybil Van Antwerp toward revisiting her past and finding a way to forgive.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Romanian",
+        "Chinese",
+        "Italian",
+        "Finnish",
+        "Croatian",
+        "Korean",
+        "Persian",
+        "Swedish",
+        "Portuguese",
+        "Czech",
+        "Polish",
+        "Latvian",
+        "Japanese",
+        "German",
+        "Dutch",
+        "French",
+        "Catalan",
+        "Hebrew",
+        "Slovak",
+        "Danish",
+        "Greek",
+        "Ukrainian",
+        "Turkish",
+        "Icelandic",
+        "Bengali",
+        "Afrikaans",
+        "Hindi",
+        "Serbian",
+        "Welsh",
+        "Vietnamese",
+        "Norwegian",
+        "Irish",
+        "Latin"
       ],
       "weeksOnList": 36,
       "rank": 11,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15232808-L.jpg"
     },
     {
-      "title": "CARL'S DOOMSDAY SCENARIO",
+      "title": "Carl'S Doomsday Scenario",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -126,15 +168,18 @@
       "description": "The second book in the \"Dungeon Crawler Carl\" series. Carl and Donut confront an ancient spell and heightened dangers.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "German"
       ],
       "weeksOnList": 27,
       "rank": 8,
       "source": "nyt",
-      "lastUpdated": "2026-07-23"
+      "lastUpdated": "2026-07-23",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11702962-L.jpg"
     },
     {
-      "title": "THE SHAMPOO EFFECT",
+      "title": "The Shampoo Effect",
       "titleZh": "",
       "author": "Jenny Jackson",
       "authorZh": "",
@@ -150,10 +195,11 @@
       "weeksOnList": 3,
       "rank": 12,
       "source": "nyt",
-      "lastUpdated": "2026-07-23"
+      "lastUpdated": "2026-07-23",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15237196-L.jpg"
     },
     {
-      "title": "THE DUNGEON ANARCHIST'S COOKBOOK",
+      "title": "The Dungeon Anarchist'S Cookbook",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -169,10 +215,11 @@
       "weeksOnList": 20,
       "rank": 9,
       "source": "nyt",
-      "lastUpdated": "2026-07-23"
+      "lastUpdated": "2026-07-23",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15233609-L.jpg"
     },
     {
-      "title": "DUNGEON CRAWLER CARL",
+      "title": "Dungeon Crawler Carl",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -183,15 +230,19 @@
       "description": "A Coast Guard vet named Carl and his ex-girlfriend’s cat, Princess Donut, are trapped in a fantasy dungeon.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German",
+        "Portuguese",
+        "French"
       ],
       "weeksOnList": 28,
       "rank": 8,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
-      "title": "COUNTRY PEOPLE",
+      "title": "Country People",
       "titleZh": "",
       "author": "Daniel Mason",
       "authorZh": "",
@@ -202,15 +253,55 @@
       "description": "When his wife accepts a visiting professorship in Vermont, Miles encounters a story that may have more to it than seems at first glance.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Irish",
+        "Swedish",
+        "Welsh",
+        "Portuguese",
+        "Spanish",
+        "Persian",
+        "Hebrew",
+        "German",
+        "Dutch",
+        "Chinese",
+        "Turkish",
+        "Latin",
+        "Italian",
+        "Finnish",
+        "Russian",
+        "Romanian",
+        "French",
+        "Arabic",
+        "Polish",
+        "Danish",
+        "Greek",
+        "Hindi",
+        "Catalan",
+        "Korean",
+        "Japanese",
+        "Hungarian",
+        "Ukrainian",
+        "Icelandic",
+        "Bengali",
+        "Croatian",
+        "Afrikaans",
+        "Serbian",
+        "Vietnamese",
+        "Norwegian",
+        "Czech",
+        "Bulgarian",
+        "Tamil",
+        "Indonesian",
+        "Slovenian"
       ],
       "weeksOnList": 1,
       "rank": 11,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-22",
+      "coverUrl": "https://covers.openlibrary.org/b/id/368541-L.jpg"
     },
     {
-      "title": "HE WHO FIGHTS WITH MONSTERS, BOOK 1",
+      "title": "He Who Fights With Monsters, Book 1",
       "titleZh": "",
       "author": "Travis Deverell",
       "authorZh": "",
@@ -229,7 +320,7 @@
       "lastUpdated": "2026-07-22"
     },
     {
-      "title": "THE BUTCHER'S MASQUERADE",
+      "title": "The Butcher'S Masquerade",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -240,15 +331,18 @@
       "description": "The fifth book in the \"Dungeon Crawler Carl\" series. The action moves to the sixth floor, which is known as the Hunting Grounds.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Spanish"
       ],
       "weeksOnList": 4,
       "rank": 13,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-22",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15231958-L.jpg"
     },
     {
-      "title": "THE GATE OF THE FERAL GODS",
+      "title": "The Gate of the Feral Gods",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -264,10 +358,11 @@
       "weeksOnList": 11,
       "rank": 15,
       "source": "nyt",
-      "lastUpdated": "2026-07-23"
+      "lastUpdated": "2026-07-23",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15232581-L.jpg"
     },
     {
-      "title": "EVERYTHING WAS BEAUTIFUL AND NOTHING HURT",
+      "title": "Everything Was Beautiful and Nothing Hurt",
       "titleZh": "",
       "author": "Ben Reeves",
       "authorZh": "",
@@ -286,7 +381,7 @@
       "lastUpdated": "2026-07-22"
     },
     {
-      "title": "REGIME CHANGE",
+      "title": "Regime Change",
       "titleZh": "",
       "author": "Maggie Haberman and Jonathan Swan",
       "authorZh": "",
@@ -305,7 +400,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "REVOLUTION",
+      "title": "Revolution",
       "titleZh": "",
       "author": "Eric Metaxas",
       "authorZh": "",
@@ -324,7 +419,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "CANCEL ME IF YOU CAN",
+      "title": "Cancel Me If You Can",
       "titleZh": "",
       "author": "Dave Portnoy",
       "authorZh": "",
@@ -343,7 +438,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "STRANGERS",
+      "title": "Strangers",
       "titleZh": "",
       "author": "Belle Burden",
       "authorZh": "",
@@ -354,15 +449,17 @@
       "description": "Burden retraces her marriage of 20 years in search of clues to help shape her understanding about its demise and to find a way forward.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 27,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15165045-L.jpg"
     },
     {
-      "title": "COMMUNION",
+      "title": "Communion",
       "titleZh": "",
       "author": "JD Vance",
       "authorZh": "",
@@ -381,7 +478,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "THE LAND AND ITS PEOPLE",
+      "title": "The Land and Its People",
       "titleZh": "",
       "author": "David Sedaris",
       "authorZh": "",
@@ -400,7 +497,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "LONDON FALLING",
+      "title": "London Falling",
       "titleZh": "",
       "author": "Patrick Radden Keefe",
       "authorZh": "",
@@ -419,7 +516,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "FAMESICK",
+      "title": "Famesick",
       "titleZh": "",
       "author": "Lena Dunham",
       "authorZh": "",
@@ -435,10 +532,11 @@
       "weeksOnList": 12,
       "rank": 14,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15213178-L.jpg"
     },
     {
-      "title": "THE ANXIOUS GENERATION",
+      "title": "The Anxious Generation",
       "titleZh": "",
       "author": "Jonathan Haidt",
       "authorZh": "",
@@ -449,15 +547,18 @@
       "description": "A co-author of “The Coddling of the American Mind” looks at the mental health impacts that a phone-based life has on children.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Italian"
       ],
       "weeksOnList": 66,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15104803-L.jpg"
     },
     {
-      "title": "EVERYTHING IS TUBERCULOSIS",
+      "title": "Everything Is Tuberculosis",
       "titleZh": "",
       "author": "John Green",
       "authorZh": "",
@@ -473,10 +574,11 @@
       "weeksOnList": 2,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14853332-L.jpg"
     },
     {
-      "title": "AMERICA, U.S.A.",
+      "title": "America, U.S.a.",
       "titleZh": "",
       "author": "Eddie S. Glaude Jr",
       "authorZh": "",
@@ -495,7 +597,7 @@
       "lastUpdated": "2026-07-22"
     },
     {
-      "title": "ON COURAGE",
+      "title": "On Courage",
       "titleZh": "",
       "author": "Julia Angwin and Ami Fields-Meyer",
       "authorZh": "",
@@ -514,7 +616,7 @@
       "lastUpdated": "2026-07-22"
     },
     {
-      "title": "THE GREATEST SENTENCE EVER WRITTEN",
+      "title": "The Greatest Sentence Ever Written",
       "titleZh": "",
       "author": "Walter Isaacson",
       "authorZh": "",
@@ -533,7 +635,7 @@
       "lastUpdated": "2026-07-22"
     },
     {
-      "title": "WHEN BREATH BECOMES AIR",
+      "title": "When Breath Becomes Air",
       "titleZh": "",
       "author": "Paul Kalanithi",
       "authorZh": "",
@@ -544,15 +646,28 @@
       "description": "A memoir by a physician who received a diagnosis of Stage IV lung cancer at the age of 36.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Chinese",
+        "Serbian",
+        "Portuguese",
+        "Dutch",
+        "Spanish",
+        "German",
+        "Icelandic",
+        "French",
+        "Indonesian",
+        "Danish",
+        "Russian",
+        "Hebrew"
       ],
       "weeksOnList": 24,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11463139-L.jpg"
     },
     {
-      "title": "SUICIDAL EMPATHY",
+      "title": "Suicidal Empathy",
       "titleZh": "",
       "author": "Gad Saad",
       "authorZh": "",
@@ -571,7 +686,7 @@
       "lastUpdated": "2026-07-23"
     },
     {
-      "title": "RANSOM",
+      "title": "Ransom",
       "titleZh": "",
       "author": "Daniel Silva",
       "authorZh": "",
@@ -587,10 +702,11 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15238299-L.jpg"
     },
     {
-      "title": "THE COUNTRY ROAD MURDERS",
+      "title": "The Country Road Murders",
       "titleZh": "",
       "author": "James Patterson and Mike Lupica",
       "authorZh": "",
@@ -609,7 +725,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "THE ROMANCE REVIVAL",
+      "title": "The Romance Revival",
       "titleZh": "",
       "author": "Christina Lauren",
       "authorZh": "",
@@ -625,10 +741,11 @@
       "weeksOnList": 1,
       "rank": 10,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15237194-L.jpg"
     },
     {
-      "title": "THE GOAL",
+      "title": "The Goal",
       "titleZh": "",
       "author": "Elle Kennedy",
       "authorZh": "",
@@ -639,15 +756,22 @@
       "description": "Pregnancy complicates the budding relationship between a college senior and a hockey player.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Spanish",
+        "German",
+        "Dutch",
+        "Turkish",
+        "Hebrew"
       ],
       "weeksOnList": 3,
       "rank": 12,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12371614-L.jpg"
     },
     {
-      "title": "THE LEGACY",
+      "title": "The Legacy",
       "titleZh": "",
       "author": "Elle Kennedy",
       "authorZh": "",
@@ -658,15 +782,17 @@
       "description": "The fifth book in the Off-Campus series. Four couples experience the ups and downs of life after graduating college.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese"
       ],
       "weeksOnList": 1,
       "rank": 9,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15217419-L.jpg"
     },
     {
-      "title": "THE DAY AFTER",
+      "title": "The Day After",
       "titleZh": "",
       "author": "Brian Tyler Cohen",
       "authorZh": "",
@@ -685,7 +811,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "PUSH THE WALL",
+      "title": "Push the Wall",
       "titleZh": "",
       "author": "Frank Miller",
       "authorZh": "",
@@ -704,7 +830,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "THEY STOLE A CITY",
+      "title": "They Stole a City",
       "titleZh": "",
       "author": "Lauren Collins",
       "authorZh": "",
@@ -723,7 +849,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "CATCH THE DEVIL",
+      "title": "Catch the Devil",
       "titleZh": "",
       "author": "Pamela Colloff",
       "authorZh": "",
@@ -742,7 +868,7 @@
       "lastUpdated": "2026-07-27"
     },
     {
-      "title": "CARELESS PEOPLE",
+      "title": "Careless People",
       "titleZh": "",
       "author": "Sarah Wynn-Williams",
       "authorZh": "",
@@ -758,10 +884,11 @@
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15199344-L.jpg"
     },
     {
-      "title": "THE RENOIR GIRLS",
+      "title": "The Renoir Girls",
       "titleZh": "",
       "author": "Catherine Ostler",
       "authorZh": "",
@@ -791,12 +918,19 @@
       "description": "The attorney Sebastian Rudd is a “lone gunman” who hates injustice and the system and defends unpopular clients.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Dutch",
+        "French",
+        "Spanish",
+        "Italian",
+        "Hebrew"
       ],
       "weeksOnList": 10,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9323460-L.jpg"
     },
     {
       "title": "The Martian",
@@ -810,12 +944,29 @@
       "description": "Abandoned by his crew, an astronaut embarks on a dogged quest to stay alive.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Belarusian",
+        "Indonesian",
+        "Hungarian",
+        "Arabic",
+        "Polish",
+        "Danish",
+        "Korean",
+        "Hebrew",
+        "Romanian",
+        "Chinese",
+        "German",
+        "Italian",
+        "Spanish",
+        "Dutch",
+        "French",
+        "Portuguese"
       ],
       "weeksOnList": 31,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11447888-L.jpg"
     },
     {
       "title": "Cross Justice",
@@ -834,7 +985,8 @@
       "weeksOnList": 5,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7400509-L.jpg"
     },
     {
       "title": "The Girl on the Train",
@@ -848,12 +1000,24 @@
       "description": "A psychological thriller set in the environs of London is full of complications and betrayals.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Korean",
+        "Greek",
+        "German",
+        "Chinese",
+        "French",
+        "Spanish",
+        "Arabic",
+        "Dutch",
+        "Russian",
+        "Swedish",
+        "Polish"
       ],
       "weeksOnList": 83,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7350360-L.jpg"
     },
     {
       "title": "All the Light We Cannot See",
@@ -867,12 +1031,23 @@
       "description": "The lives of a blind French girl and a gadget-obsessed German boy before and during World War II.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish",
+        "French",
+        "Hebrew",
+        "Chinese",
+        "Portuguese",
+        "Romanian",
+        "Dutch",
+        "Spanish",
+        "Korean",
+        "Japanese"
       ],
       "weeksOnList": 66,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14559680-L.jpg"
     },
     {
       "title": "Killing Reagan",
@@ -910,7 +1085,8 @@
       "weeksOnList": 8,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8906575-L.jpg"
     },
     {
       "title": "Humans of New York",
@@ -924,12 +1100,14 @@
       "description": "Photographs and interviews from the creator of the blog and the book “Humans of New York.”",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Chinese"
       ],
       "weeksOnList": 8,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8291452-L.jpg"
     },
     {
       "title": "Between the World and Me",
@@ -948,7 +1126,8 @@
       "weeksOnList": 24,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9218481-L.jpg"
     },
     {
       "title": "The Boys in the Boat",
@@ -962,12 +1141,15 @@
       "description": "The story of the American rowers who pursued gold at the 1936 Berlin Olympic Games; the basis of the film.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Russian"
       ],
       "weeksOnList": 125,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12722394-L.jpg"
     },
     {
       "title": "Fool Me Once",
@@ -981,12 +1163,22 @@
       "description": "A retired Army helicopter pilot faces combat-related nightmares and mysteries concerning the deaths of her husband and sister.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew",
+        "French",
+        "Spanish",
+        "German",
+        "Dutch",
+        "Polish",
+        "Portuguese",
+        "Chinese",
+        "Turkish"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10665020-L.jpg"
     },
     {
       "title": "Private Paris",
@@ -1005,7 +1197,8 @@
       "weeksOnList": 2,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8470580-L.jpg"
     },
     {
       "title": "The Nest",
@@ -1038,12 +1231,23 @@
       "description": "A young woman who has barely been farther afield than her English village finds herself while caring for a wealthy, embittered quadriplegic.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German",
+        "Korean",
+        "Spanish",
+        "Russian",
+        "Chinese",
+        "Danish",
+        "Turkish",
+        "French",
+        "Swedish",
+        "Polish"
       ],
       "weeksOnList": 21,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14419339-L.jpg"
     },
     {
       "title": "Property of a Noblewoman",
@@ -1057,12 +1261,26 @@
       "description": "Two New Yorkers searching for the owner of an abandoned safe-deposit box reconstruct the history of a young woman and a forbidden love affair at the time of World War II.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Turkish",
+        "Slovak",
+        "French",
+        "Dutch",
+        "Hebrew",
+        "Hungarian",
+        "Spanish",
+        "Vietnamese",
+        "German",
+        "Swedish",
+        "Russian",
+        "Polish",
+        "Italian"
       ],
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/373764-L.jpg"
     },
     {
       "title": "Miracles From Heaven",
@@ -1081,7 +1299,8 @@
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10085184-L.jpg"
     },
     {
       "title": "Seven Brief Lessons on Physics",
@@ -1095,12 +1314,14 @@
       "description": "",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Italian"
       ],
       "weeksOnList": 2,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7398110-L.jpg"
     },
     {
       "title": "Dead Wake",
@@ -1114,12 +1335,14 @@
       "description": "The last voyage of the Lusitania, the passenger liner sunk by a German torpedo in 1915; by the author of “The Devil in the White City.”",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 29,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7317226-L.jpg"
     },
     {
       "title": "Frozen in Time",
@@ -1138,7 +1361,8 @@
       "weeksOnList": 3,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7772818-L.jpg"
     },
     {
       "title": "End of Watch",
@@ -1152,12 +1376,43 @@
       "description": "The conclusion of the Bill Hodges trilogy.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Chinese",
+        "Polish",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Latin",
+        "Romanian",
+        "Ukrainian",
+        "Hebrew",
+        "Bengali",
+        "Spanish",
+        "Italian",
+        "Finnish",
+        "Hindi",
+        "Afrikaans",
+        "Persian",
+        "Bulgarian",
+        "Portuguese",
+        "Japanese",
+        "German",
+        "Tamil",
+        "French",
+        "Dutch",
+        "Indonesian",
+        "Vietnamese",
+        "Korean",
+        "Swedish",
+        "Catalan",
+        "Turkish",
+        "Greek"
       ],
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12376085-L.jpg"
     },
     {
       "title": "The Pursuit",
@@ -1176,7 +1431,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7434230-L.jpg"
     },
     {
       "title": "Bay of Sighs",
@@ -1190,12 +1446,14 @@
       "description": "In this second installment of the Guardians trilogy, Sawyer brings the group to the island of Capri, where he’s drawn to the mermaid Annika.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7433278-L.jpg"
     },
     {
       "title": "Here'S to Us",
@@ -1214,7 +1472,8 @@
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12063705-L.jpg"
     },
     {
       "title": "Alexander Hamilton",
@@ -1233,7 +1492,8 @@
       "weeksOnList": 26,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8261375-L.jpg"
     },
     {
       "title": "Bill O'Reilly'S Legends and Lies",
@@ -1252,7 +1512,8 @@
       "weeksOnList": 5,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8906917-L.jpg"
     },
     {
       "title": "Hamilton",
@@ -1285,12 +1546,16 @@
       "description": "A psychologist says passion and perseverance are the keys to success.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "French",
+        "Korean"
       ],
       "weeksOnList": 8,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7438753-L.jpg"
     },
     {
       "title": "Home",
@@ -1304,12 +1569,18 @@
       "description": "Myron Bolitar and his friend Win locate a boy who was kidnapped 10 years earlier; the 11th Myron Bolitar novel.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew",
+        "French",
+        "Spanish",
+        "Polish",
+        "Italian"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8166440-L.jpg"
     },
     {
       "title": "The Kept Woman",
@@ -1328,7 +1599,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8289256-L.jpg"
     },
     {
       "title": "Magic Binds",
@@ -1347,7 +1619,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13048128-L.jpg"
     },
     {
       "title": "Commonwealth",
@@ -1361,12 +1634,14 @@
       "description": "Five decades in the lives of two families remade by divorce.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9427220-L.jpg"
     },
     {
       "title": "Killing the Rising Sun",
@@ -1399,12 +1674,15 @@
       "description": "After her husband confesses to multiple infidelities, a woman who has overcome bulimia and alcoholism struggles to grow — and so does he.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Hebrew"
       ],
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12671745-L.jpg"
     },
     {
       "title": "The Girl With the Lower Back Tattoo",
@@ -1423,7 +1701,8 @@
       "weeksOnList": 6,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10829992-L.jpg"
     },
     {
       "title": "Hillbilly Elegy",
@@ -1437,12 +1716,16 @@
       "description": "A Yale Law School graduate looks at the struggles of the white working class through the story of his own childhood in the Rust Belt.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Chinese",
+        "German",
+        "Spanish"
       ],
       "weeksOnList": 48,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14846900-L.jpg"
     },
     {
       "title": "Hero of the Empire",
@@ -1461,7 +1744,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11556783-L.jpg"
     },
     {
       "title": "The Wrong Side of Goodbye",
@@ -1480,7 +1764,8 @@
       "weeksOnList": 7,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8289348-L.jpg"
     },
     {
       "title": "No Man'S Land",
@@ -1494,12 +1779,14 @@
       "description": "John Puller, a special agent with the Army, searches for the truth about his mother, who disappeared 30 years ago.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 7,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9297033-L.jpg"
     },
     {
       "title": "The Whistler",
@@ -1513,12 +1800,16 @@
       "description": "A whistleblower alerts a Florida investigator to judicial corruption involving the Mob and Indian casinos.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Russian",
+        "French",
+        "Spanish"
       ],
       "weeksOnList": 10,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9323434-L.jpg"
     },
     {
       "title": "A Dog'S Purpose",
@@ -1532,12 +1823,15 @@
       "description": "A canine narrator undergoes a series of reincarnations.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish",
+        "Spanish"
       ],
       "weeksOnList": 4,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8750145-L.jpg"
     },
     {
       "title": "Crash and Burn",
@@ -1556,7 +1850,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8470901-L.jpg"
     },
     {
       "title": "The Princess Diarist",
@@ -1570,12 +1865,16 @@
       "description": "Recollections of life on the set of the first Star Wars movie by the actress and writer, who died in December.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Spanish",
+        "Turkish"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9930403-L.jpg"
     },
     {
       "title": "Wishful Drinking",
@@ -1589,12 +1888,14 @@
       "description": "A memoir based on Fisher’s one-woman autobiographical show. Originally published in 2008.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish"
       ],
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6426757-L.jpg"
     },
     {
       "title": "The Undoing Project",
@@ -1613,7 +1914,8 @@
       "weeksOnList": 4,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9595637-L.jpg"
     },
     {
       "title": "Mississippi Blood",
@@ -1632,7 +1934,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11551727-L.jpg"
     },
     {
       "title": "The Shack",
@@ -1646,12 +1949,17 @@
       "description": "A man whose daughter was abducted is invited to an isolated shack, apparently by God.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Czech",
+        "Chinese",
+        "Korean"
       ],
       "weeksOnList": 9,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/2700082-L.jpg"
     },
     {
       "title": "Bound Together",
@@ -1670,7 +1978,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8539035-L.jpg"
     },
     {
       "title": "Vicious Circle",
@@ -1689,7 +1998,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8186966-L.jpg"
     },
     {
       "title": "If Not for You",
@@ -1708,7 +2018,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8397707-L.jpg"
     },
     {
       "title": "The Zookeeper’S Wife",
@@ -1722,12 +2033,16 @@
       "description": "How a Warsaw couple sheltered Jews and members of the Resistance during World War II. Originally published in 2007; now the basis of a movie.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish",
+        "Russian",
+        "Chinese"
       ],
       "weeksOnList": 7,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/1194806-L.jpg"
     },
     {
       "title": "The Book of Joy",
@@ -1760,12 +2075,15 @@
       "description": "he story, based in part on interviews, of the black women mathematicians who were hired as “computers” by the precursor of NASA during World War II. The basis of the movie.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Italian",
+        "Spanish"
       ],
       "weeksOnList": 24,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10661694-L.jpg"
     },
     {
       "title": "A Colony in a Nation",
@@ -1784,7 +2102,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8826398-L.jpg"
     },
     {
       "title": "Camino Island",
@@ -1798,12 +2117,17 @@
       "description": "A search for stolen rare manuscripts leads to a Florida island.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Russian",
+        "Dutch",
+        "Spanish",
+        "Hebrew"
       ],
       "weeksOnList": 17,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9323605-L.jpg"
     },
     {
       "title": "Dangerous Minds",
@@ -1822,7 +2146,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10655981-L.jpg"
     },
     {
       "title": "The Silent Corner",
@@ -1836,12 +2161,15 @@
       "description": "An F.B.I. agent investigates an alarming surge in suicides, including her husband's.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "German"
       ],
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8566861-L.jpg"
     },
     {
       "title": "The Identicals",
@@ -1860,7 +2188,8 @@
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9216272-L.jpg"
     },
     {
       "title": "The Handmaid'S Tale",
@@ -1874,12 +2203,35 @@
       "description": "In the Republic of Gilead's dystopian future, men and women perform the services assigned to them.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Turkish",
+        "French",
+        "Hebrew",
+        "Spanish",
+        "Catalan",
+        "Ukrainian",
+        "Chinese",
+        "Dutch",
+        "Romanian",
+        "Icelandic",
+        "Russian",
+        "Slovak",
+        "Danish",
+        "Portuguese",
+        "Italian",
+        "Finnish",
+        "Japanese",
+        "German",
+        "Norwegian",
+        "Korean",
+        "Polish",
+        "Persian"
       ],
       "weeksOnList": 14,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8231851-L.jpg"
     },
     {
       "title": "Astrophysics for People in a Hurry",
@@ -1893,12 +2245,19 @@
       "description": "A straightforward, easy-to-understand introduction to the laws that govern the universe.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Polish",
+        "French",
+        "Spanish",
+        "German",
+        "Dutch"
       ],
       "weeksOnList": 34,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7984709-L.jpg"
     },
     {
       "title": "Al Franken, Giant of the Senate",
@@ -1917,7 +2276,8 @@
       "weeksOnList": 4,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7996095-L.jpg"
     },
     {
       "title": "Understanding Trump",
@@ -1936,7 +2296,8 @@
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8832022-L.jpg"
     },
     {
       "title": "Killers of the Flower Moon",
@@ -1950,12 +2311,14 @@
       "description": "The story of a murder spree in 1920s Oklahoma that targeted Osage Indians, whose lands contained oil. The fledgling F.B.I. intervened, ineffectively.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 109,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8055064-L.jpg"
     },
     {
       "title": "Sleeping Beauties",
@@ -1969,12 +2332,15 @@
       "description": "Women who fall asleep become shrouded in mysterious cocoons while the men battle one another.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish",
+        "French"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10713424-L.jpg"
     },
     {
       "title": "Don'T Let Go",
@@ -1993,7 +2359,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15204289-L.jpg"
     },
     {
       "title": "It",
@@ -2007,12 +2374,44 @@
       "description": "The fears of seven teenagers are rekindled in their adult lives by the terrifying title character.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Russian",
+        "Polish",
+        "Turkish",
+        "Japanese",
+        "German",
+        "Italian",
+        "Dutch",
+        "Spanish",
+        "French",
+        "Portuguese",
+        "Hebrew",
+        "Finnish",
+        "Persian",
+        "Greek",
+        "Hungarian",
+        "Arabic",
+        "Chinese",
+        "Belarusian",
+        "Ukrainian",
+        "Croatian",
+        "Hindi",
+        "Afrikaans",
+        "Catalan",
+        "Bulgarian",
+        "Swedish",
+        "Slovak",
+        "Slovenian",
+        "Danish",
+        "Thai",
+        "Serbian",
+        "Norwegian"
       ],
       "weeksOnList": 8,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8569284-L.jpg"
     },
     {
       "title": "A Column of Fire",
@@ -2026,12 +2425,14 @@
       "description": "A pair of lovers find themselves on opposite sides of a conflict while Queen Elizabeth fights to maintain her throne.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 3,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8465187-L.jpg"
     },
     {
       "title": "The Cuban Affair",
@@ -2045,12 +2446,14 @@
       "description": "A Miami lawyer solicits an Army veteran to go on a secret mission to recover $60 million stashed away in Cuba.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12911137-L.jpg"
     },
     {
       "title": "Killing England",
@@ -2083,12 +2486,14 @@
       "description": "An inside look at her campaign and how she recovered in its aftermath.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8315356-L.jpg"
     },
     {
       "title": "Unbelievable",
@@ -2107,7 +2512,8 @@
       "weeksOnList": 3,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10843893-L.jpg"
     },
     {
       "title": "Hit Refresh",
@@ -2145,7 +2551,8 @@
       "weeksOnList": 6,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10118797-L.jpg"
     },
     {
       "title": "Two Kinds of Truth",
@@ -2164,7 +2571,8 @@
       "weeksOnList": 7,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10537454-L.jpg"
     },
     {
       "title": "Origin",
@@ -2178,12 +2586,52 @@
       "description": "A symbology professor goes on a perilous quest with a beautiful museum director.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Portuguese",
+        "Chinese",
+        "Hebrew",
+        "French",
+        "German",
+        "Hindi",
+        "Bengali",
+        "Tamil",
+        "Korean",
+        "Swedish",
+        "Polish",
+        "Danish",
+        "Japanese",
+        "Romanian",
+        "Italian",
+        "Dutch",
+        "Indonesian",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Greek",
+        "Latin",
+        "Belarusian",
+        "Irish",
+        "Ukrainian",
+        "Turkish",
+        "Finnish",
+        "Croatian",
+        "Catalan",
+        "Bulgarian",
+        "Serbian",
+        "Czech",
+        "Latvian",
+        "Slovak",
+        "Welsh",
+        "Vietnamese",
+        "Lithuanian",
+        "Persian"
       ],
       "weeksOnList": 13,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11013590-L.jpg"
     },
     {
       "title": "The Wanted",
@@ -2202,7 +2650,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9172686-L.jpg"
     },
     {
       "title": "Twisted",
@@ -2221,7 +2670,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14528054-L.jpg"
     },
     {
       "title": "Leonardo Da Vinci",
@@ -2235,12 +2685,25 @@
       "description": "",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Finnish",
+        "Spanish",
+        "Hebrew",
+        "Portuguese",
+        "Polish",
+        "Russian",
+        "Korean",
+        "Japanese",
+        "Chinese",
+        "Swedish",
+        "Vietnamese",
+        "French"
       ],
       "weeksOnList": 11,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8087691-L.jpg"
     },
     {
       "title": "Grant",
@@ -2259,7 +2722,8 @@
       "weeksOnList": 12,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11521312-L.jpg"
     },
     {
       "title": "The Last Black Unicorn",
@@ -2278,7 +2742,8 @@
       "weeksOnList": 4,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14487665-L.jpg"
     },
     {
       "title": "The Disappeared",
@@ -2297,7 +2762,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/5854701-L.jpg"
     },
     {
       "title": "Red Alert",
@@ -2311,12 +2777,14 @@
       "description": "The fifth book in the NYPD Red series. Detectives Zach Jordan and Kylie MacDonald investigate the death of a documentary filmmaker and an explosion at a charity benefit.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9216277-L.jpg"
     },
     {
       "title": "Ready Player One",
@@ -2330,12 +2798,20 @@
       "description": "It’s 2044, life on a resource-depleted Earth has grown increasingly grim, and the key to a vast fortune is hidden in a virtual-reality world.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew",
+        "Serbian",
+        "Portuguese",
+        "Lithuanian",
+        "Catalan",
+        "Spanish",
+        "German"
       ],
       "weeksOnList": 19,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8737626-L.jpg"
     },
     {
       "title": "The Great Alone",
@@ -2349,12 +2825,14 @@
       "description": "A former prisoner of war returns from Vietnam and moves his family to Alaska, where they face tough conditions.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 8,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8315368-L.jpg"
     },
     {
       "title": "This Is Me",
@@ -2373,7 +2851,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8797550-L.jpg"
     },
     {
       "title": "A Brief History of Time",
@@ -2387,12 +2866,29 @@
       "description": "The British cosmologist reviews efforts to create a unified theory of the universe; first published in 1988.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Czech",
+        "Russian",
+        "Polish",
+        "Turkish",
+        "Greek",
+        "Chinese",
+        "German",
+        "Spanish",
+        "Italian",
+        "Dutch",
+        "Finnish",
+        "Vietnamese",
+        "French",
+        "Portuguese",
+        "Catalan",
+        "Hebrew"
       ],
       "weeksOnList": 6,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10432365-L.jpg"
     },
     {
       "title": "Russian Roulette",
@@ -2411,7 +2907,8 @@
       "weeksOnList": 3,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8832062-L.jpg"
     },
     {
       "title": "Dear Madam President",
@@ -2430,7 +2927,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9224863-L.jpg"
     },
     {
       "title": "Tiger Woods",
@@ -2449,7 +2947,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8579766-L.jpg"
     },
     {
       "title": "The President Is Missing",
@@ -2463,12 +2962,17 @@
       "description": "President Jonathan Duncan takes on adversaries at home and abroad.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew",
+        "Spanish",
+        "Catalan",
+        "Turkish"
       ],
       "weeksOnList": 4,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8234413-L.jpg"
     },
     {
       "title": "All We Ever Wanted",
@@ -2487,7 +2991,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8794354-L.jpg"
     },
     {
       "title": "The Woman in the Window",
@@ -2501,12 +3006,31 @@
       "description": "A recluse who drinks heavily and takes prescription drugs may have witnessed a crime across from her Harlem townhouse.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Spanish",
+        "Chinese",
+        "Dutch",
+        "Romanian",
+        "Russian",
+        "Indonesian",
+        "Portuguese",
+        "Hindi",
+        "Italian",
+        "Vietnamese",
+        "Arabic",
+        "Finnish",
+        "Japanese",
+        "German",
+        "Korean",
+        "Polish",
+        "Persian"
       ],
       "weeksOnList": 16,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9237722-L.jpg"
     },
     {
       "title": "The Perfect Couple",
@@ -2520,12 +3044,14 @@
       "description": "A body is found in Nantucket Harbor hours before a picture-perfect wedding.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8803935-L.jpg"
     },
     {
       "title": "The Rooster Bar",
@@ -2544,7 +3070,8 @@
       "weeksOnList": 16,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9323578-L.jpg"
     },
     {
       "title": "Kitchen Confidential",
@@ -2558,12 +3085,19 @@
       "description": "A memoir-exposé of the restaurant world. Originally published in 2000.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Swedish",
+        "Spanish",
+        "Portuguese",
+        "Russian",
+        "Hebrew",
+        "German"
       ],
       "weeksOnList": 5,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/843879-L.jpg"
     },
     {
       "title": "Calypso",
@@ -2582,7 +3116,8 @@
       "weeksOnList": 5,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12750531-L.jpg"
     },
     {
       "title": "Educated",
@@ -2596,12 +3131,20 @@
       "description": "The daughter of survivalists, who is kept out of school, educates herself enough to leave home for university.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Spanish",
+        "Chinese",
+        "Italian",
+        "Thai",
+        "French",
+        "Hebrew"
       ],
       "weeksOnList": 110,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8314077-L.jpg"
     },
     {
       "title": "Things That Matter",
@@ -2620,7 +3163,8 @@
       "weeksOnList": 21,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7270420-L.jpg"
     },
     {
       "title": "The Soul of America",
@@ -2639,7 +3183,8 @@
       "weeksOnList": 8,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8809255-L.jpg"
     },
     {
       "title": "Vince Flynn",
@@ -2658,7 +3203,8 @@
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8289424-L.jpg"
     },
     {
       "title": "An Absolutely Remarkable Thing",
@@ -2672,12 +3218,14 @@
       "description": "After posting a video that goes viral, April May must deal with the pressures of becoming an internet sensation.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8565416-L.jpg"
     },
     {
       "title": "Transcription",
@@ -2691,12 +3239,14 @@
       "description": "Ten years later, figures from a BBC radio producer’s past as an M15 recruit in 1940 confront her.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9169163-L.jpg"
     },
     {
       "title": "Crazy Rich Asians",
@@ -2710,12 +3260,17 @@
       "description": "A New Yorker gets a surprise when she spends the summer with her boyfriend in Singapore.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Chinese",
+        "Polish",
+        "Hebrew"
       ],
       "weeksOnList": 16,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8251889-L.jpg"
     },
     {
       "title": "Lethal White",
@@ -2729,12 +3284,17 @@
       "description": "The fourth book in the Cormoran Strike series. Detectives Strike and Ellacott investigate a crime a young man may have witnessed as a child; by J. K. Rowling, writing pseudonymously.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish",
+        "Spanish",
+        "Portuguese",
+        "Hebrew"
       ],
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9243445-L.jpg"
     },
     {
       "title": "Fear",
@@ -2753,7 +3313,8 @@
       "weeksOnList": 3,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8315580-L.jpg"
     },
     {
       "title": "In Pieces",
@@ -2772,7 +3333,8 @@
       "weeksOnList": 2,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9338678-L.jpg"
     },
     {
       "title": "The Dichotomy of Leadership",
@@ -2791,7 +3353,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8648861-L.jpg"
     },
     {
       "title": "Leadership",
@@ -2805,12 +3368,17 @@
       "description": "",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Korean",
+        "Chinese",
+        "Spanish",
+        "Hebrew"
       ],
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9286949-L.jpg"
     },
     {
       "title": "Long Road to Mercy",
@@ -2824,12 +3392,15 @@
       "description": "Atlee Pine, an F.B.I. agent who is haunted by the childhood kidnapping of her twin sister, must choose between protecting her career or the United States' democracy.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Hebrew"
       ],
       "weeksOnList": 7,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8779560-L.jpg"
     },
     {
       "title": "The Reckoning",
@@ -2843,12 +3414,14 @@
       "description": "A decorated World War II veteran shoots and kills a pastor inside a Mississippi church.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French"
       ],
       "weeksOnList": 20,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8260231-L.jpg"
     },
     {
       "title": "Where the Crawdads Sing",
@@ -2862,12 +3435,23 @@
       "description": "In a quiet town on the North Carolina coast in 1969, a young woman who survived alone in the marsh becomes a murder suspect.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Chinese",
+        "Greek",
+        "Vietnamese",
+        "Spanish",
+        "French",
+        "German",
+        "Catalan",
+        "Turkish",
+        "Dutch",
+        "Hebrew"
       ],
       "weeksOnList": 179,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8362947-L.jpg"
     },
     {
       "title": "The Tattooist of Auschwitz",
@@ -2881,12 +3465,16 @@
       "description": "A concentration camp detainee tasked with permanently marking fellow prisoners falls in love with one of them.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Turkish",
+        "Polish",
+        "Spanish"
       ],
       "weeksOnList": 16,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8572962-L.jpg"
     },
     {
       "title": "Fire and Blood",
@@ -2905,7 +3493,8 @@
       "weeksOnList": 6,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13175019-L.jpg"
     },
     {
       "title": "Becoming",
@@ -2919,12 +3508,23 @@
       "description": "The former first lady describes her journey from the South Side of Chicago to the White House, and how she balanced work, family and her husband’s political ascent.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Turkish",
+        "German",
+        "Portuguese",
+        "Russian",
+        "Spanish",
+        "Dutch",
+        "Chinese",
+        "French",
+        "Italian",
+        "Japanese"
       ],
       "weeksOnList": 102,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8824664-L.jpg"
     },
     {
       "title": "The Point of It All",
@@ -2957,12 +3557,25 @@
       "description": "How Homo sapiens became Earth’s dominant species.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Romanian",
+        "French",
+        "Spanish",
+        "German",
+        "Polish",
+        "Korean",
+        "Turkish",
+        "Croatian",
+        "Italian",
+        "Japanese",
+        "Chinese"
       ],
       "weeksOnList": 53,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8634250-L.jpg"
     },
     {
       "title": "Killing the Ss",
@@ -3000,7 +3613,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9079081-L.jpg"
     },
     {
       "title": "Tiamat'S Wrath",
@@ -3038,7 +3652,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8803807-L.jpg"
     },
     {
       "title": "The Cornwalls Are Gone",
@@ -3057,7 +3672,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8804402-L.jpg"
     },
     {
       "title": "The Right Side of History",
@@ -3076,7 +3692,8 @@
       "weeksOnList": 2,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8797704-L.jpg"
     },
     {
       "title": "Bad Blood",
@@ -3090,12 +3707,14 @@
       "description": "",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Chinese"
       ],
       "weeksOnList": 34,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12735651-L.jpg"
     },
     {
       "title": "Doing Justice",
@@ -3114,7 +3733,8 @@
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8807318-L.jpg"
     },
     {
       "title": "Backlash",
@@ -3128,12 +3748,14 @@
       "description": "Cut off from any support, Scot Harvath fights to get his revenge.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8745975-L.jpg"
     },
     {
       "title": "Lost and Found",
@@ -3152,7 +3774,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8636502-L.jpg"
     },
     {
       "title": "Summer of '69",
@@ -3171,7 +3794,8 @@
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8635762-L.jpg"
     },
     {
       "title": "The Pioneers",
@@ -3190,7 +3814,8 @@
       "weeksOnList": 8,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10077347-L.jpg"
     },
     {
       "title": "Unfreedom of the Press",
@@ -3209,7 +3834,8 @@
       "weeksOnList": 6,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8574092-L.jpg"
     },
     {
       "title": "The Mueller Report",
@@ -3228,7 +3854,8 @@
       "weeksOnList": 10,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/5854701-L.jpg"
     },
     {
       "title": "The Water Dancer",
@@ -3242,12 +3869,17 @@
       "description": "A young man who was gifted with a mysterious power becomes part of a war between slavers and the enslaved.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "German",
+        "Korean",
+        "Chinese"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11328078-L.jpg"
     },
     {
       "title": "The Institute",
@@ -3261,12 +3893,55 @@
       "description": "Children with special talents are abducted and sequestered in an institution where the sinister staff seeks to extract their gifts through harsh methods.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Dutch",
+        "French",
+        "Russian",
+        "Arabic",
+        "Chinese",
+        "Malay",
+        "Hebrew",
+        "Italian",
+        "Korean",
+        "Thai",
+        "Bulgarian",
+        "Portuguese",
+        "Japanese",
+        "German",
+        "Vietnamese",
+        "Hungarian",
+        "Latin",
+        "Romanian",
+        "Ukrainian",
+        "Bengali",
+        "Finnish",
+        "Hindi",
+        "Afrikaans",
+        "Persian",
+        "Tamil",
+        "Danish",
+        "Greek",
+        "Turkish",
+        "Catalan",
+        "Swedish",
+        "Polish",
+        "Welsh",
+        "Icelandic",
+        "Serbian",
+        "Czech",
+        "Lithuanian",
+        "Slovak",
+        "Belarusian",
+        "Irish",
+        "Latvian",
+        "Slovenian"
       ],
       "weeksOnList": 16,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10712767-L.jpg"
     },
     {
       "title": "The Dutch House",
@@ -3285,7 +3960,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8788823-L.jpg"
     },
     {
       "title": "Inside Out",
@@ -3304,7 +3980,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8790381-L.jpg"
     },
     {
       "title": "The United States of Trump",
@@ -3337,12 +4014,14 @@
       "description": "Famous examples of miscommunication serve as the backdrop to explain potential conflicts and misunderstandings.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew"
       ],
       "weeksOnList": 16,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8779682-L.jpg"
     },
     {
       "title": "Over the Top",
@@ -3361,7 +4040,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8788822-L.jpg"
     },
     {
       "title": "Know My Name",
@@ -3375,12 +4055,15 @@
       "description": "A sexual assault victim reclaims her identity and challenges our culture and criminal justice system as they relate to this issue.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Dutch"
       ],
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9264396-L.jpg"
     },
     {
       "title": "The Guardians",
@@ -3394,12 +4077,14 @@
       "description": "Cullen Post, a lawyer and Episcopal minister, antagonizes some ruthless killers when he takes on a wrongful conviction case.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 21,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8943098-L.jpg"
     },
     {
       "title": "The Last Wish",
@@ -3413,12 +4098,18 @@
       "description": "Linked stories follow the exploits of Geralt of Rivia, a monster-slaying mercenary.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Spanish",
+        "German",
+        "Polish",
+        "Italian"
       ],
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7360819-L.jpg"
     },
     {
       "title": "The Night Fire",
@@ -3437,7 +4128,8 @@
       "weeksOnList": 7,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8980902-L.jpg"
     },
     {
       "title": "Me",
@@ -3451,12 +4143,20 @@
       "description": "The multi-award-winning solo artist's first autobiography chronicles his career, relationships and private struggles.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Russian",
+        "Chinese",
+        "German",
+        "Italian",
+        "Spanish",
+        "French",
+        "Portuguese"
       ],
       "weeksOnList": 11,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8999843-L.jpg"
     },
     {
       "title": "Sam Houston and the Alamo Avengers",
@@ -3475,7 +4175,8 @@
       "weeksOnList": 8,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9134942-L.jpg"
     },
     {
       "title": "Little Fires Everywhere",
@@ -3489,12 +4190,15 @@
       "description": "An artist with a mysterious past and a disregard for the status quo upends a quiet town outside Cleveland.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German",
+        "Hebrew"
       ],
       "weeksOnList": 59,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8111914-L.jpg"
     },
     {
       "title": "The Boy From the Woods",
@@ -3508,12 +4212,18 @@
       "description": "When a girl goes missing, a private investigator’s feral childhood becomes an asset in the search.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Polish",
+        "Spanish",
+        "French",
+        "Dutch"
       ],
       "weeksOnList": 2,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10451515-L.jpg"
     },
     {
       "title": "The Sinner",
@@ -3551,7 +4261,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9312931-L.jpg"
     },
     {
       "title": "The Splendid and the Vile",
@@ -3570,7 +4281,8 @@
       "weeksOnList": 39,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9293917-L.jpg"
     },
     {
       "title": "Untamed",
@@ -3589,7 +4301,8 @@
       "weeksOnList": 68,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9295686-L.jpg"
     },
     {
       "title": "Lady in Waiting",
@@ -3608,7 +4321,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10216066-L.jpg"
     },
     {
       "title": "The Great Influenza",
@@ -3622,12 +4336,16 @@
       "description": "An overview of the 1918 flu epidemic and cautionary tale for similar kinds of large-scale outbreaks.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Portuguese",
+        "Spanish"
       ],
       "weeksOnList": 3,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/402769-L.jpg"
     },
     {
       "title": "28 Summers",
@@ -3646,7 +4364,8 @@
       "weeksOnList": 2,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10194284-L.jpg"
     },
     {
       "title": "The Vanishing Half",
@@ -3660,12 +4379,14 @@
       "description": "The lives of twin sisters who run away from a Southern Black community at age 16 diverge as one returns and the other takes on a different racial identity but their fates intertwine.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Italian"
       ],
       "weeksOnList": 30,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10095692-L.jpg"
     },
     {
       "title": "Camino Winds",
@@ -3679,12 +4400,14 @@
       "description": "The line between fact and fiction becomes blurred when an author of thrillers is found dead after a hurricane hits Camino Island.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 9,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9358326-L.jpg"
     },
     {
       "title": "The Room Where It Happened",
@@ -3703,7 +4426,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9367049-L.jpg"
     },
     {
       "title": "White Fragility",
@@ -3717,12 +4441,14 @@
       "description": "Historical and cultural analyses on what causes defensive moves by white people and how this inhibits cross-racial dialogue.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese"
       ],
       "weeksOnList": 14,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8467410-L.jpg"
     },
     {
       "title": "How to Be an Antiracist",
@@ -3736,12 +4462,15 @@
       "description": "A primer for creating a more just and equitable society through identifying and opposing racism.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "French"
       ],
       "weeksOnList": 9,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12355529-L.jpg"
     },
     {
       "title": "Stamped From the Beginning",
@@ -3755,12 +4484,14 @@
       "description": "Winner of the 2016 National Book Award for nonfiction. A look at anti-Black racist ideas and their effect on the course of American history.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 4,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7880073-L.jpg"
     },
     {
       "title": "So You Want to Talk About Race",
@@ -3774,12 +4505,14 @@
       "description": "A look at the contemporary racial landscape of the United States.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 6,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10844924-L.jpg"
     },
     {
       "title": "The Book of Two Ways",
@@ -3798,7 +4531,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10219952-L.jpg"
     },
     {
       "title": "The Coast-to-Coast Murders",
@@ -3817,7 +4551,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/5854701-L.jpg"
     },
     {
       "title": "The Evening and the Morning",
@@ -3831,12 +4566,15 @@
       "description": "In a prequel to “The Pillars of the Earth,” a boatbuilder, a Norman noblewoman and a monk live in England under attack by the Welsh and the Vikings.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "German"
       ],
       "weeksOnList": 2,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10447089-L.jpg"
     },
     {
       "title": "Next to Last Stand",
@@ -3855,7 +4593,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12047938-L.jpg"
     },
     {
       "title": "Rage",
@@ -3869,12 +4608,19 @@
       "description": "Based on 17 on-the-record interviews with President Trump and other reporting, the Pulitzer Prize-winning journalist details the president’s perspective on multiple crises.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Portuguese",
+        "Dutch",
+        "German",
+        "Italian",
+        "Spanish"
       ],
       "weeksOnList": 2,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10357978-L.jpg"
     },
     {
       "title": "My Own Words",
@@ -3907,12 +4653,16 @@
       "description": "The conservative commentator makes her case that Black Americans should part ways with the Democratic Party.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Italian",
+        "German"
       ],
       "weeksOnList": 2,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10528214-L.jpg"
     },
     {
       "title": "Killing Crazy Horse",
@@ -3945,12 +4695,15 @@
       "description": "The Pulitzer Prize-winning journalist examines aspects of caste systems across civilizations and reveals a rigid hierarchy in America today.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Turkish"
       ],
       "weeksOnList": 34,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10201429-L.jpg"
     },
     {
       "title": "A Time for Mercy",
@@ -3964,12 +4717,14 @@
       "description": "The third book in the Jake Brigance series. A 16-year-old is accused of killing a deputy in Clanton, Miss., in 1990.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 11,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10221362-L.jpg"
     },
     {
       "title": "Ready Player Two",
@@ -3983,12 +4738,16 @@
       "description": "In a sequel to “Ready Player One,” Wade Watts discovers a technological advancement and goes on a new quest.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Portuguese",
+        "German"
       ],
       "weeksOnList": 5,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10250001-L.jpg"
     },
     {
       "title": "Deadly Cross",
@@ -4002,12 +4761,15 @@
       "description": "The 28th book in the Alex Cross series. An investigation of a double homicide sends Alex Cross to Alabama.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Swedish",
+        "Dutch"
       ],
       "weeksOnList": 5,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10315484-L.jpg"
     },
     {
       "title": "The Return",
@@ -4021,12 +4783,38 @@
       "description": "A doctor serving in the Navy in Afghanistan goes back to North Carolina where two women change his life.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Irish",
+        "Icelandic",
+        "Portuguese",
+        "Spanish",
+        "Hebrew",
+        "German",
+        "Czech",
+        "Dutch",
+        "Ukrainian",
+        "Chinese",
+        "Turkish",
+        "Latin",
+        "Italian",
+        "Russian",
+        "Greek",
+        "Romanian",
+        "French",
+        "Arabic",
+        "Polish",
+        "Tamil",
+        "Estonian",
+        "Danish",
+        "Hindi",
+        "Finnish",
+        "Japanese"
       ],
       "weeksOnList": 13,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10389674-L.jpg"
     },
     {
       "title": "A Promised Land",
@@ -4040,12 +4828,19 @@
       "description": "In the first volume of his presidential memoirs, Barack Obama offers personal reflections on his formative years and pivotal moments through his first term.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Italian",
+        "French",
+        "German",
+        "Dutch",
+        "Portuguese",
+        "Spanish"
       ],
       "weeksOnList": 6,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10449357-L.jpg"
     },
     {
       "title": "Greenlights",
@@ -4059,12 +4854,15 @@
       "description": "The Academy Award-winning actor shares snippets from the diaries he kept over the last 35 years.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Ukrainian"
       ],
       "weeksOnList": 49,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10512439-L.jpg"
     },
     {
       "title": "The Four Winds",
@@ -4078,12 +4876,15 @@
       "description": "As dust storms roll during the Great Depression, Elsa must choose between saving the family and farm or heading West.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Dutch"
       ],
       "weeksOnList": 8,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10675593-L.jpg"
     },
     {
       "title": "Win",
@@ -4097,12 +4898,21 @@
       "description": "Windsor Horne Lockwood III might rectify cold cases connected to his family that have eluded the F.B.I. for decades.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew",
+        "Turkish",
+        "Polish",
+        "Spanish",
+        "Portuguese",
+        "Dutch",
+        "French",
+        "Danish"
       ],
       "weeksOnList": 2,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/1407263-L.jpg"
     },
     {
       "title": "The Consequences of Fear",
@@ -4121,7 +4931,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10722380-L.jpg"
     },
     {
       "title": "Double Jeopardy",
@@ -4140,7 +4951,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10722387-L.jpg"
     },
     {
       "title": "The Bounty",
@@ -4159,7 +4971,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10835698-L.jpg"
     },
     {
       "title": "The Code Breaker",
@@ -4173,12 +4986,21 @@
       "description": "How the Nobel Prize winner Jennifer Doudna and her colleagues invented CRISPR, a tool that can edit DNA.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Korean",
+        "Swedish",
+        "Spanish",
+        "Dutch",
+        "Portuguese",
+        "Russian",
+        "Italian",
+        "Chinese"
       ],
       "weeksOnList": 3,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10675496-L.jpg"
     },
     {
       "title": "The Body Keeps the Score",
@@ -4192,12 +5014,18 @@
       "description": "How trauma affects the body and mind, and innovative treatments for recovery.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Vietnamese",
+        "French",
+        "Hebrew",
+        "Spanish"
       ],
       "weeksOnList": 304,
       "rank": 6,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8315367-L.jpg"
     },
     {
       "title": "The Last Thing He Told Me",
@@ -4211,12 +5039,14 @@
       "description": "Hannah Hall discovers truths about her missing husband and bonds with his daughter from a previous relationship.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 8,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10571017-L.jpg"
     },
     {
       "title": "The President'S Daughter",
@@ -4230,12 +5060,14 @@
       "description": "Matthew Keating, a past president and former Navy SEAL, goes on his own to find his abducted teenage daughter.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish"
       ],
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10344565-L.jpg"
     },
     {
       "title": "Malibu Rising",
@@ -4254,7 +5086,8 @@
       "weeksOnList": 4,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10447065-L.jpg"
     },
     {
       "title": "People We Meet on Vacation",
@@ -4273,7 +5106,8 @@
       "weeksOnList": 7,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10476782-L.jpg"
     },
     {
       "title": "Killing the Mob",
@@ -4306,12 +5140,15 @@
       "description": "A look at the key players and outcomes of precision bombing during World War II.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Swedish",
+        "Spanish"
       ],
       "weeksOnList": 9,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10716338-L.jpg"
     },
     {
       "title": "Apples Never Fall",
@@ -4325,12 +5162,14 @@
       "description": "The Delaney siblings suspect their father of causing the disappearance of their mother.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 2,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11135449-L.jpg"
     },
     {
       "title": "The Jailhouse Lawyer",
@@ -4349,7 +5188,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11945976-L.jpg"
     },
     {
       "title": "Daughter of the Morning Star",
@@ -4368,7 +5208,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12727217-L.jpg"
     },
     {
       "title": "Harlem Shuffle",
@@ -4382,12 +5223,14 @@
       "description": "Ray Carney, a family man who sells furniture on 125th Street, gets a new clientele made up of vicious and unsavory characters.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German"
       ],
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10550695-L.jpg"
     },
     {
       "title": "Peril",
@@ -4406,7 +5249,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11661963-L.jpg"
     },
     {
       "title": "Vanderbilt",
@@ -4425,7 +5269,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11730014-L.jpg"
     },
     {
       "title": "American Marxism",
@@ -4444,7 +5289,8 @@
       "weeksOnList": 11,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10921569-L.jpg"
     },
     {
       "title": "Yours Cruelly, Elvira",
@@ -4463,7 +5309,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10693559-L.jpg"
     },
     {
       "title": "The Judge'S List",
@@ -4477,12 +5324,23 @@
       "description": "The second book in the Whistler series. Investigator Lacy Stoltz goes after a serial killer and closes in on a sitting judge.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German",
+        "Romanian",
+        "Turkish",
+        "Spanish",
+        "Russian",
+        "Czech",
+        "Chinese",
+        "Portuguese",
+        "Japanese",
+        "French"
       ],
       "weeksOnList": 10,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10868035-L.jpg"
     },
     {
       "title": "The Stranger in the Lifeboat",
@@ -4501,7 +5359,8 @@
       "weeksOnList": 8,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14598031-L.jpg"
     },
     {
       "title": "It Ends With Us",
@@ -4515,12 +5374,22 @@
       "description": "A battered wife raised in a violent home attempts to halt the cycle of abuse.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "French",
+        "Korean",
+        "Spanish",
+        "Polish",
+        "Turkish",
+        "Russian",
+        "Portuguese",
+        "German"
       ],
       "weeksOnList": 140,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10473609-L.jpg"
     },
     {
       "title": "The Lincoln Highway",
@@ -4539,7 +5408,8 @@
       "weeksOnList": 12,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10648601-L.jpg"
     },
     {
       "title": "Call Us What We Carry",
@@ -4558,7 +5428,8 @@
       "weeksOnList": 3,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14621704-L.jpg"
     },
     {
       "title": "The Storyteller",
@@ -4577,7 +5448,8 @@
       "weeksOnList": 12,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12042146-L.jpg"
     },
     {
       "title": "Will",
@@ -4591,12 +5463,34 @@
       "description": "The actor, producer and musician tells his life story and lessons he learned along the way.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Latin",
+        "Romanian",
+        "Chinese",
+        "Ukrainian",
+        "Hebrew",
+        "Bengali",
+        "Spanish",
+        "Italian",
+        "Finnish",
+        "Hindi",
+        "Afrikaans",
+        "Persian",
+        "Bulgarian",
+        "Portuguese",
+        "Japanese",
+        "German",
+        "Tamil",
+        "French"
       ],
       "weeksOnList": 7,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12707846-L.jpg"
     },
     {
       "title": "The 1619 Project",
@@ -4634,7 +5528,8 @@
       "weeksOnList": 8,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10868781-L.jpg"
     },
     {
       "title": "Run, Rose, Run",
@@ -4653,7 +5548,8 @@
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11581994-L.jpg"
     },
     {
       "title": "The Recovery Agent",
@@ -4672,7 +5568,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10662552-L.jpg"
     },
     {
       "title": "Verity",
@@ -4686,12 +5583,19 @@
       "description": "Lowen Ashleigh is hired by the husband of an injured writer to complete her popular series and uncovers a horrifying truth.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hebrew",
+        "Polish",
+        "German",
+        "Turkish",
+        "Chinese",
+        "Spanish"
       ],
       "weeksOnList": 56,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8747160-L.jpg"
     },
     {
       "title": "One Damn Thing After Another",
@@ -4710,7 +5614,8 @@
       "weeksOnList": 3,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12564806-L.jpg"
     },
     {
       "title": "Crying in H Mart",
@@ -4729,7 +5634,8 @@
       "weeksOnList": 26,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10462708-L.jpg"
     },
     {
       "title": "The Hotel Nantucket",
@@ -4748,7 +5654,8 @@
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12818404-L.jpg"
     },
     {
       "title": "Ugly Love",
@@ -4762,12 +5669,17 @@
       "description": "A casual sexual relationship between Tate and Miles becomes more complicated than they expected.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Turkish",
+        "Portuguese",
+        "German",
+        "Spanish"
       ],
       "weeksOnList": 24,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12856728-L.jpg"
     },
     {
       "title": "Battle for the American Mind",
@@ -4805,7 +5717,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12835209-L.jpg"
     },
     {
       "title": "Happy-Go-Lucky",
@@ -4857,12 +5770,14 @@
       "description": "Musicians from different backgrounds are attracted to each other and a mother flees with her son from an abusive husband.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12568272-L.jpg"
     },
     {
       "title": "Fairy Tale",
@@ -4876,12 +5791,45 @@
       "description": "A high school kid inherits a shed that is a portal to another world where good and evil are at war.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German",
+        "Spanish",
+        "Italian",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Danish",
+        "Greek",
+        "Latin",
+        "Chinese",
+        "Belarusian",
+        "Irish",
+        "Ukrainian",
+        "Turkish",
+        "Hebrew",
+        "Finnish",
+        "Croatian",
+        "Catalan",
+        "Korean",
+        "Bulgarian",
+        "Serbian",
+        "Swedish",
+        "Portuguese",
+        "Czech",
+        "Polish",
+        "Latvian",
+        "Japanese",
+        "Slovak",
+        "Dutch",
+        "Welsh",
+        "French",
+        "Vietnamese"
       ],
       "weeksOnList": 3,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14655682-L.jpg"
     },
     {
       "title": "I'M Glad My Mom Died",
@@ -4900,7 +5848,8 @@
       "weeksOnList": 46,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13463075-L.jpg"
     },
     {
       "title": "The Divider",
@@ -4919,7 +5868,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14542053-L.jpg"
     },
     {
       "title": "Starry Messenger",
@@ -4938,7 +5888,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12554618-L.jpg"
     },
     {
       "title": "Dinners With Ruth",
@@ -4957,7 +5908,8 @@
       "weeksOnList": 2,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12900566-L.jpg"
     },
     {
       "title": "It Starts With Us",
@@ -4971,12 +5923,16 @@
       "description": "In the sequel to “It Ends With Us,” Lily deals with her jealous ex-husband as she reconnects with her first boyfriend.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "French",
+        "Portuguese"
       ],
       "weeksOnList": 23,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12749873-L.jpg"
     },
     {
       "title": "Lessons in Chemistry",
@@ -4990,12 +5946,16 @@
       "description": "A scientist and single mother living in California in the 1960s becomes a star on a TV cooking show.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "German",
+        "Swedish"
       ],
       "weeksOnList": 60,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12725772-L.jpg"
     },
     {
       "title": "The Seven Husbands of Evelyn Hugo",
@@ -5009,12 +5969,18 @@
       "description": "A movie icon recounts stories of her loves and career to a struggling magazine writer.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "German",
+        "Dutch",
+        "Serbian",
+        "Spanish"
       ],
       "weeksOnList": 78,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8354226-L.jpg"
     },
     {
       "title": "The Light We Carry",
@@ -5028,12 +5994,14 @@
       "description": "The former first lady shares personal stories and the tools she uses to deal with difficult situations.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 7,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12983461-L.jpg"
     },
     {
       "title": "The January 6 Report",
@@ -5052,7 +6020,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13279527-L.jpg"
     },
     {
       "title": "The January 6th Report",
@@ -5109,7 +6078,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13219665-L.jpg"
     },
     {
       "title": "Poverty, by America",
@@ -5128,7 +6098,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13239320-L.jpg"
     },
     {
       "title": "Saved",
@@ -5142,12 +6113,44 @@
       "description": "The Fox News journalist gives his account of the injuries he sustained from a Russian attack while covering the war in Ukraine.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Welsh",
+        "German",
+        "Swedish",
+        "Italian",
+        "Irish",
+        "Portuguese",
+        "Spanish",
+        "Persian",
+        "Hebrew",
+        "Dutch",
+        "Chinese",
+        "Turkish",
+        "Latin",
+        "Finnish",
+        "Russian",
+        "Romanian",
+        "Arabic",
+        "Polish",
+        "Icelandic",
+        "Ukrainian",
+        "Serbian",
+        "Danish",
+        "Japanese",
+        "Bulgarian",
+        "Czech",
+        "Catalan",
+        "Lithuanian",
+        "Slovak",
+        "Hungarian",
+        "Greek"
       ],
       "weeksOnList": 2,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6112107-L.jpg"
     },
     {
       "title": "Spare",
@@ -5161,12 +6164,14 @@
       "description": "The Duke of Sussex details his struggles with the royal family, loss of his mother, service in the British Army and marriage to Meghan Markle.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 11,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13415348-L.jpg"
     },
     {
       "title": "The Five-Star Weekend",
@@ -5199,12 +6204,34 @@
       "description": "A former couple pretend to be together for the sake of their friends during their annual getaway in Maine.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Latin",
+        "Romanian",
+        "Chinese",
+        "Ukrainian",
+        "Hebrew",
+        "Bengali",
+        "Spanish",
+        "Italian",
+        "Finnish",
+        "Hindi",
+        "Afrikaans",
+        "Persian",
+        "Bulgarian",
+        "Portuguese",
+        "Japanese",
+        "German",
+        "Tamil",
+        "French"
       ],
       "weeksOnList": 9,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13233403-L.jpg"
     },
     {
       "title": "Fourth Wing",
@@ -5218,12 +6245,16 @@
       "description": "Violet Sorrengail is urged by the commanding general, who also is her mother, to become a candidate for the elite dragon riders.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "German",
+        "Dutch"
       ],
       "weeksOnList": 88,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14407898-L.jpg"
     },
     {
       "title": "Outlive",
@@ -5256,12 +6287,14 @@
       "description": "The survivors of a shipwrecked British vessel on a secret mission during an imperial war with Spain have different accounts of events.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 36,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13245246-L.jpg"
     },
     {
       "title": "The Running Grave",
@@ -5275,12 +6308,15 @@
       "description": "The seventh book in the Cormoran Strike series. Strike's business partner, Robin Ellacott, goes inside a cult to rescue someone who has joined it.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "German",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14424913-L.jpg"
     },
     {
       "title": "The Armor of Light",
@@ -5294,12 +6330,14 @@
       "description": "The fifth book in the Kingsbridge series. Change and turmoil affect various aspects of society in the latter part of the 18th century.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13539115-L.jpg"
     },
     {
       "title": "12 Months to Live",
@@ -5318,7 +6356,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14367799-L.jpg"
     },
     {
       "title": "House of Sky and Breath",
@@ -5332,12 +6371,16 @@
       "description": "The second book in the Crescent City series. Bryce Quinlan and Hunt Athalar must choose to fight or stay silent.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Spanish",
+        "Polish"
       ],
       "weeksOnList": 4,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10327411-L.jpg"
     },
     {
       "title": "Enough",
@@ -5356,7 +6399,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14427935-L.jpg"
     },
     {
       "title": "Killing the Witches",
@@ -5413,7 +6457,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14544217-L.jpg"
     },
     {
       "title": "Elon Musk",
@@ -5427,12 +6472,14 @@
       "description": "The author of “The Code Breaker” traces Musk’s life and summarizes his work on electric vehicles, private space exploration and artificial intelligence.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 3,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14420016-L.jpg"
     },
     {
       "title": "Iron Flame",
@@ -5446,12 +6493,17 @@
       "description": "The second book in the Empyrean series. Violet Sorrengail’s next round of training might require her to betray the man she loves.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Spanish",
+        "German",
+        "Dutch"
       ],
       "weeksOnList": 21,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14405746-L.jpg"
     },
     {
       "title": "The Heaven & Earth Grocery Store",
@@ -5484,12 +6536,14 @@
       "description": "Anastasia might need the help of the captain of a college hockey team to get on the Olympic figure skating team.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 28,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13180728-L.jpg"
     },
     {
       "title": "Oath and Honor",
@@ -5508,7 +6562,8 @@
       "weeksOnList": 4,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14549229-L.jpg"
     },
     {
       "title": "The Woman in Me",
@@ -5522,12 +6577,14 @@
       "description": "The Grammy Award-winning pop star details her personal and professional experiences, including the years she spent under a conservatorship overseen by her father.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 10,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14538012-L.jpg"
     },
     {
       "title": "The Women",
@@ -5541,12 +6598,18 @@
       "description": "In 1965, a nursing student follows her brother to serve during the Vietnam War and returns to a divided America.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Polish",
+        "Spanish",
+        "French",
+        "Chinese"
       ],
       "weeksOnList": 47,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8314147-L.jpg"
     },
     {
       "title": "The Truth About the Devlins",
@@ -5565,7 +6628,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14562118-L.jpg"
     },
     {
       "title": "The Three-Body Problem",
@@ -5598,12 +6662,14 @@
       "description": "The CNN host draws out lessons for the present polarized era from the 17th-century Netherlands, the French Revolution and the Industrial Revolution.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15233488-L.jpg"
     },
     {
       "title": "Becky Lynch",
@@ -5660,7 +6726,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14611389-L.jpg"
     },
     {
       "title": "All the Colors of the Dark",
@@ -5674,12 +6741,14 @@
       "description": "Questions arise when a boy saves the daughter of a wealthy family amid a string of disappearances in a Missouri town in 1975.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14643105-L.jpg"
     },
     {
       "title": "The Housemaid Is Watching",
@@ -5693,12 +6762,17 @@
       "description": "The third book in the Housemaid series. Dangers lurk in a quiet neighborhood.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Spanish",
+        "German",
+        "Portuguese"
       ],
       "weeksOnList": 3,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14633291-L.jpg"
     },
     {
       "title": "Swan Song",
@@ -5717,7 +6791,8 @@
       "weeksOnList": 3,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14605221-L.jpg"
     },
     {
       "title": "The Housemaid",
@@ -5731,12 +6806,18 @@
       "description": "Troubles surface when a woman looking to make a fresh start takes a job in the home of the Winchesters.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Spanish",
+        "Polish",
+        "German",
+        "Portuguese"
       ],
       "weeksOnList": 77,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15105883-L.jpg"
     },
     {
       "title": "On Call",
@@ -5755,7 +6836,8 @@
       "weeksOnList": 2,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14633597-L.jpg"
     },
     {
       "title": "The Demon of Unrest",
@@ -5774,7 +6856,8 @@
       "weeksOnList": 9,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14815012-L.jpg"
     },
     {
       "title": "The Singularity Is Nearer",
@@ -5793,7 +6876,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14861631-L.jpg"
     },
     {
       "title": "Friends, Lovers, and the Big Terrible Thing",
@@ -5812,7 +6896,8 @@
       "weeksOnList": 29,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/13133707-L.jpg"
     },
     {
       "title": "Counting Miracles",
@@ -5826,12 +6911,14 @@
       "description": "A man in search of the father he never knew encounters a single mom and rumors circulate of the nearby appearance of a white deer.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14822874-L.jpg"
     },
     {
       "title": "Intermezzo",
@@ -5845,12 +6932,14 @@
       "description": "After the passing of their father, seemingly different brothers engage in relationships and seek ways to cope.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14836043-L.jpg"
     },
     {
       "title": "The Small and the Mighty",
@@ -5869,7 +6958,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14802468-L.jpg"
     },
     {
       "title": "Truths",
@@ -5926,7 +7016,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14819962-L.jpg"
     },
     {
       "title": "James",
@@ -5945,7 +7036,8 @@
       "weeksOnList": 10,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15094964-L.jpg"
     },
     {
       "title": "Wicked",
@@ -5959,12 +7051,18 @@
       "description": "A misunderstood girl named Elphaba is declared a witch; the basis of the musical and the film.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish",
+        "Chinese",
+        "Dutch",
+        "Korean",
+        "Hebrew"
       ],
       "weeksOnList": 7,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/38706-L.jpg"
     },
     {
       "title": "The Backyard Bird Chronicles",
@@ -5997,12 +7095,21 @@
       "description": "In the first part of her memoir, the multiple award-winning pop culture icon traces her childhood and forays into the world of entertainment.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Russian",
+        "Arabic",
+        "Polish",
+        "German",
+        "Spanish",
+        "Italian",
+        "Swedish",
+        "French"
       ],
       "weeksOnList": 6,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/4064892-L.jpg"
     },
     {
       "title": "Framed",
@@ -6040,7 +7147,8 @@
       "weeksOnList": 13,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14824767-L.jpg"
     },
     {
       "title": "Melania",
@@ -6054,12 +7162,14 @@
       "description": "The first lady describes her work as a fashion model, marriage to Donald Trump and time in the White House.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 12,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14825966-L.jpg"
     },
     {
       "title": "Lethal Prey",
@@ -6092,12 +7202,17 @@
       "description": "The third book in the Empyrean series. As enemies gain traction, Violet Sorrengail goes beyond the Aretian wards in search of allies.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Spanish",
+        "German",
+        "Turkish"
       ],
       "weeksOnList": 10,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14826089-L.jpg"
     },
     {
       "title": "Nobody'S Fool",
@@ -6116,7 +7231,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15205314-L.jpg"
     },
     {
       "title": "Summer in the City",
@@ -6135,7 +7251,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15217772-L.jpg"
     },
     {
       "title": "Abundance",
@@ -6206,12 +7323,23 @@
       "description": "After her handbag is stolen during a trip to Paris, a best-selling author with a traumatic past determines not to be a victim.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Russian",
+        "Arabic",
+        "Turkish",
+        "Spanish",
+        "Finnish",
+        "French",
+        "Polish",
+        "Norwegian",
+        "Dutch",
+        "Hebrew"
       ],
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/240011-L.jpg"
     },
     {
       "title": "Atmosphere",
@@ -6225,12 +7353,14 @@
       "description": "In the summer of 1980, Joan Goodwin begins training with a group of candidates for NASA’s space shuttle program.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch"
       ],
       "weeksOnList": 4,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15098710-L.jpg"
     },
     {
       "title": "One Golden Summer",
@@ -6249,7 +7379,8 @@
       "weeksOnList": 8,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14840895-L.jpg"
     },
     {
       "title": "Severed Heart",
@@ -6263,12 +7394,25 @@
       "description": "The second book in the Ravenhood Legacy series. Tyler gets his friend’s aunt to help him on his quest to become a man before his time.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Czech",
+        "French",
+        "Chinese",
+        "Romanian",
+        "Hungarian",
+        "Russian",
+        "Slovak",
+        "Belarusian",
+        "Japanese",
+        "German",
+        "Norwegian",
+        "Polish"
       ],
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9048263-L.jpg"
     },
     {
       "title": "Behind the Badge",
@@ -6301,12 +7445,52 @@
       "description": "The journalist shares moments from her life and the two trials in which she accused President Trump of sexual assault and defamation.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Hungarian",
+        "Russian",
+        "Arabic",
+        "Danish",
+        "Greek",
+        "Latin",
+        "Chinese",
+        "Belarusian",
+        "Irish",
+        "Ukrainian",
+        "Turkish",
+        "Hebrew",
+        "Spanish",
+        "Italian",
+        "Finnish",
+        "Croatian",
+        "Catalan",
+        "Korean",
+        "Bulgarian",
+        "Serbian",
+        "Swedish",
+        "Portuguese",
+        "Czech",
+        "Polish",
+        "Latvian",
+        "Japanese",
+        "Slovak",
+        "German",
+        "Dutch",
+        "Welsh",
+        "French",
+        "Icelandic",
+        "Bengali",
+        "Afrikaans",
+        "Persian",
+        "Vietnamese",
+        "Romanian",
+        "Hindi",
+        "Tamil"
       ],
       "weeksOnList": 2,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10527843-L.jpg"
     },
     {
       "title": "Mark Twain",
@@ -6325,7 +7509,8 @@
       "weeksOnList": 7,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11521312-L.jpg"
     },
     {
       "title": "Alchemised",
@@ -6339,12 +7524,16 @@
       "description": "After the war, an imprisoned alchemist is sent to a necromancer to recover her lost memories.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "French",
+        "Spanish"
       ],
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15162548-L.jpg"
     },
     {
       "title": "The Primal of Blood and Bone",
@@ -6363,7 +7552,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15128598-L.jpg"
     },
     {
       "title": "The Secret of Secrets",
@@ -6377,12 +7567,51 @@
       "description": "As he searches for the missing noetic scientist he has been seeing, Robert Langdon discovers something regarding a secret project.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Spanish",
+        "Croatian",
+        "German",
+        "Dutch",
+        "Persian",
+        "French",
+        "Korean",
+        "Japanese",
+        "Greek",
+        "Catalan",
+        "Polish",
+        "Indonesian",
+        "Turkish",
+        "Vietnamese",
+        "Swedish",
+        "Italian",
+        "Russian",
+        "Chinese",
+        "Lithuanian",
+        "Romanian",
+        "Hebrew",
+        "Arabic",
+        "Icelandic",
+        "Hungarian",
+        "Danish",
+        "Slovenian",
+        "Czech",
+        "Serbian",
+        "Bengali",
+        "Hindi",
+        "Tamil",
+        "Ukrainian",
+        "Finnish",
+        "Afrikaans",
+        "Irish",
+        "Latin",
+        "Welsh"
       ],
       "weeksOnList": 3,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9255229-L.jpg"
     },
     {
       "title": "Circle of Days",
@@ -6396,12 +7625,28 @@
       "description": "A priestess envisions a great stone circle put together by divided tribes, but drought and violence may impede its creation.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "French",
+        "Irish",
+        "Catalan",
+        "Icelandic",
+        "Japanese",
+        "Spanish",
+        "Danish",
+        "Hebrew",
+        "German",
+        "Dutch",
+        "Chinese",
+        "Latin",
+        "Italian",
+        "Finnish",
+        "Russian"
       ],
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15156827-L.jpg"
     },
     {
       "title": "Tourist Season",
@@ -6420,7 +7665,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15236115-L.jpg"
     },
     {
       "title": "107 Days",
@@ -6439,7 +7685,8 @@
       "weeksOnList": 1,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15125213-L.jpg"
     },
     {
       "title": "Poems & Prayers",
@@ -6477,7 +7724,8 @@
       "weeksOnList": 1,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15141815-L.jpg"
     },
     {
       "title": "Confronting Evil",
@@ -6534,7 +7782,8 @@
       "weeksOnList": 33,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
       "title": "Project Hail Mary",
@@ -6548,12 +7797,21 @@
       "description": "Ryland Grace awakes from a long sleep alone and far from home, and the fate of humanity rests on his shoulders; the basis of the movie.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Portuguese",
+        "Dutch",
+        "Spanish",
+        "Turkish",
+        "German",
+        "French",
+        "Korean",
+        "Finnish"
       ],
       "weeksOnList": 58,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/11200092-L.jpg"
     },
     {
       "title": "The Deal",
@@ -6567,12 +7825,19 @@
       "description": "Hannah Wells makes a deal with the captain of the college hockey team in exchange for tutoring him that may complicate their relationship.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Polish",
+        "Turkish",
+        "German",
+        "Dutch",
+        "Spanish",
+        "Portuguese"
       ],
       "weeksOnList": 10,
       "rank": 14,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10201611-L.jpg"
     },
     {
       "title": "The Divorce",
@@ -6586,12 +7851,15 @@
       "description": "After her husband ends their marriage and she turns her attention to his new girlfriend, Naomi suspects she might be in danger.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Dutch",
+        "Spanish"
       ],
       "weeksOnList": 8,
       "rank": 15,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15230534-L.jpg"
     },
     {
       "title": "A Marriage at Sea",
@@ -6605,18 +7873,20 @@
       "description": "In 1972, an incident with a breaching whale turns a couple’s dream of sailing on a boat into a monthslong struggle for survival on a raft.",
       "descriptionZh": "",
       "languages": [
-        "English"
+        "English",
+        "Spanish"
       ],
       "weeksOnList": 9,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/14805268-L.jpg"
     }
   ],
-  "lastUpdated": "2026-07-27T12:24:32.732Z",
+  "lastUpdated": "2026-07-31T19:25:22.258Z",
   "sources": [
     "NYT Books API",
-    "Google Books API"
+    "OpenLibrary"
   ],
   "historyFetched": true
 }

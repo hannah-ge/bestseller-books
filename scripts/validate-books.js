@@ -34,6 +34,10 @@ const { execFileSync } = require('child_process');
 const REPO_ROOT = path.join(__dirname, '..');
 const REQUIRED_FIELDS = ['title', 'author', 'year', 'country', 'genre'];
 const YEARS_BACK = 10;
+// Must match fetch-books.js: an early-January list is dated to the previous
+// December, so the boundary year is legitimate and is not an error.
+const PRUNE_SLACK_YEARS = 1;
+const WINDOW_START = new Date().getFullYear() - YEARS_BACK - PRUNE_SLACK_YEARS;
 // Absorbs sampling noise on small weekly deltas.
 const TOLERANCE_PCT = 1.0;
 
@@ -97,10 +101,10 @@ function measure(books) {
     englishOnly: count(
       (b) => Array.isArray(b.languages) && b.languages.length === 1 && b.languages[0] === 'English'
     ),
-    noCover: count((b) => !b.googleCover),
+    noCover: count((b) => !b.coverUrl && !b.googleCover),
     noChinese: count((b) => !b.titleZh),
     outOfWindow: count(
-      (b) => !Number.isInteger(b.year) || b.year < nowYear - YEARS_BACK || b.year > nowYear + 1
+      (b) => !Number.isInteger(b.year) || b.year < WINDOW_START || b.year > nowYear + 1
     ),
   };
 }
@@ -143,7 +147,7 @@ function checkStructure(books) {
 
 const QUALITY_CHECKS = [
   ['englishOnly', 'only "English" in languages'],
-  ['noCover', 'no googleCover'],
+  ['noCover', 'no cover image'],
   ['noChinese', 'no Chinese title'],
   ['allCaps', 'ALL-CAPS title'],
   ['outOfWindow', 'year outside the 10-year window'],
@@ -172,9 +176,28 @@ function main() {
 
   if (before) {
     if (now.total < before.total) {
-      errors.push(
-        `book count dropped from ${before.total} to ${now.total} — the merge should never lose books`
+      // Books leaving the ten-year window are pruned on purpose — that is the
+      // removal path that stops the file growing forever. Anything else
+      // vanishing means the merge lost data, which is a real failure.
+      const liveKeys = new Set(books.map(bookKey));
+      const removed = baselineBooks.filter((b) => !liveKeys.has(bookKey(b)));
+      const nowYear = new Date().getFullYear();
+      const windowStart = WINDOW_START;
+      const unexpected = removed.filter(
+        (b) => Number.isInteger(b.year) && b.year >= windowStart && b.year <= nowYear + 1
       );
+
+      if (unexpected.length) {
+        errors.push(
+          `${unexpected.length} in-window book(s) disappeared, e.g. "${unexpected[0].title}" ` +
+            `(${unexpected[0].year}) — the merge should never lose books`
+        );
+      } else {
+        warnings.push(
+          `${removed.length} book(s) pruned as outside ${windowStart}–${nowYear + 1} ` +
+            `(${before.total} -> ${now.total})`
+        );
+      }
     }
     for (const [key, label] of QUALITY_CHECKS) {
       const wasPct = pct(before[key], before.total);
