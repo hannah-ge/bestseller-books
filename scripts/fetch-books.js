@@ -228,33 +228,68 @@ async function enrichBook(title, author) {
   return { languages, cover };
 }
 
-// Translate text to Chinese using Google Translate API
+// Translate text to Chinese using the Google Cloud Translation v2 API.
+//
+// The key must travel in the X-Goog-Api-Key header (or ?key= on the URL) — a
+// "key" field in the JSON body is ignored, and the call comes back 403
+// "unregistered callers". That is why every titleZh was empty even though the
+// secret had been configured correctly all along: wrong placement, and then
+// the 403 was swallowed into empty strings.
+const translateStats = { attempted: 0, translated: 0, failed: 0 };
+
+// Google returns HTML entities (&#39;, &quot;) even when format is "text".
+function decodeEntities(s) {
+  return String(s)
+    .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(Number(d)))
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');
+}
+
 async function translateToChinese(texts) {
   if (!GOOGLE_TRANSLATE_KEY || texts.length === 0) return texts.map(() => "");
+  translateStats.attempted += texts.length;
 
   try {
-    const url = 'https://translation.googleapis.com/language/translate/v2';
-    const res = await fetch(url, {
+    const res = await fetch('https://translation.googleapis.com/language/translate/v2', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Goog-Api-Key': GOOGLE_TRANSLATE_KEY,
+      },
       body: JSON.stringify({
         q: texts,
         source: 'en',
-        target: 'zh',
-        key: GOOGLE_TRANSLATE_KEY,
+        // Explicitly Simplified, to match the site's zh copy.
+        target: 'zh-CN',
         format: 'text',
       }),
     });
 
     if (!res.ok) {
-      console.error(`  Google Translate error: ${res.status}`);
+      // Surface Google's own message. The status alone does not distinguish a
+      // bad key from an API that is not enabled, or a project without billing.
+      let detail = '';
+      try { detail = (await res.json())?.error?.message || ''; } catch {}
+      console.error(`  Google Translate ${res.status}: ${detail || res.statusText}`);
+      translateStats.failed += texts.length;
       return texts.map(() => "");
     }
 
     const json = await res.json();
-    return json.data.translations.map(t => t.translatedText);
+    const out = json?.data?.translations;
+    if (!Array.isArray(out) || out.length !== texts.length) {
+      console.error(`  Google Translate returned ${out?.length ?? 0} results for ${texts.length} inputs`);
+      translateStats.failed += texts.length;
+      return texts.map(() => "");
+    }
+    translateStats.translated += out.length;
+    return out.map(t => decodeEntities(t.translatedText));
   } catch (err) {
     console.error(`  Translation failed: ${err.message}`);
+    translateStats.failed += texts.length;
     return texts.map(() => "");
   }
 }
@@ -440,7 +475,10 @@ async function main() {
 
       await sleep(500);
     }
-    console.log(`  Translated ${booksNeedingTranslation.length} books`);
+    console.log(
+      `  Translated ${translateStats.translated} of ${translateStats.attempted} strings` +
+      (translateStats.failed ? `, ${translateStats.failed} failed` : '')
+    );
   } else {
     console.log('\nGOOGLE_TRANSLATE_KEY not set — skipping Chinese translations.');
     console.log('To enable: Add GOOGLE_TRANSLATE_KEY to your repo secrets.');
@@ -472,6 +510,17 @@ async function main() {
     console.error(
       `\nEnrichment returned no language data for any of ${enrichStats.attempted} books. ` +
       `Upstream is failing — refusing to write a degraded file.`
+    );
+    process.exit(1);
+  }
+
+  // Same rule for translation. A configured key that translates nothing means
+  // the key is bad, the Cloud Translation API is not enabled on the project, or
+  // billing is off — all of which used to surface as silently empty titleZh.
+  if (translateStats.attempted > 0 && translateStats.translated === 0) {
+    console.error(
+      `\nGOOGLE_TRANSLATE_KEY is set but all ${translateStats.attempted} translations failed. ` +
+      `Check the key, that the Cloud Translation API is enabled, and that the project has billing.`
     );
     process.exit(1);
   }

@@ -97,11 +97,25 @@ Fixed (2026) — kept here because the failure mode is the interesting part:
 
 Still outstanding:
 
-- `GOOGLE_TRANSLATE_KEY` is unset, so `titleZh`/`descriptionZh` are all empty.
-  This one genuinely cannot be fixed in code — it needs the secret. The script
-  says so loudly and the gate tracks the percentage.
 - ~17% of books still have no cover and ~57% resolve to English only. That is
   usually a genuinely single-edition book, not a bug.
+
+Also fixed: Chinese translation. `GOOGLE_TRANSLATE_KEY` **was** configured in
+repo secrets and **was** passed correctly by the workflow — the script was
+sending it as a `key` field in the JSON POST body, which the Cloud Translation
+v2 API ignores. Every call came back `403 "unregistered callers"`, and that 403
+was swallowed into empty strings, so it looked identical to a missing secret.
+The key now travels in the `X-Goog-Api-Key` header (keeps it out of logged
+URLs), the target is explicitly `zh-CN`, Google's own error message is printed
+instead of a bare status, and a run where every translation fails exits 1
+before writing.
+
+Proof of the diagnosis, if you ever need to re-check placement:
+
+```bash
+# key in body -> 403, Google never saw a key
+# key in header/query -> 400 "API key not valid", Google read it and rejected it
+```
 
 Fixing any of these lowers the percentage, which the gate then locks in.
 
