@@ -36,6 +36,20 @@ jobs:
           FETCH_HISTORY: ${{ github.event.inputs.fetch_history || 'false' }}
         run: node scripts/fetch-books.js
 
+      # Gate: compares the freshly fetched data against the committed version.
+      # Structural problems always fail; quality metrics fail only on regression,
+      # so existing debt does not block but any improvement is locked in.
+      - name: Validate data before publishing
+        run: node scripts/validate-books.js
+
+      - name: Upload rejected data for inspection
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-books-json
+          path: data/books.json
+          retention-days: 7
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
