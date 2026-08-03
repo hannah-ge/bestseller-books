@@ -83,10 +83,23 @@ async function fetchNYTList(listName, date = 'current') {
 
 // Convert "ALL CAPS TITLE" to "All Caps Title"
 function toTitleCase(str) {
-  if (str !== str.toUpperCase()) return str;
-  return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase())
-    .replace(/\b(A|An|And|As|At|But|By|For|In|Nor|Of|On|Or|So|The|To|Up|Yet)\b/g,
-      (m, p1, offset) => offset === 0 ? m : m.toLowerCase());
+  // An apostrophe is a word boundary, so the \b\w pass below capitalises the
+  // letter after it: "IT'S" became "It'S" and "I'VE" became "I'Ve". Only the
+  // known contraction and possessive suffixes are lowered, so names that
+  // genuinely capitalise there (O'Brien, D'Angelo) survive.
+  //
+  // This runs on every input, not just ALL-CAPS ones, so that titles already
+  // mangled by the earlier version of this function are healed by the
+  // re-apply pass rather than staying broken forever.
+  const fixApostrophes = (s) =>
+    s.replace(/'(S|T|Ve|Ll|Re|D|M)\b/g, (m, suffix) => `'${suffix.toLowerCase()}`);
+
+  if (str !== str.toUpperCase()) return fixApostrophes(str);
+  return fixApostrophes(
+    str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase())
+      .replace(/\b(A|An|And|As|At|But|By|For|In|Nor|Of|On|Or|So|The|To|Up|Yet)\b/g,
+        (m, p1, offset) => offset === 0 ? m : m.toLowerCase())
+  );
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -550,6 +563,7 @@ enrichBook,
 enrichFromOpenLibrary,
 enrichFromGoogleBooks,
 translateToChinese,
+toTitleCase,
 enrichStats,
 translateStats,
 };

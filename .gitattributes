@@ -1,0 +1,12 @@
+# data/books.json is written by the workflow on Linux and sometimes by hand on
+# Windows. Without this, core.autocrlf=true rewrites it on checkout and the next
+# CI run reports the whole file as changed. Pin the text files to LF so the diff
+# only ever shows real content changes.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary

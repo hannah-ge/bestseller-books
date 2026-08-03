@@ -14,10 +14,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 15,
+      "weeksOnList": 16,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
@@ -34,10 +34,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 7,
-      "rank": 6,
+      "weeksOnList": 8,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234903-L.jpg"
     },
     {
@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 11,
-      "rank": 4,
+      "weeksOnList": 12,
+      "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -150,14 +150,14 @@
         "Irish",
         "Latin"
       ],
-      "weeksOnList": 36,
-      "rank": 11,
+      "weeksOnList": 37,
+      "rank": 9,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15232808-L.jpg"
     },
     {
-      "title": "Carl'S Doomsday Scenario",
+      "title": "Carl's Doomsday Scenario",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -195,11 +195,11 @@
       "weeksOnList": 3,
       "rank": 12,
       "source": "nyt",
-      "lastUpdated": "2026-07-23",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15237196-L.jpg"
     },
     {
-      "title": "The Dungeon Anarchist'S Cookbook",
+      "title": "The Dungeon Anarchist's Cookbook",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -235,10 +235,10 @@
         "Portuguese",
         "French"
       ],
-      "weeksOnList": 28,
-      "rank": 8,
+      "weeksOnList": 29,
+      "rank": 6,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
@@ -320,7 +320,7 @@
       "lastUpdated": "2026-07-22"
     },
     {
-      "title": "The Butcher'S Masquerade",
+      "title": "The Butcher's Masquerade",
       "titleZh": "",
       "author": "Matt Dinniman",
       "authorZh": "",
@@ -394,10 +394,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 4,
+      "weeksOnList": 5,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "Revolution",
@@ -413,10 +413,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 6,
-      "rank": 9,
+      "weeksOnList": 7,
+      "rank": 12,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "Cancel Me If You Can",
@@ -432,10 +432,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 3,
-      "rank": 8,
+      "weeksOnList": 4,
+      "rank": 11,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "Strangers",
@@ -452,10 +452,10 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 27,
-      "rank": 3,
+      "weeksOnList": 28,
+      "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15165045-L.jpg"
     },
     {
@@ -472,10 +472,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 5,
+      "weeksOnList": 6,
       "rank": 7,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "The Land and Its People",
@@ -491,10 +491,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 8,
+      "weeksOnList": 9,
       "rank": 10,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "London Falling",
@@ -510,10 +510,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 15,
-      "rank": 4,
+      "weeksOnList": 16,
+      "rank": 6,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "Famesick",
@@ -529,10 +529,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 12,
-      "rank": 14,
+      "weeksOnList": 13,
+      "rank": 15,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15213178-L.jpg"
     },
     {
@@ -551,10 +551,10 @@
         "Dutch",
         "Italian"
       ],
-      "weeksOnList": 66,
-      "rank": 3,
+      "weeksOnList": 112,
+      "rank": 13,
       "source": "nyt",
-      "lastUpdated": "2026-07-24",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15104803-L.jpg"
     },
     {
@@ -699,10 +699,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 1,
+      "weeksOnList": 2,
+      "rank": 7,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15238299-L.jpg"
     },
     {
@@ -719,10 +719,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 7,
+      "weeksOnList": 2,
+      "rank": 10,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "The Romance Revival",
@@ -805,10 +805,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 2,
+      "weeksOnList": 2,
+      "rank": 9,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "Push the Wall",
@@ -1456,7 +1456,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/7433278-L.jpg"
     },
     {
-      "title": "Here'S to Us",
+      "title": "Here's to Us",
       "titleZh": "",
       "author": "Elin Hilderbrand",
       "authorZh": "",
@@ -1496,7 +1496,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/8261375-L.jpg"
     },
     {
-      "title": "Bill O'Reilly'S Legends and Lies",
+      "title": "Bill O'Reilly's Legends and Lies",
       "titleZh": "",
       "author": "David Fisher",
       "authorZh": "",
@@ -1768,7 +1768,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/8289348-L.jpg"
     },
     {
-      "title": "No Man'S Land",
+      "title": "No Man's Land",
       "titleZh": "",
       "author": "David Baldacci",
       "authorZh": "",
@@ -1812,7 +1812,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/9323434-L.jpg"
     },
     {
-      "title": "A Dog'S Purpose",
+      "title": "A Dog's Purpose",
       "titleZh": "",
       "author": "W. Bruce Cameron",
       "authorZh": "",
@@ -2192,7 +2192,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/9216272-L.jpg"
     },
     {
-      "title": "The Handmaid'S Tale",
+      "title": "The Handmaid's Tale",
       "titleZh": "",
       "author": "Margaret Atwood",
       "authorZh": "",
@@ -2343,7 +2343,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/10713424-L.jpg"
     },
     {
-      "title": "Don'T Let Go",
+      "title": "Don't Let Go",
       "titleZh": "",
       "author": "Harlan Coben",
       "authorZh": "",
@@ -3617,7 +3617,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/9079081-L.jpg"
     },
     {
-      "title": "Tiamat'S Wrath",
+      "title": "Tiamat's Wrath",
       "titleZh": "",
       "author": "James S.A. Corey",
       "authorZh": "",
@@ -5021,10 +5021,10 @@
         "Hebrew",
         "Spanish"
       ],
-      "weeksOnList": 304,
-      "rank": 6,
+      "weeksOnList": 305,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/8315367-L.jpg"
     },
     {
@@ -5049,7 +5049,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/10571017-L.jpg"
     },
     {
-      "title": "The President'S Daughter",
+      "title": "The President's Daughter",
       "titleZh": "",
       "author": "James Patterson and Bill Clinton",
       "authorZh": "",
@@ -5313,7 +5313,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/10693559-L.jpg"
     },
     {
-      "title": "The Judge'S List",
+      "title": "The Judge's List",
       "titleZh": "",
       "author": "John Grisham",
       "authorZh": "",
@@ -5832,7 +5832,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/14655682-L.jpg"
     },
     {
-      "title": "I'M Glad My Mom Died",
+      "title": "I'm Glad My Mom Died",
       "titleZh": "",
       "author": "Jennette McCurdy",
       "authorZh": "",
@@ -6187,10 +6187,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 7,
-      "rank": 13,
+      "weeksOnList": 8,
+      "rank": 15,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-08-03"
     },
     {
       "title": "Happy Place",
@@ -7215,7 +7215,7 @@
       "coverUrl": "https://covers.openlibrary.org/b/id/14826089-L.jpg"
     },
     {
-      "title": "Nobody'S Fool",
+      "title": "Nobody's Fool",
       "titleZh": "",
       "author": "Harlan Coben",
       "authorZh": "",
@@ -7293,7 +7293,7 @@
       "lastUpdated": "2026-07-24"
     },
     {
-      "title": "Don'T Let Him in",
+      "title": "Don't Let Him in",
       "titleZh": "",
       "author": "Lisa Jewell",
       "authorZh": "",
@@ -7312,7 +7312,7 @@
       "lastUpdated": "2026-07-24"
     },
     {
-      "title": "A Mother'S Love",
+      "title": "A Mother's Love",
       "titleZh": "",
       "author": "Danielle Steel",
       "authorZh": "",
@@ -7779,10 +7779,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 33,
-      "rank": 2,
+      "weeksOnList": 34,
+      "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -7807,10 +7807,10 @@
         "Korean",
         "Finnish"
       ],
-      "weeksOnList": 58,
+      "weeksOnList": 59,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/11200092-L.jpg"
     },
     {
@@ -7833,10 +7833,10 @@
         "Spanish",
         "Portuguese"
       ],
-      "weeksOnList": 10,
-      "rank": 14,
+      "weeksOnList": 11,
+      "rank": 13,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/10201611-L.jpg"
     },
     {
@@ -7876,14 +7876,133 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 9,
+      "weeksOnList": 10,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/14805268-L.jpg"
+    },
+    {
+      "title": "Cool Machine",
+      "titleZh": "",
+      "author": "Colson Whitehead",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385550505",
+      "description": "In the third book in the Harlem trilogy, 1980s crime and capitalism affect Ray Carney and the people around him.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 8,
+      "source": "nyt",
+      "lastUpdated": "2026-08-03"
+    },
+    {
+      "title": "A Forsaken Prophecy",
+      "titleZh": "",
+      "author": "Stacey McEwan",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668076279",
+      "description": "The second book in the Artisan trilogy. Nina and Patrick search for resources that may alter the course of the war.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 11,
+      "source": "nyt",
+      "lastUpdated": "2026-08-03"
+    },
+    {
+      "title": "Mad Mabel",
+      "titleZh": "",
+      "author": "Sally Hepworth",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781250284556",
+      "description": "An elderly woman who was once Australia’s youngest convicted murderer tries to keep her previous life hidden.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 14,
+      "source": "nyt",
+      "lastUpdated": "2026-08-03",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15149022-L.jpg"
+    },
+    {
+      "title": "This Is the Plan",
+      "titleZh": "",
+      "author": "Ben Wikler",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781324131434",
+      "description": "The former chair of the Democratic Party of Wisconsin shares his perspectives on what it takes to win elections.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-08-03"
+    },
+    {
+      "title": "Dogs, Boys, and Other Things I've Cried About",
+      "titleZh": "",
+      "author": "Isabel Klee",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063451070",
+      "description": "Klee helps foster dogs overcome challenges while she faces her own complications.",
+      "descriptionZh": "",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 5,
+      "rank": 8,
+      "source": "nyt",
+      "lastUpdated": "2026-08-03"
+    },
+    {
+      "title": "All About Love",
+      "titleZh": "",
+      "author": "bell hooks",
+      "authorZh": "",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780060959470",
+      "description": "The late feminist icon explores the causes of a polarized society and the meaning of love.",
+      "descriptionZh": "",
+      "languages": [
+        "German",
+        "English",
+        "Spanish",
+        "Portuguese"
+      ],
+      "weeksOnList": 63,
+      "rank": 14,
+      "source": "nyt",
+      "lastUpdated": "2026-08-03",
+      "coverUrl": "https://covers.openlibrary.org/b/id/42317-L.jpg"
     }
   ],
-  "lastUpdated": "2026-07-31T19:25:22.258Z",
+  "lastUpdated": "2026-08-03T22:17:20.419Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
