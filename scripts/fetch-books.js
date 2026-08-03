@@ -536,7 +536,20 @@ async function main() {
   console.log(`\nSaved ${existingBooks.length} books to ${DATA_FILE}`);
 }
 
+if (require.main === module) {
 main().catch(err => {
   console.error("Error:", err);
   process.exit(1);
 });
+}
+
+// Exported so tooling can reuse the real enrichment path instead of
+// reimplementing it. Importing this file must not kick off a full NYT run.
+module.exports = {
+enrichBook,
+enrichFromOpenLibrary,
+enrichFromGoogleBooks,
+translateToChinese,
+enrichStats,
+translateStats,
+};
