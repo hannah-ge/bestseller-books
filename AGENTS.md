@@ -113,7 +113,12 @@ the data was wrong. That pattern is the thing to watch for in this repo.
   → `400 "API key not valid"`, which proves Google actually read it.
 
 - **41 ALL-CAPS titles** persisted because `toTitleCase` ran only on insert.
-  It now re-runs over every book on every run.
+  It now re-runs over every book on every run. The same function also treated an
+  apostrophe as a word boundary and produced `It'S`, `Don'T`, `The Handmaid'S
+  Tale`, and because it only ever ran on ALL-CAPS input, anything it had already
+  mangled was never revisited. The suffix repair now runs on every input and is
+  idempotent, and only lowers known contractions so `O'Brien` and `D'Angelo`
+  survive.
 
 - **Ten books were dated to the wrong year** because the year came from
   `bestsellers_date`; a Jan-15 list is dated to the prior December.
@@ -123,7 +128,15 @@ the data was wrong. That pattern is the thing to watch for in this repo.
   rebuilt by `populateLangFilter()` after the async load. `scripts/smoke-test.js`
   asserts against exactly this.
 
-### Two traps worth knowing
+### Three traps worth knowing
+
+- **All book text must go through `escapeHtml()` before it reaches markup.**
+  `render()` builds cards by string concatenation, and titles, authors and
+  descriptions come from the NYT and OpenLibrary feeds. Descriptions already
+  contain quotes today (`"Dungeon Crawler Carl"`), and an unescaped title with a
+  quote breaks `alt="…"` while `<img src=x onerror=…>` in any field becomes a
+  live XSS. Verified by injecting a hostile book: pre-fix it put a working
+  `onerror` handler in the DOM, post-fix it renders as literal text.
 
 - **The prune floor has a year of slack** (`PRUNE_SLACK_YEARS`). Removing it
   looks harmless and is not: because January lists carry December dates, a

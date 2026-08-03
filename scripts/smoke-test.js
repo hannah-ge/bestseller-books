@@ -28,8 +28,12 @@ const flag = (name, fallback) => {
   return i !== -1 && args[i + 1] ? args[i + 1] : fallback;
 };
 
-const BASE = flag('--url', 'http://localhost:8000');
-const PAGE = `${BASE}/index.html`;
+// --url accepts either a base ("http://localhost:8000") or a full page URL
+// ending in .html, so a fault-injected copy can be tested without renaming it
+// over the real index.html.
+const URL_ARG = flag('--url', 'http://localhost:8000');
+const PAGE = URL_ARG.endsWith('.html') ? URL_ARG : `${URL_ARG}/index.html`;
+const BASE = PAGE.slice(0, PAGE.lastIndexOf('/'));
 // Generous, because it covers a real network fetch of data/books.json.
 const SETTLE_MS = Number(flag('--settle', 8000));
 
@@ -125,6 +129,77 @@ async function main() {
   check('filtering narrows results', jp > 0 && jp < rendered, `Japanese → ${jp} cards`);
   const restored = await filterBy('');
   check('clearing filter restores all', restored === rendered, `${restored} cards`);
+
+  // Sorting. Ordering bugs are invisible in a screenshot, so assert the whole
+  // resulting sequence. Comparing only the first and last card is not enough:
+  // an unsorted list often satisfies that by chance.
+  const sortSel = d.getElementById('sortFilter');
+  const sortBy = async value => {
+    sortSel.value = value;
+    sortSel.dispatchEvent(new w.Event('change'));
+    await new Promise(r => setTimeout(r, 300));
+    return $('#grid > .card');
+  };
+  const nonIncreasing = seq => seq.every((v, i) => i === 0 || seq[i - 1] >= v);
+
+  const byLangs = await sortBy('langs-desc');
+  const langSeq = byLangs.map(c => c.querySelectorAll('.lang-tag').length);
+  check('sort by most translated', langSeq.length > 1 && nonIncreasing(langSeq),
+    `${langSeq[0]} … ${langSeq[langSeq.length - 1]}${nonIncreasing(langSeq) ? '' : ' — sequence not descending'}`);
+
+  const byYear = await sortBy('year-desc');
+  const yearOf = c => parseInt((c.querySelector('.card-year')?.textContent || '').match(/\d{3,4}/)?.[0] || '0', 10);
+  const yearSeq = byYear.map(yearOf);
+  check('sort by newest first', yearSeq.length > 1 && nonIncreasing(yearSeq),
+    `${yearSeq[0]} … ${yearSeq[yearSeq.length - 1]}${nonIncreasing(yearSeq) ? '' : ' — sequence not descending'}`);
+  await sortBy('');
+
+  // Search has to cover genre, description and country. Restricting it to title
+  // and author made "thriller" and "Japan" return nothing, which reads as broken.
+  const searchBox = d.getElementById('search');
+  const searchFor = async q => {
+    searchBox.value = q;
+    searchBox.dispatchEvent(new w.Event('input'));
+    await new Promise(r => setTimeout(r, 400));
+    return cards();
+  };
+  const byGenre = await searchFor('thriller');
+  check('search matches genre', byGenre > 0, `"thriller" → ${byGenre} cards`);
+  const byCountry = await searchFor('japan');
+  check('search matches country', byCountry > 0, `"japan" → ${byCountry} cards`);
+
+  // The escape hatch out of a zero-result state.
+  const clearBtn = d.getElementById('clearFilters');
+  check('clear button appears while filtering', clearBtn && !clearBtn.hidden);
+  clearBtn.dispatchEvent(new w.Event('click', { bubbles: true }));
+  await new Promise(r => setTimeout(r, 400));
+  check('clear resets search and grid', cards() === rendered && searchBox.value === '',
+    `${cards()} cards`);
+
+  // Language tags double as filters. They must be real buttons, not spans
+  // inside the Goodreads link, or clicking one navigates away instead.
+  // These run unconditionally — skipping them on a missing tag would quietly
+  // shrink the check count and read as success.
+  const tag = $('#grid .lang-tag').find(t => t.dataset.lang === 'Japanese');
+  check('language tags are buttons', !!tag && tag.tagName === 'BUTTON',
+    tag ? tag.tagName : 'no tag with data-lang="Japanese"');
+
+  if (tag) tag.dispatchEvent(new w.Event('click', { bubbles: true }));
+  await new Promise(r => setTimeout(r, 400));
+  check('clicking a language tag filters', !!tag && sel.value === 'Japanese' && cards() < rendered,
+    tag ? `${cards()} cards, langFilter="${sel.value}"` : 'no clickable tag');
+  check('filter state written to the URL', w.location.search.includes('lang=Japanese'),
+    w.location.search || 'empty');
+
+  sel.value = '';
+  d.getElementById('clearFilters').dispatchEvent(new w.Event('click', { bubbles: true }));
+  await new Promise(r => setTimeout(r, 400));
+
+  // Book text goes straight into markup, so it must be escaped. Descriptions
+  // already contain quotes today; a title with one would break the card.
+  const strayScripts = $('#grid script').length;
+  check('no markup injected from book text', strayScripts === 0,
+    strayScripts ? `${strayScripts} <script> inside the grid` : 'clean');
 
   // i18n: the known trap is text that is only wired up inside updateUI(), so it
   // renders blank until the user toggles language.

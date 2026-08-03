@@ -28,7 +28,7 @@ both from `updateUI()` and again at startup.
 
 ## The three edits
 
-**1. Add the key to both language blocks.** They currently hold 30 keys each and
+**1. Add the key to both language blocks.** They currently hold 38 keys each and
 parity is exact — keep it that way.
 
 ```js
@@ -47,6 +47,7 @@ Some keys are **functions**, not strings, because they interpolate:
 | `footerRelease` | 1 | `Last released <strong>{date}</strong>` |
 | `voteCount` | 1 | `{n} votes` |
 | `ratingAria` | 1 | `Rated {n} out of 5 stars` |
+| `filterByLang` | 1 | `Show only books available in {language}` |
 
 Match the arity in both languages. Chinese word order often differs, so write
 the translation as its own template rather than substituting into the English

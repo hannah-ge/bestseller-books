@@ -234,7 +234,7 @@
       width: min(1120px, 100%);
       margin-top: 50px;
       display: grid;
-      grid-template-columns: minmax(260px, 2.1fr) minmax(140px, 1.2fr) minmax(110px, 0.9fr) minmax(120px, 1fr) minmax(120px, 1fr);
+      grid-template-columns: minmax(240px, 1.9fr) minmax(130px, 1.1fr) minmax(105px, 0.85fr) minmax(115px, 1fr) minmax(115px, 1fr) minmax(130px, 1.05fr);
       gap: 14px;
     }
 
@@ -488,9 +488,39 @@
     .languages { display: flex; flex-wrap: wrap; gap: 6px; }
 
     .lang-tag {
+      font-family: inherit;
       font-size: 0.75rem; padding: 4px 10px; border-radius: 0.625rem;
       background: var(--cp-surface-soft); border: 1px solid var(--cp-border); color: var(--cp-text-soft);
+      cursor: pointer;
+      transition: background .15s ease, color .15s ease, border-color .15s ease;
     }
+
+    .lang-tag:hover { border-color: var(--accent); color: var(--accent); }
+    .lang-tag:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    /* Marks the language currently being filtered on, so a click has visible effect. */
+    .lang-tag.is-active {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+
+    .clear-filters {
+      font-family: inherit;
+      font-size: 0.78rem;
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(169,25,63,.35);
+      background: transparent;
+      color: var(--accent);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background .15s ease, color .15s ease;
+    }
+
+    .clear-filters:hover { background: var(--accent); color: #fff; }
+    .clear-filters:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .clear-filters[hidden] { display: none; }
 
     .empty-state { text-align: center; padding: 60px 20px; color: var(--cp-text-muted); }
     .empty-state h3 { margin-bottom: 8px; }
@@ -848,11 +878,25 @@
             <select id="langFilter"><option value="">All Languages</option></select>
           </div>
         </label>
+        <label class="control">
+          <i data-lucide="arrow-up-down"></i>
+          <div class="select-wrap">
+            <select id="sortFilter">
+              <option value="">Default order</option>
+              <option value="year-desc">Newest first</option>
+              <option value="year-asc">Oldest first</option>
+              <option value="title-asc">Title A–Z</option>
+              <option value="langs-desc">Most translated</option>
+              <option value="rating-desc">Highest rated</option>
+            </select>
+          </div>
+        </label>
       </div>
 
       <div class="book-count">
         <i data-lucide="library"></i>
         <span id="stats"></span>
+        <button type="button" id="clearFilters" class="clear-filters" hidden>Clear filters</button>
       </div>
     </div>
 
@@ -904,9 +948,17 @@
         title: "The World's\nBookshelf",
         eyebrow: "Explore the collection",
         subtitle: "Bestsellers, timeless classics & hidden gems — across 12 countries and dozens of languages",
-        searchPlaceholder: "Search by title, author, or language...",
+        searchPlaceholder: "Search by title, author, genre, or language...",
         allYears: "All Years",
         allGenres: "All Genres",
+        sortDefault: "Default order",
+        sortYearDesc: "Newest first",
+        sortYearAsc: "Oldest first",
+        sortTitleAsc: "Title A–Z",
+        sortLangsDesc: "Most translated",
+        sortRatingDesc: "Highest rated",
+        clearFilters: "Clear filters",
+        filterByLang: (l) => `Show only books available in ${l}`,
         showing: (n, total) => `Showing ${n} of ${total} books`,
         langLabel: (n) => `Available in ${n} languages`,
         viewGoodreads: "View on Goodreads →",
@@ -936,9 +988,17 @@
         title: "世界\n书架",
         eyebrow: "探索书藏",
         subtitle: "畅销书、经典名著与沧海遗珠 — 跨越12个国家，数十种语言",
-        searchPlaceholder: "按书名、作者或语言搜索...",
+        searchPlaceholder: "按书名、作者、类别或语言搜索...",
         allYears: "所有年份",
         allGenres: "所有类别",
+        sortDefault: "默认排序",
+        sortYearDesc: "最新优先",
+        sortYearAsc: "最早优先",
+        sortTitleAsc: "书名 A–Z",
+        sortLangsDesc: "译本最多",
+        sortRatingDesc: "评分最高",
+        clearFilters: "清除筛选",
+        filterByLang: (l) => `只看有${l}版本的书`,
         showing: (n, total) => `显示 ${n} / ${total} 本书`,
         langLabel: (n) => `提供 ${n} 种语言版本`,
         viewGoodreads: "在 Goodreads 上查看 →",
@@ -1192,6 +1252,8 @@
     const yearFilter = document.getElementById("yearFilter");
     const genreFilter = document.getElementById("genreFilter");
     const langFilter = document.getElementById("langFilter");
+    const sortFilter = document.getElementById("sortFilter");
+    const clearFiltersBtn = document.getElementById("clearFilters");
     const searchInput = document.getElementById("search");
     const grid = document.getElementById("grid");
     const stats = document.getElementById("stats");
@@ -1243,6 +1305,21 @@
 
       // Update language filter label
       langFilter.options[0].textContent = currentLang === "zh" ? "所有语言" : "All Languages";
+
+      // Update sort options. Values are stable ids; only the labels are localised.
+      const sortLabels = {
+        "": t.sortDefault,
+        "year-desc": t.sortYearDesc,
+        "year-asc": t.sortYearAsc,
+        "title-asc": t.sortTitleAsc,
+        "langs-desc": t.sortLangsDesc,
+        "rating-desc": t.sortRatingDesc,
+      };
+      for (const opt of sortFilter.options) {
+        if (sortLabels[opt.value]) opt.textContent = sortLabels[opt.value];
+      }
+
+      clearFiltersBtn.textContent = t.clearFilters;
 
       // Update country filter
       const countryOpts = countryFilter.options;
@@ -1587,13 +1664,44 @@
       castVote(btn.dataset.key, btn.dataset.vote);
     });
 
+    // Ranks a book for the "highest rated" sort. Unrated books sort last rather
+    // than scoring 0, so a single downvote doesn't outrank "no opinion yet".
+    function ratingRank(b) {
+      const { up, down } = tallyFor(bookKey(b));
+      const total = up + down;
+      if (!total) return { score: -1, total: 0 };
+      return { score: up / total, total };
+    }
+
+    const SORTERS = {
+      "year-desc": (a, b) => (b.year || 0) - (a.year || 0),
+      "year-asc": (a, b) => (a.year || 0) - (b.year || 0),
+      "title-asc": (a, b) => {
+        const key = (x) => (currentLang === "zh" ? (x.titleZh || x.title) : x.title) || "";
+        return key(a).localeCompare(key(b), currentLang === "zh" ? "zh-Hans" : "en");
+      },
+      "langs-desc": (a, b) => (b.languages || []).length - (a.languages || []).length,
+      "rating-desc": (a, b) => {
+        const ra = ratingRank(a), rb = ratingRank(b);
+        return rb.score - ra.score || rb.total - ra.total;
+      },
+    };
+
+    function anyFilterActive() {
+      return Boolean(
+        searchInput.value.trim() || yearFilter.value || genreFilter.value ||
+        langFilter.value || countryFilter.value || sortFilter.value
+      );
+    }
+
     function render() {
       const t = i18n[currentLang];
-      const query = searchInput.value.toLowerCase();
+      const query = searchInput.value.toLowerCase().trim();
       const year = yearFilter.value;
       const genre = genreFilter.value;
       const lang = langFilter.value;
       const country = countryFilter.value;
+      const sort = sortFilter.value;
 
       const filtered = books.filter(b => {
         if (country && b.country !== country) return false;
@@ -1601,32 +1709,50 @@
         if (genre && b.genre !== genre) return false;
         if (lang && !b.languages.includes(lang)) return false;
         if (query) {
-          const hay = `${b.title} ${b.titleZh} ${b.author} ${b.authorZh} ${b.languages.join(" ")}`.toLowerCase();
+          // Genre, description and country are searched too. Without them,
+          // typing "thriller" or "Japan" returned nothing, which reads as a
+          // broken search rather than an empty result.
+          const c = countries.find(x => x.id === b.country);
+          const hay = [
+            b.title, b.titleZh, b.author, b.authorZh,
+            b.genre, genreTranslations[b.genre],
+            b.description, b.descriptionZh,
+            c && c.name, c && c.nameZh,
+            (b.languages || []).join(" "),
+          ].filter(Boolean).join(" ").toLowerCase();
           if (!hay.includes(query)) return false;
         }
         return true;
       });
 
+      if (SORTERS[sort]) filtered.sort(SORTERS[sort]);
+
       stats.textContent = t.showing(filtered.length, books.length);
+      clearFiltersBtn.hidden = !anyFilterActive();
 
       if (filtered.length === 0) {
-        grid.innerHTML = `<div class="empty-state"><h3>${t.noBooks}</h3><p>${t.noBooksHint}</p></div>`;
+        grid.innerHTML = `<div class="empty-state"><h3>${escapeHtml(t.noBooks)}</h3><p>${escapeHtml(t.noBooksHint)}</p></div>`;
         return;
       }
 
       grid.innerHTML = filtered.map(b => {
-        const title = currentLang === "zh" ? (b.titleZh || b.title) : b.title;
-        const author = currentLang === "zh" ? (b.authorZh || b.author) : b.author;
-        const desc = currentLang === "zh" ? (b.descriptionZh || b.description) : b.description;
-        const genreLabel = currentLang === "zh" ? (genreTranslations[b.genre] || b.genre) : b.genre;
+        // Every value below is book text from the NYT / OpenLibrary feeds and
+        // goes straight into markup, so it all has to be escaped. Descriptions
+        // already contain quotes ("Dungeon Crawler Carl"), and a title with a
+        // quote or angle bracket would otherwise break the card or the alt.
+        const title = escapeHtml(currentLang === "zh" ? (b.titleZh || b.title) : b.title);
+        const author = escapeHtml(currentLang === "zh" ? (b.authorZh || b.author) : b.author);
+        const desc = escapeHtml(currentLang === "zh" ? (b.descriptionZh || b.description) : b.description);
+        const genreLabel = escapeHtml(currentLang === "zh" ? (genreTranslations[b.genre] || b.genre) : b.genre);
         const goodreadsUrl = `https://www.goodreads.com/search?q=${encodeURIComponent(b.title + " " + b.author)}`;
         const c = countries.find(x => x.id === b.country);
         const countryLabel = c ? c.flag : "";
+        const coverSrc = escapeHtml(b.coverUrl || b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`);
         return `
         <article class="card">
           <a class="card-link" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
             <div class="card-body">
-              <img class="card-cover" src="${b.coverUrl || b.googleCover || `https://covers.openlibrary.org/b/isbn/${b.isbn}-M.jpg`}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
+              <img class="card-cover" src="${coverSrc}" alt="${title} cover" loading="lazy" onerror="this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" onload="if(this.naturalWidth<10)this.outerHTML='<div class=\\'card-cover-placeholder\\'>📖</div>'" />
               <div class="card-info">
                 <div class="card-header">
                   <div>
@@ -1639,10 +1765,15 @@
                 <div class="card-description">${desc}</div>
               </div>
             </div>
-            <div class="languages-label">${t.langLabel(b.languages.length)}</div>
-            <div class="languages">
-              ${b.languages.map(l => `<span class="lang-tag">${l}</span>`).join("")}
-            </div>
+          </a>
+          <div class="languages-label">${t.langLabel(b.languages.length)}</div>
+          <div class="languages">
+            ${b.languages.map(l => {
+              const safe = escapeHtml(l);
+              return `<button type="button" class="lang-tag${l === lang ? " is-active" : ""}" data-lang="${safe}" title="${escapeHtml(t.filterByLang(l))}" aria-pressed="${l === lang}">${safe}</button>`;
+            }).join("")}
+          </div>
+          <a class="card-link" href="${goodreadsUrl}" target="_blank" rel="noopener noreferrer">
             <div class="card-link-hint">${t.viewGoodreads}</div>
           </a>
           ${ratingMarkup(bookKey(b))}
@@ -1650,11 +1781,77 @@
       `}).join("");
     }
 
-    searchInput.addEventListener("input", render);
-    yearFilter.addEventListener("change", render);
-    genreFilter.addEventListener("change", render);
-    langFilter.addEventListener("change", render);
-    countryFilter.addEventListener("change", render);
+    // Filter state lives in the URL so a filtered view can be shared or
+    // bookmarked, and so Back undoes a filter instead of leaving the page.
+    const URL_PARAMS = {
+      q: searchInput, country: countryFilter, year: yearFilter,
+      genre: genreFilter, lang: langFilter, sort: sortFilter,
+    };
+
+    function syncUrlFromFilters() {
+      const params = new URLSearchParams();
+      for (const [key, el] of Object.entries(URL_PARAMS)) {
+        const v = el.value.trim();
+        if (v) params.set(key, v);
+      }
+      const qs = params.toString();
+      history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+    }
+
+    function applyFiltersFromUrl() {
+      const params = new URLSearchParams(location.search);
+      let applied = false;
+      for (const [key, el] of Object.entries(URL_PARAMS)) {
+        const v = params.get(key);
+        if (v === null) continue;
+        // Selects silently ignore values that aren't options; only accept real ones.
+        if (el.tagName === "SELECT" && !Array.from(el.options).some(o => o.value === v)) continue;
+        el.value = v;
+        applied = true;
+      }
+      return applied;
+    }
+
+    function renderAndSync() {
+      render();
+      syncUrlFromFilters();
+    }
+
+    // render() rebuilds every card from a string — roughly 1 MB of markup and
+    // 14k nodes for the full set. Debouncing keeps that off the keystroke path.
+    let searchDebounce;
+    searchInput.addEventListener("input", () => {
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(renderAndSync, 150);
+    });
+
+    yearFilter.addEventListener("change", renderAndSync);
+    genreFilter.addEventListener("change", renderAndSync);
+    langFilter.addEventListener("change", renderAndSync);
+    countryFilter.addEventListener("change", renderAndSync);
+    sortFilter.addEventListener("change", renderAndSync);
+
+    clearFiltersBtn.addEventListener("click", () => {
+      Object.values(URL_PARAMS).forEach(el => { el.value = ""; });
+      renderAndSync();
+      searchInput.focus();
+    });
+
+    // Language tags filter the grid. Delegated, because the grid is replaced
+    // wholesale on every render and per-tag listeners would not survive it.
+    grid.addEventListener("click", (e) => {
+      const tag = e.target.closest(".lang-tag");
+      if (!tag) return;
+      const value = tag.dataset.lang;
+      langFilter.value = langFilter.value === value ? "" : value;
+      renderAndSync();
+    });
+
+    window.addEventListener("popstate", () => {
+      Object.values(URL_PARAMS).forEach(el => { el.value = ""; });
+      applyFiltersFromUrl();
+      render();
+    });
 
     // Google Books API integration - enrich book data with live cover/language info
     const CACHE_KEY = "bestseller_books_cache";
@@ -1775,6 +1972,10 @@
             yearFilter.appendChild(opt);
           });
           populateLangFilter();
+          // The year and language selects were just rebuilt, which drops any
+          // active selection. Re-applying from the URL restores it — this also
+          // fixes filters being silently cleared when the data arrives.
+          applyFiltersFromUrl();
           render();
           console.log(`Loaded ${added} new books from data/books.json`);
         }
@@ -1787,6 +1988,7 @@
     // Initial render with static data, then enrich.
     // updateUI() only runs on language switch, so the footer timestamp has
     // to be filled in here too or it stays blank until someone toggles language.
+    applyFiltersFromUrl();
     render();
     updateFooterRelease();
     loadDynamicBooks();

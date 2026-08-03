@@ -24,8 +24,14 @@ python -m http.server 8000     # separate terminal, from the repo root
 node scripts/smoke-test.js
 ```
 
-Options: `--url http://localhost:3000`, `--settle 12000` (raise if the data fetch
-is slow).
+Options: `--settle 12000` (raise if the data fetch is slow) and `--url`, which
+accepts either a base (`--url http://localhost:3000`) or a full page URL ending
+in `.html`. The second form matters for fault injection: it lets you point the
+test at a deliberately broken copy without overwriting `index.html`.
+
+```bash
+node scripts/smoke-test.js --url http://localhost:8000/index-broken.html
+```
 
 `jsdom` is an optional, dev-only dependency and is deliberately **not** in a
 `package.json` — the site ships as static files with no install step. If it is
@@ -46,10 +52,25 @@ npm install --no-save jsdom
 | Ukrainian/Catalan/Hungarian selectable | Enrichment languages unreachable in the UI |
 | Covers have `http` URLs | `coverUrl` mapping broken |
 | Filtering narrows, clearing restores | Options exist but do not actually filter |
+| Sort sequences are non-increasing | Sort control wired up but not applied |
+| Search finds a genre and a country | Search narrowed back to title/author only |
+| Clear button appears, then resets | No escape hatch from a zero-result state |
+| Language tags are `<button>` | Tags moved back inside the Goodreads `<a>` |
+| Clicking a tag filters and updates the URL | Delegated handler or URL sync broken |
+| No `<script>` inside the grid | Book text interpolated without `escapeHtml` |
 | Title non-empty **before** any toggle | The `updateUI()` trap — see the `i18n` skill |
 | Chinese toggle changes title, cards survive | i18n regressions |
 | Footer release date non-empty | The blank-footer bug specifically |
 | No uncaught page errors | Anything throwing during startup |
+
+**Assert sequences, not endpoints.** The sort checks originally compared only the
+first and last card. An unsorted list satisfied that by chance, so removing the
+sort entirely still passed. They now verify the whole sequence.
+
+**Never skip a check when its precondition fails.** An early `if (tag) { … }`
+guard meant a missing element quietly dropped two checks and the run still
+reported success, just with a smaller total. Failing preconditions must fail
+loudly instead.
 
 ## Reading a failure
 
