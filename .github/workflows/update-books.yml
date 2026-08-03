@@ -42,6 +42,19 @@ jobs:
       - name: Validate data before publishing
         run: node scripts/validate-books.js
 
+      # Structural validity does not prove the page renders. This loads the real
+      # index.html headlessly and asserts on the post-load DOM, which is the only
+      # check that catches a silent async-load failure.
+      - name: Smoke test the page
+        run: |
+          npm install --no-save jsdom
+          python3 -m http.server 8000 &
+          for i in $(seq 1 15); do
+            curl -sf http://localhost:8000/index.html >/dev/null && break
+            sleep 1
+          done
+          node scripts/smoke-test.js
+
       - name: Upload rejected data for inspection
         if: failure()
         uses: actions/upload-artifact@v4

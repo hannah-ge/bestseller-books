@@ -1,0 +1,9 @@
+# jsdom is an optional dev-only dependency for scripts/smoke-test.js, installed
+# with `npm install --no-save jsdom`. The site itself ships as static files with
+# no build step and no runtime dependencies.
+node_modules/
+package-lock.json
+
+# OS noise
+.DS_Store
+Thumbs.db

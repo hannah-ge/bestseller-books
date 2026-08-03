@@ -19,6 +19,19 @@ node scripts/validate-books.js
 
 Must exit 0. Warnings are existing debt and are fine; `FAIL` lines are blocking.
 
+## 1b. Prove the page still works
+
+Structural validity does not mean the UI renders. Run the headless assertions:
+
+```bash
+python -m http.server 8000     # separate terminal
+node scripts/smoke-test.js
+```
+
+Must exit 0. If `jsdom` is not installed it exits 0 with instructions — install
+it (`npm install --no-save jsdom`) rather than skipping this, because it is the
+only check that catches a silent async-load failure. See the `verify-ui` skill.
+
 ## 2. Confirm the RPC contract still matches
 
 This is the check that matters most. The client and the database schema live in

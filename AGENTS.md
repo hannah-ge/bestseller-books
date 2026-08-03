@@ -16,18 +16,20 @@ package.json. Open `index.html` and it runs.
 
 | Path | Role |
 |---|---|
-| `index.html` | The entire app — markup, CSS, i18n, ~137 curated books, voting engine. ~1,650 lines |
+| `index.html` | The entire app — markup, CSS, i18n, 135 curated books, voting engine. ~1,900 lines |
 | `data/books.json` | **Generated.** NYT data refreshed weekly by the Action |
-| `scripts/fetch-books.js` | The weekly scraper (NYT + Google Books + Google Translate) |
+| `scripts/fetch-books.js` | The weekly pipeline (NYT + OpenLibrary + Google Translate) |
 | `scripts/validate-books.js` | Publish gate. Runs in CI between fetch and commit |
+| `scripts/smoke-test.js` | Headless UI assertions. See the `verify-ui` skill |
 | `supabase-setup.sql` | Backend schema for global ratings. Safe to re-run |
 | `higashino-keigo.html` | Standalone tribute page |
 | `.github/workflows/update-books.yml` | Monday 09:00 UTC refresh |
 
-The page merges two sources at runtime: the ~137 books hardcoded in `index.html`
-(curated, rich language data) and everything in `data/books.json` (NYT, English
-only). Merge is by lowercased title; `loadDynamicBooks()` runs **async after**
-first paint, so counting cards immediately after load undercounts.
+The page merges two sources at runtime: the 135 books hardcoded in `index.html`
+(curated, hand-written Chinese) and everything in `data/books.json` (NYT, now
+enriched with languages and covers from OpenLibrary but no Chinese). Merge is by
+lowercased title; `loadDynamicBooks()` runs **async after** first paint, so
+counting cards immediately after load undercounts — ~135 rather than ~450.
 
 ## Hard rules
 
@@ -74,50 +76,52 @@ These each cost real debugging time. Read before editing.
 - **Supabase is CORS-blocked over `file://`.** To test voting locally you must
   serve over HTTP: `python -m http.server 8000`.
 
-## Known data debt
+## Data state and history
 
-Fixed (2026) — kept here because the failure mode is the interesting part:
+Current coverage, as reported by `node scripts/validate-books.js`:
 
-- Enrichment used to call Google Books keyless, which returns **HTTP 429** from a
-  shared runner IP. `fetchGoogleBooksLanguages` swallowed it and returned
-  `{ languages: [], cover: "" }`, so a completely failed run still produced a
-  green Action and a live commit. Every fetched book ended up `["English"]` with
-  no cover, for weeks, unnoticed.
-  Now **OpenLibrary** is the primary source — keyless, unthrottled, and it
-  aggregates *all editions*, which is exactly what a site about translations
-  needs. Google Books is only consulted if `GOOGLE_BOOKS_KEY` is set.
-  Result: multi-language 0% → 43%, covers 0% → 83%, 0 failures over 348 books.
-- Titles are re-normalised through `toTitleCase` on **every** run, not just on
-  insert, so the 41 legacy ALL-CAPS titles are gone and cannot come back.
-- The year now comes from the *requested* date, not `bestsellers_date` — a
-  Jan-15 list is dated to the prior December, which is what put books in 2015.
-- `data/books.json` no longer grows without bound: the current-week fetch is
-  capped to the same top-5 as the historical sampler, and books older than the
-  window are pruned.
+| Metric | Value |
+|---|---|
+| Books in `data/books.json` | 348 |
+| More than one language | ~43% |
+| With a cover image | ~83% |
+| With a Chinese title | 0% until the next successful Action run |
 
-Still outstanding:
+The remaining gaps are mostly genuine — a book with one edition really does have
+one language. Improvements lower the percentage, which the gate then locks in as
+the new ceiling.
 
-- ~17% of books still have no cover and ~57% resolve to English only. That is
-  usually a genuinely single-edition book, not a bug.
+### Resolved failures worth remembering
 
-Also fixed: Chinese translation. `GOOGLE_TRANSLATE_KEY` **was** configured in
-repo secrets and **was** passed correctly by the workflow — the script was
-sending it as a `key` field in the JSON POST body, which the Cloud Translation
-v2 API ignores. Every call came back `403 "unregistered callers"`, and that 403
-was swallowed into empty strings, so it looked identical to a missing secret.
-The key now travels in the `X-Goog-Api-Key` header (keeps it out of logged
-URLs), the target is explicitly `zh-CN`, Google's own error message is printed
-instead of a bare status, and a run where every translation fails exits 1
-before writing.
+Every one of these was **silent**: the run went green, the commit landed, and
+the data was wrong. That pattern is the thing to watch for in this repo.
 
-Proof of the diagnosis, if you ever need to re-check placement:
+- **Google Books returned HTTP 429** from shared runner IPs, and
+  `fetchGoogleBooksLanguages` swallowed it into `{ languages: [], cover: "" }`.
+  Every fetched book ended up `["English"]` with no cover, for weeks.
+  **OpenLibrary** is now primary — keyless, unthrottled, and it aggregates *all
+  editions*, which is what a site about translations actually needs. Google
+  Books is consulted only when `GOOGLE_BOOKS_KEY` is set. Result: multi-language
+  0% → 43%, covers 0% → 83%, zero failures across 348 books.
 
-```bash
-# key in body -> 403, Google never saw a key
-# key in header/query -> 400 "API key not valid", Google read it and rejected it
-```
+- **The Google Translate key was sent in the JSON POST body**, where the
+  Cloud Translation v2 API ignores it. Every call returned
+  `403 "unregistered callers"`, swallowed into empty strings — indistinguishable
+  from an unset secret, which is what everyone assumed for weeks. The key was
+  configured correctly the whole time. It now travels in the `X-Goog-Api-Key`
+  header. To re-diagnose placement: key in body → `403`; key in header or query
+  → `400 "API key not valid"`, which proves Google actually read it.
 
-Fixing any of these lowers the percentage, which the gate then locks in.
+- **41 ALL-CAPS titles** persisted because `toTitleCase` ran only on insert.
+  It now re-runs over every book on every run.
+
+- **Ten books were dated to the wrong year** because the year came from
+  `bestsellers_date`; a Jan-15 list is dated to the prior December.
+
+- **The language filter was built once at startup**, so the 20 languages added
+  by enrichment were in the data but unreachable in the dropdown. It is now
+  rebuilt by `populateLangFilter()` after the async load. `scripts/smoke-test.js`
+  asserts against exactly this.
 
 ### Two traps worth knowing
 
@@ -131,12 +135,30 @@ Fixing any of these lowers the percentage, which the gate then locks in.
   filter uses; an unmapped code is dropped rather than shown raw. If you add a
   language, add it to `nativeNames` in `index.html` too or it appears in English.
 
+## Skills
+
+Task-specific playbooks live in `.github/skills/`. Read the relevant one before
+starting — each encodes failures that have already happened here.
+
+| Skill | Use it for |
+|---|---|
+| `publish` | Shipping. Gate, RPC-contract check, secret scan, then the push command |
+| `add-book` | Adding or correcting a curated book in `index.html` |
+| `i18n` | Any user-facing string — the app is fully bilingual and fails silently |
+| `verify-ui` | Proving the page still works after a change |
+| `data-health` | Diagnosing missing covers, languages, or translations |
+| `supabase-migrate` | Changing the ratings schema without orphaning votes |
+
 ## Verifying a change
 
 ```bash
-node scripts/validate-books.js        # publish gate
-python -m http.server 8000            # then open http://localhost:8000
+node scripts/validate-books.js        # publish gate — data structure and quality
+python -m http.server 8000            # serve (never test over file://)
+node scripts/smoke-test.js            # headless UI assertions
 ```
+
+The smoke test needs `npm install --no-save jsdom`. It is optional and exits 0
+when absent, so it can never block a publish for being unconfigured.
 
 For anything touching voting, test on `localhost`, not `file://`, and confirm both
 the vote *and* the un-vote path, plus the blocked-vote toast.

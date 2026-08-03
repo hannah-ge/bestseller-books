@@ -23,8 +23,8 @@ line, in the same key order.
 
 | Field | Rule |
 |---|---|
-| `title` / `author` | Title Case. Never ALL CAPS — 41 entries already have that problem |
-| `titleZh` / `authorZh` / `descriptionZh` | Required. The site has full zh i18n; empty values fall back to English and look broken in Chinese mode |
+| `title` / `author` | Title Case. Never ALL CAPS — the pipeline normalises generated titles, but curated entries are never touched by it |
+| `titleZh` / `authorZh` / `descriptionZh` | Required. The site has full zh i18n; empty values fall back to English and look broken in Chinese mode. This is the main reason to add a book here rather than let the NYT feed carry it |
 | `year` | Integer, within the last 10 years, unless `genre` is `Classics` |
 | `country` | One of `US CN JP RU IN GB FR DE NL NO IS IT` — anything else silently disappears from the country filter |
 | `genre` | Reuse an existing value, do not invent one, or you fragment the filter: `Classics, Fantasy, Historical Fiction, Illustrated, Literary Fiction, Memoir, Mystery, Non-Fiction, Romance, Science Fiction, Self-Help, Thriller` |
@@ -53,9 +53,14 @@ grep -n "title: \"Your Title\"" index.html
 
 ```bash
 node scripts/validate-books.js     # guards the generated file is untouched
-python -m http.server 8000         # then open http://localhost:8000
+python -m http.server 8000
+node scripts/smoke-test.js         # asserts cards render and both languages work
 ```
 
 Confirm in the browser that the new card appears, its cover resolves, and it
 renders correctly in **both** languages — toggle to Chinese and back. A missing
 `titleZh` is invisible in English and obvious in Chinese.
+
+If the book introduces a language not already in the filter, add it to
+`nativeNames` in `index.html` as well, or it displays in English instead of its
+own script. See the `i18n` skill.
