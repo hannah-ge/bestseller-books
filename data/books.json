@@ -14,10 +14,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 16,
+      "weeksOnList": 17,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
@@ -34,10 +34,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 8,
+      "weeksOnList": 9,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234903-L.jpg"
     },
     {
@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 12,
+      "weeksOnList": 13,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -235,10 +235,10 @@
         "Portuguese",
         "French"
       ],
-      "weeksOnList": 29,
-      "rank": 6,
+      "weeksOnList": 30,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
@@ -378,7 +378,8 @@
       "weeksOnList": 1,
       "rank": 15,
       "source": "nyt",
-      "lastUpdated": "2026-07-22"
+      "lastUpdated": "2026-07-22",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15243278-L.jpg"
     },
     {
       "title": "Regime Change",
@@ -394,10 +395,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 5,
+      "weeksOnList": 6,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-10"
     },
     {
       "title": "Revolution",
@@ -452,10 +453,10 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 28,
-      "rank": 2,
+      "weeksOnList": 29,
+      "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/15165045-L.jpg"
     },
     {
@@ -5021,10 +5022,10 @@
         "Hebrew",
         "Spanish"
       ],
-      "weeksOnList": 305,
-      "rank": 4,
+      "weeksOnList": 306,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/8315367-L.jpg"
     },
     {
@@ -7779,10 +7780,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 34,
+      "weeksOnList": 35,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-08-03",
+      "lastUpdated": "2026-08-10",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -7973,10 +7974,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 5,
-      "rank": 8,
+      "weeksOnList": 6,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-10"
     },
     {
       "title": "All About Love",
@@ -8000,9 +8001,28 @@
       "source": "nyt",
       "lastUpdated": "2026-08-03",
       "coverUrl": "https://covers.openlibrary.org/b/id/42317-L.jpg"
+    },
+    {
+      "title": "Biological War",
+      "titleZh": "生物战",
+      "author": "Annie Jacobsen",
+      "authorZh": "安妮·雅各布森",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9798217046034",
+      "description": "The author of “Nuclear War” describes potential outcomes of biological warfare, including mass death and societal breakdown.",
+      "descriptionZh": "《核战争》一书的作者描述了生物战可能造成的后果，包括大规模死亡和社会崩溃。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-08-10"
     }
   ],
-  "lastUpdated": "2026-08-03T23:19:03.550Z",
+  "lastUpdated": "2026-08-10T10:22:12.184Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
