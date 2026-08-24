@@ -14,10 +14,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 17,
+      "weeksOnList": 19,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-08-10",
+      "lastUpdated": "2026-08-24",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 13,
+      "weeksOnList": 15,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-10",
+      "lastUpdated": "2026-08-24",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -235,10 +235,10 @@
         "Portuguese",
         "French"
       ],
-      "weeksOnList": 30,
-      "rank": 5,
+      "weeksOnList": 32,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-10",
+      "lastUpdated": "2026-08-24",
       "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
@@ -395,10 +395,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 6,
+      "weeksOnList": 8,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-08-10"
+      "lastUpdated": "2026-08-24"
     },
     {
       "title": "Revolution",
@@ -417,7 +417,8 @@
       "weeksOnList": 7,
       "rank": 12,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-03",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8076896-L.jpg"
     },
     {
       "title": "Cancel Me If You Can",
@@ -436,7 +437,8 @@
       "weeksOnList": 4,
       "rank": 11,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-03",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7884139-L.jpg"
     },
     {
       "title": "Strangers",
@@ -453,10 +455,10 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 29,
+      "weeksOnList": 31,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-08-10",
+      "lastUpdated": "2026-08-24",
       "coverUrl": "https://covers.openlibrary.org/b/id/15165045-L.jpg"
     },
     {
@@ -495,7 +497,8 @@
       "weeksOnList": 9,
       "rank": 10,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-03",
+      "coverUrl": "https://covers.openlibrary.org/b/id/12516140-L.jpg"
     },
     {
       "title": "London Falling",
@@ -511,10 +514,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 16,
-      "rank": 6,
+      "weeksOnList": 19,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-24"
     },
     {
       "title": "Famesick",
@@ -806,10 +809,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 2,
-      "rank": 9,
+      "weeksOnList": 3,
+      "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-03"
+      "lastUpdated": "2026-08-24"
     },
     {
       "title": "Push the Wall",
@@ -828,7 +831,8 @@
       "weeksOnList": 1,
       "rank": 13,
       "source": "nyt",
-      "lastUpdated": "2026-07-27"
+      "lastUpdated": "2026-07-27",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10403161-L.jpg"
     },
     {
       "title": "They Stole a City",
@@ -3489,7 +3493,8 @@
       "description": "Set 300 years before the events of “A Game of Thrones,” this is the first volume of the two-part history of the Targaryens in Westeros.",
       "descriptionZh": "故事发生在《权力的游戏》事件发生前 300 年，这是坦格利安家族在维斯特洛大陆历史的两卷本的第一卷。",
       "languages": [
-        "English"
+        "English",
+        "Italian"
       ],
       "weeksOnList": 6,
       "rank": 5,
@@ -4243,7 +4248,8 @@
       "weeksOnList": 1,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/9940595-L.jpg"
     },
     {
       "title": "The Last Odyssey",
@@ -5022,10 +5028,10 @@
         "Hebrew",
         "Spanish"
       ],
-      "weeksOnList": 306,
-      "rank": 5,
+      "weeksOnList": 308,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-10",
+      "lastUpdated": "2026-08-24",
       "coverUrl": "https://covers.openlibrary.org/b/id/8315367-L.jpg"
     },
     {
@@ -6041,7 +6047,8 @@
       "weeksOnList": 1,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6426475-L.jpg"
     },
     {
       "title": "Daisy Jones & the Six",
@@ -6439,7 +6446,8 @@
       "weeksOnList": 2,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24"
+      "lastUpdated": "2026-07-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6426475-L.jpg"
     },
     {
       "title": "Democracy Awakening",
@@ -7032,7 +7040,8 @@
       "description": "A reimagining of “Adventures of Huckleberry Finn” shines a different light on Mark Twain's classic, revealing new facets of the character of Jim.",
       "descriptionZh": "重新演绎的《哈克贝利·费恩历险记》为马克·吐温的经典之作赋予了不同的意义，揭示了吉姆这个角色的新侧面。",
       "languages": [
-        "English"
+        "English",
+        "French"
       ],
       "weeksOnList": 10,
       "rank": 1,
@@ -7780,10 +7789,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 35,
+      "weeksOnList": 37,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-08-10",
+      "lastUpdated": "2026-08-24",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -8020,9 +8029,28 @@
       "rank": 2,
       "source": "nyt",
       "lastUpdated": "2026-08-10"
+    },
+    {
+      "title": "The Secrets We Hide",
+      "titleZh": "我们隐藏的秘密",
+      "author": "Karin Slaughter",
+      "authorZh": "卡琳·斯劳特",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780063458819",
+      "description": "The second book in the North Falls thriller series. Sheriff Emmy Clifton investigates a crime in which a mother was murdered and her daughter left for dead.",
+      "descriptionZh": "《北瀑布》系列惊悚小说第二部。警长艾米·克利夫顿调查了一起母亲被谋杀、女儿被弃尸荒野的案件。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-08-24"
     }
   ],
-  "lastUpdated": "2026-08-10T10:22:12.184Z",
+  "lastUpdated": "2026-08-24T09:52:49.576Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
