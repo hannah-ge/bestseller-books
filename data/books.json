@@ -14,10 +14,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 19,
-      "rank": 3,
+      "weeksOnList": 20,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 15,
+      "weeksOnList": 16,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -235,10 +235,10 @@
         "Portuguese",
         "French"
       ],
-      "weeksOnList": 32,
-      "rank": 4,
+      "weeksOnList": 33,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
@@ -395,10 +395,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 8,
-      "rank": 1,
+      "weeksOnList": 9,
+      "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-24"
+      "lastUpdated": "2026-08-31"
     },
     {
       "title": "Revolution",
@@ -455,10 +455,10 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 31,
-      "rank": 3,
+      "weeksOnList": 32,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/15165045-L.jpg"
     },
     {
@@ -2853,10 +2853,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
+      "weeksOnList": 2,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/8797550-L.jpg"
     },
     {
@@ -5028,10 +5028,10 @@
         "Hebrew",
         "Spanish"
       ],
-      "weeksOnList": 308,
-      "rank": 4,
+      "weeksOnList": 309,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/8315367-L.jpg"
     },
     {
@@ -7789,10 +7789,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 37,
+      "weeksOnList": 38,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-08-24",
+      "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -8028,7 +8028,8 @@
       "weeksOnList": 1,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-10"
+      "lastUpdated": "2026-08-10",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15249414-L.jpg"
     },
     {
       "title": "The Secrets We Hide",
@@ -8048,9 +8049,48 @@
       "rank": 5,
       "source": "nyt",
       "lastUpdated": "2026-08-24"
+    },
+    {
+      "title": "Delusional",
+      "titleZh": "妄想",
+      "author": "James Patterson and James O. Born",
+      "authorZh": "詹姆斯·帕特森和詹姆斯·O·伯恩",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316569842",
+      "description": "The 18th book in the Michael Bennett series. A group that is angry with the government gets investigated.",
+      "descriptionZh": "迈克尔·贝内特系列小说第18部。一个对政府不满的团体遭到调查。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-08-31"
+    },
+    {
+      "title": "The Nerd Reich",
+      "titleZh": "书呆子帝国",
+      "author": "Gil Durán",
+      "authorZh": "吉尔·杜兰",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668221402",
+      "description": "An independent journalist portrays a new political order that would supplant elected governments with corporate rule.",
+      "descriptionZh": "一位独立记者描绘了一种新的政治秩序，这种秩序将用企业统治取代民选政府。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-08-31",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15247968-L.jpg"
     }
   ],
-  "lastUpdated": "2026-08-24T09:52:49.576Z",
+  "lastUpdated": "2026-08-31T16:50:56.708Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
