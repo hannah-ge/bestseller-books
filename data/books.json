@@ -14,10 +14,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 20,
+      "weeksOnList": 21,
       "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-31",
+      "lastUpdated": "2026-09-07",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 16,
-      "rank": 2,
+      "weeksOnList": 17,
+      "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-08-31",
+      "lastUpdated": "2026-09-07",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -235,10 +235,10 @@
         "Portuguese",
         "French"
       ],
-      "weeksOnList": 33,
+      "weeksOnList": 34,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-31",
+      "lastUpdated": "2026-09-07",
       "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
@@ -395,10 +395,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 9,
+      "weeksOnList": 10,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-08-31"
+      "lastUpdated": "2026-09-07"
     },
     {
       "title": "Revolution",
@@ -455,10 +455,10 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 32,
-      "rank": 4,
+      "weeksOnList": 33,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-31",
+      "lastUpdated": "2026-09-07",
       "coverUrl": "https://covers.openlibrary.org/b/id/15165045-L.jpg"
     },
     {
@@ -2853,10 +2853,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 2,
-      "rank": 1,
+      "weeksOnList": 3,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-08-31",
+      "lastUpdated": "2026-09-07",
       "coverUrl": "https://covers.openlibrary.org/b/id/8797550-L.jpg"
     },
     {
@@ -7789,10 +7789,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 38,
+      "weeksOnList": 39,
       "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-08-31",
+      "lastUpdated": "2026-09-07",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -8088,9 +8088,69 @@
       "source": "nyt",
       "lastUpdated": "2026-08-31",
       "coverUrl": "https://covers.openlibrary.org/b/id/15247968-L.jpg"
+    },
+    {
+      "title": "Big Little Truths",
+      "titleZh": "大小真相",
+      "author": "Liane Moriarty",
+      "authorZh": "莉安·莫里亚蒂",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593798645",
+      "description": "In a sequel to “Big Little Lies,” a stranger’s presence at a school may force things to the fore that had not been shared.",
+      "descriptionZh": "在《大小谎言》的续集中，一个陌生人的出现可能会迫使一些原本不为人知的事情浮出水面。",
+      "languages": [
+        "English",
+        "Russian",
+        "Spanish"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-09-07",
+      "coverUrl": "https://covers.openlibrary.org/b/id/7352410-L.jpg"
+    },
+    {
+      "title": "Going Further",
+      "titleZh": "更进一步",
+      "author": "Ted Cruz",
+      "authorZh": "特德·克鲁兹",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9798217181193",
+      "description": "The Republican senator from Texas profiles the Supreme Court justice Clarence Thomas.",
+      "descriptionZh": "来自德克萨斯州的共和党参议员对最高法院大法官克拉伦斯·托马斯进行了介绍。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-09-07"
+    },
+    {
+      "title": "The Rise and Fall of the Artificial State",
+      "titleZh": "人工国家的兴衰",
+      "author": "Jill Lepore",
+      "authorZh": "吉尔·莱波雷",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781324098423",
+      "description": "The author of “These Truths” examines how technology and artificial intelligence have impacted global democracy and human community.",
+      "descriptionZh": "《这些真理》一书的作者探讨了科技和人工智能如何影响全球民主和人类社会。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-09-07"
     }
   ],
-  "lastUpdated": "2026-08-31T16:50:56.708Z",
+  "lastUpdated": "2026-09-07T14:57:07.487Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
