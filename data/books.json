@@ -14,10 +14,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 21,
-      "rank": 4,
+      "weeksOnList": 22,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-09-14",
       "coverUrl": "https://covers.openlibrary.org/b/id/15234864-L.jpg"
     },
     {
@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 17,
+      "weeksOnList": 18,
       "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-09-14",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -235,10 +235,10 @@
         "Portuguese",
         "French"
       ],
-      "weeksOnList": 34,
-      "rank": 5,
+      "weeksOnList": 35,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-09-14",
       "coverUrl": "https://covers.openlibrary.org/b/id/15143022-L.jpg"
     },
     {
@@ -395,10 +395,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 10,
-      "rank": 2,
+      "weeksOnList": 11,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-09-07"
+      "lastUpdated": "2026-09-14"
     },
     {
       "title": "Revolution",
@@ -517,7 +517,8 @@
       "weeksOnList": 19,
       "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-08-24"
+      "lastUpdated": "2026-08-24",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15254324-L.jpg"
     },
     {
       "title": "Famesick",
@@ -2853,10 +2854,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 3,
-      "rank": 4,
+      "weeksOnList": 4,
+      "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-09-14",
       "coverUrl": "https://covers.openlibrary.org/b/id/8797550-L.jpg"
     },
     {
@@ -4283,7 +4284,8 @@
       "description": "An examination of the leadership of the prime minister Winston Churchill.",
       "descriptionZh": "对首相温斯顿·丘吉尔领导能力的考察。",
       "languages": [
-        "English"
+        "English",
+        "French"
       ],
       "weeksOnList": 39,
       "rank": 4,
@@ -7789,10 +7791,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 39,
-      "rank": 1,
+      "weeksOnList": 40,
+      "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-09-14",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -8125,10 +8127,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 1,
+      "weeksOnList": 2,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-09-07"
+      "lastUpdated": "2026-09-14"
     },
     {
       "title": "The Rise and Fall of the Artificial State",
@@ -8148,9 +8150,67 @@
       "rank": 3,
       "source": "nyt",
       "lastUpdated": "2026-09-07"
+    },
+    {
+      "title": "The Knave and the Moon",
+      "titleZh": "杰克与月亮",
+      "author": "Rachel Gillig",
+      "authorZh": "瑞秋·吉利格",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780316608329",
+      "description": "The second book in the Stonewater Kingdom series. A knave who is lacking his memory may help Sybil take Benji out of power.",
+      "descriptionZh": "《石水王国》系列第二部。一个失忆的恶棍或许能帮助西比尔扳倒本吉。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-09-14",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15200691-L.jpg"
+    },
+    {
+      "title": "American Scoundrel",
+      "titleZh": "美国恶棍",
+      "author": "Kai Bird with Susan Goldmark",
+      "authorZh": "凯·伯德和苏珊·戈德马克",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668031575",
+      "description": "A co-author of “American Prometheus” chronicles the life and work of the lawyer and political fixer Roy Cohn.",
+      "descriptionZh": "《美国普罗米修斯》的合著者记录了律师兼政治掮客罗伊·科恩的生活和工作。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-09-14"
+    },
+    {
+      "title": "Crossing the Wine-Dark Sea",
+      "titleZh": "穿越酒红色的海洋",
+      "author": "Emily Wilson",
+      "authorZh": "艾米莉·威尔逊",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781324099406",
+      "description": "The translator of editions of Homer’s “Iliad” and “Odyssey” explicates potential complications encountered in her line of work.",
+      "descriptionZh": "荷马史诗《伊利亚特》和《奥德赛》译者的译者阐述了她在工作中可能遇到的复杂情况。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-09-14"
     }
   ],
-  "lastUpdated": "2026-09-07T14:57:07.487Z",
+  "lastUpdated": "2026-09-14T15:49:20.095Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
