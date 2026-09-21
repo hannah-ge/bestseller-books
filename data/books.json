@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 18,
-      "rank": 3,
+      "weeksOnList": 19,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-09-14",
+      "lastUpdated": "2026-09-21",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -395,10 +395,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 11,
-      "rank": 4,
+      "weeksOnList": 12,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-09-14"
+      "lastUpdated": "2026-09-21"
     },
     {
       "title": "Revolution",
@@ -7791,10 +7791,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 40,
+      "weeksOnList": 41,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-09-14",
+      "lastUpdated": "2026-09-21",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -8185,10 +8185,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 2,
+      "weeksOnList": 2,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-09-14"
+      "lastUpdated": "2026-09-21"
     },
     {
       "title": "Crossing the Wine-Dark Sea",
@@ -8208,9 +8208,125 @@
       "rank": 3,
       "source": "nyt",
       "lastUpdated": "2026-09-14"
+    },
+    {
+      "title": "Fury in Death",
+      "titleZh": "死亡之怒",
+      "author": "J.D. Robb",
+      "authorZh": "J.D.罗布",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781250414571",
+      "description": "The 63rd book of the In Death series. Eve Dallas investigates the violent death of a wealthy biotech executive.",
+      "descriptionZh": "《死亡系列》第63部。伊芙·达拉斯调查了一位富有的生物技术公司高管的离奇死亡事件。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-09-21"
+    },
+    {
+      "title": "Burn of the Everflame",
+      "titleZh": "永焰之火",
+      "author": "Penn Cole",
+      "authorZh": "潘恩·科尔",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668200223",
+      "description": "The fourth book of the Kindred's Curse Saga. War, rebellion and an unlikely alliance factor into whether the future will be in darkness.",
+      "descriptionZh": "《血族诅咒》系列的第四部。战争、叛乱和一段意想不到的联盟，将决定未来是否会陷入黑暗。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-09-21",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15088969-L.jpg"
+    },
+    {
+      "title": "The Pirate Queen",
+      "titleZh": "海盗女王",
+      "author": "Ariel Lawhon",
+      "authorZh": "艾瑞尔·劳恩",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780385550345",
+      "description": "In 16th-century Ireland, Grace O’Malley endures betrayal and hardship before leading a fleet of ships to defend her land.",
+      "descriptionZh": "在 16 世纪的爱尔兰，格蕾丝·奥马利经历了背叛和苦难，最终率领一支舰队保卫了自己的家园。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-09-21",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15254529-L.jpg"
+    },
+    {
+      "title": "The Counterrevolution",
+      "titleZh": "反革命",
+      "author": "Victor Davis Hanson",
+      "authorZh": "维克多·戴维斯·汉森",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781541607828",
+      "description": "The author of “The End of Everything” evaluates the influence of President Trump’s time out of office on his second term.",
+      "descriptionZh": "《万物终结》的作者评估了特朗普总统卸任期间对其第二个任期的影响。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-09-21"
+    },
+    {
+      "title": "How to Eat an Elephant",
+      "titleZh": "如何吃掉一头大象",
+      "author": "Sarah Longwell",
+      "authorZh": "莎拉·朗威尔",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781250464170",
+      "description": "The publisher of The Bulwark builds upon her interactions with voters to envision a modern pro-democracy movement.",
+      "descriptionZh": "《堡垒》的出版商通过与选民的互动，构想了一个现代的亲民主运动。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-09-21"
+    },
+    {
+      "title": "Plot Twist",
+      "titleZh": "剧情反转",
+      "author": "Harlan Coben",
+      "authorZh": "哈兰·科本",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781538784624",
+      "description": "Coben, known for his suspense novels, shares stories from his childhood, inspirations for his characters and insights into his craft.",
+      "descriptionZh": "以悬疑小说闻名的科本分享了他的童年故事、人物创作灵感以及他对写作技巧的见解。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-09-21"
     }
   ],
-  "lastUpdated": "2026-09-14T15:49:20.095Z",
+  "lastUpdated": "2026-09-21T15:47:24.142Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
