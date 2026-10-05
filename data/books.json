@@ -54,10 +54,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 19,
-      "rank": 4,
+      "weeksOnList": 21,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-09-21",
+      "lastUpdated": "2026-10-05",
       "coverUrl": "https://covers.openlibrary.org/b/id/15236189-L.jpg"
     },
     {
@@ -210,7 +210,8 @@
       "description": "The third book in the \"Dungeon Crawler Carl\" series. Carl and Donut are up against a subway system filled with monsters.",
       "descriptionZh": "《地牢探险家卡尔》系列的第三部。卡尔和甜甜圈要对抗的是一个充满怪物的地铁系统。",
       "languages": [
-        "English"
+        "English",
+        "Italian"
       ],
       "weeksOnList": 20,
       "rank": 9,
@@ -3206,10 +3207,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 2,
-      "rank": 5,
+      "weeksOnList": 1,
+      "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-07-24",
+      "lastUpdated": "2026-10-05",
       "coverUrl": "https://covers.openlibrary.org/b/id/8289424-L.jpg"
     },
     {
@@ -5552,7 +5553,8 @@
       "description": "A singer-songwriter goes to Nashville seeking stardom but is followed by her dark past.",
       "descriptionZh": "一位创作型歌手前往纳什维尔追寻明星梦，但她黑暗的过去却如影随形。",
       "languages": [
-        "English"
+        "English",
+        "French"
       ],
       "weeksOnList": 3,
       "rank": 2,
@@ -6799,10 +6801,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 3,
-      "rank": 4,
+      "weeksOnList": 1,
+      "rank": 1,
       "source": "nyt",
-      "lastUpdated": "2026-07-24",
+      "lastUpdated": "2026-10-05",
       "coverUrl": "https://covers.openlibrary.org/b/id/14605221-L.jpg"
     },
     {
@@ -6902,7 +6904,8 @@
       "description": "The late actor, known for playing Chandler Bing on “Friends,” shares stories from his childhood and his struggles with sobriety.",
       "descriptionZh": "这位已故演员因在《老友记》中饰演钱德勒·宾而闻名，他分享了自己童年的故事以及与酗酒作斗争的经历。",
       "languages": [
-        "English"
+        "English",
+        "Portuguese"
       ],
       "weeksOnList": 29,
       "rank": 5,
@@ -7791,10 +7794,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 41,
+      "weeksOnList": 43,
       "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-09-21",
+      "lastUpdated": "2026-10-05",
       "coverUrl": "https://covers.openlibrary.org/b/id/15205233-L.jpg"
     },
     {
@@ -8324,9 +8327,127 @@
       "rank": 3,
       "source": "nyt",
       "lastUpdated": "2026-09-21"
+    },
+    {
+      "title": "Hollywood, Ending",
+      "titleZh": "好莱坞，结局",
+      "author": "John Green",
+      "authorZh": "约翰·格林",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780525556657",
+      "description": "Celebrity permeates lives onscreen and off for two rising stars appearing in the biopic “Andy Warhol Never Gets Old.”",
+      "descriptionZh": "在传记电影《安迪·沃霍尔永不老去》中亮相的两位冉冉升起的新星，其银幕内外都充满了名人的光环。",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-10-05",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6426475-L.jpg"
+    },
+    {
+      "title": "Hollow Bones",
+      "titleZh": "空心骨",
+      "author": "Jodi Picoult",
+      "authorZh": "乔迪·皮考特",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780593726259",
+      "description": "A woman who runs the Rhode Island Department for Emergency Preparedness and her husband, who is a police polygraph expert, face a crisis in their marriage.",
+      "descriptionZh": "罗德岛州应急准备部门的负责人和她的丈夫（一位警界测谎专家）正面临婚姻危机。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 2,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-10-05"
+    },
+    {
+      "title": "Roll the Calls",
+      "titleZh": "点名",
+      "author": "Ari Emanuel",
+      "authorZh": "阿里·伊曼纽尔",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9798217209347",
+      "description": "The Hollywood mogul charts his rise to power and depicts behind-the-scenes stories about the entertainment industry.",
+      "descriptionZh": "这位好莱坞大亨记录了他的崛起之路，并描绘了娱乐行业的幕后故事。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-10-05",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15258100-L.jpg"
+    },
+    {
+      "title": "Actually, Nevermind",
+      "titleZh": "其实，算了。",
+      "author": "Taylor Tomlinson",
+      "authorZh": "泰勒·汤姆林森",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781668097236",
+      "description": "In a collection of essays, the comedian reflects upon her life as she approaches the same age her mother was when she died.",
+      "descriptionZh": "在一系列散文中，这位喜剧演员回顾了自己的人生，因为她即将达到母亲去世时的年龄。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-10-05"
+    },
+    {
+      "title": "An Unexpected Life",
+      "titleZh": "意想不到的生活",
+      "author": "Gloria Steinem",
+      "authorZh": "格洛丽亚·斯泰纳姆",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780593978177",
+      "description": "A memoir by the recently deceased feminist journalist and icon in which she recounts her six decades of activism.",
+      "descriptionZh": "这是已故女权主义记者兼偶像人物撰写的回忆录，她在书中回顾了自己六十年的维权生涯。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-10-05",
+      "coverUrl": "https://covers.openlibrary.org/b/id/8344257-L.jpg"
+    },
+    {
+      "title": "Pay Attention",
+      "titleZh": "注意",
+      "author": "David Pakman",
+      "authorZh": "大卫·帕克曼",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780063569805",
+      "description": "The author of “The Echo Machine” looks at the ways in which technology exacerbates political and cultural divisions.",
+      "descriptionZh": "《回声机器》的作者探讨了科技如何加剧政治和文化分裂。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-10-05"
     }
   ],
-  "lastUpdated": "2026-09-21T15:47:24.142Z",
+  "lastUpdated": "2026-10-05T18:04:56.334Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
