@@ -6802,10 +6802,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 2,
-      "rank": 2,
+      "weeksOnList": 3,
+      "rank": 4,
       "source": "nyt",
-      "lastUpdated": "2026-10-12",
+      "lastUpdated": "2026-10-19",
       "coverUrl": "https://covers.openlibrary.org/b/id/14605221-L.jpg"
     },
     {
@@ -8462,10 +8462,10 @@
         "English",
         "Spanish"
       ],
-      "weeksOnList": 1,
-      "rank": 1,
+      "weeksOnList": 2,
+      "rank": 2,
       "source": "nyt",
-      "lastUpdated": "2026-10-12",
+      "lastUpdated": "2026-10-19",
       "coverUrl": "https://covers.openlibrary.org/b/id/15260919-L.jpg"
     },
     {
@@ -8482,10 +8482,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 2,
+      "weeksOnList": 2,
+      "rank": 5,
       "source": "nyt",
-      "lastUpdated": "2026-10-12",
+      "lastUpdated": "2026-10-19",
       "coverUrl": "https://covers.openlibrary.org/b/id/15263055-L.jpg"
     },
     {
@@ -8502,10 +8502,10 @@
       "languages": [
         "English"
       ],
-      "weeksOnList": 1,
-      "rank": 1,
+      "weeksOnList": 2,
+      "rank": 3,
       "source": "nyt",
-      "lastUpdated": "2026-10-12",
+      "lastUpdated": "2026-10-19",
       "coverUrl": "https://covers.openlibrary.org/b/id/8737793-L.jpg"
     },
     {
@@ -8565,9 +8565,125 @@
       "rank": 5,
       "source": "nyt",
       "lastUpdated": "2026-10-12"
+    },
+    {
+      "title": "The Witch",
+      "titleZh": "女巫",
+      "author": "Freida McFadden",
+      "authorZh": "弗里达·麦克法登",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781464249648",
+      "description": "Circumstances force Julia Barlow to retreat to her family’s estate, which contains the dark energy of a 1692 witchcraft execution.",
+      "descriptionZh": "种种境遇迫使朱莉娅·巴洛回到她家族的庄园，那里弥漫着 1692 年一场巫术处决的黑暗能量。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-10-19",
+      "coverUrl": "https://covers.openlibrary.org/b/id/15263335-L.jpg"
+    },
+    {
+      "title": "Other Worlds Than These",
+      "titleZh": "除此之外的其他世界",
+      "author": "Stephen King and Peter Straub",
+      "authorZh": "斯蒂芬·金和彼得·斯特劳布",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9781668233092",
+      "description": "In the finale to the Talisman trilogy, an older Jack Sawyer faces off against a gang of infected teenagers and other destructive forces.",
+      "descriptionZh": "在《护身符》三部曲的最终章中，年长的杰克·索耶与一群受感染的青少年和其他破坏势力展开了对决。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 3,
+      "source": "nyt",
+      "lastUpdated": "2026-10-19"
+    },
+    {
+      "title": "Partita",
+      "titleZh": "帕蒂塔",
+      "author": "Barbara Kingsolver",
+      "authorZh": "芭芭拉·金索尔弗",
+      "year": 2026,
+      "country": "US",
+      "genre": "Fiction",
+      "isbn": "9780063577541",
+      "description": "When she receives an unexpected phone call from an old lover, Livia contends with memories she put aside many years ago.",
+      "descriptionZh": "莉维娅接到一位旧情人的意外来电，尘封已久的往事涌上心头。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 4,
+      "source": "nyt",
+      "lastUpdated": "2026-10-19"
+    },
+    {
+      "title": "One Helluva Ride",
+      "titleZh": "一段精彩绝伦的旅程",
+      "author": "Michael Douglas with Shane Salerno and Michael Fleming Jr",
+      "authorZh": "迈克尔·道格拉斯与肖恩·萨勒诺和迈克尔·弗莱明二世",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781538782224",
+      "description": "The Hollywood icon shares stories about his career and relationships.",
+      "descriptionZh": "这位好莱坞巨星分享了他职业生涯和感情生活中的故事。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 1,
+      "source": "nyt",
+      "lastUpdated": "2026-10-19"
+    },
+    {
+      "title": "Blockers",
+      "titleZh": "阻滞剂",
+      "author": "Michael Lewis",
+      "authorZh": "迈克尔·刘易斯",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9781324131656",
+      "description": "The author of “The Fifth Risk” tells the story of President Trump’s Department of Government Efficiency through the lens of six public servants.",
+      "descriptionZh": "《第五风险》的作者通过六位公务员的视角，讲述了特朗普总统的政府效率部的故事。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 2,
+      "source": "nyt",
+      "lastUpdated": "2026-10-19",
+      "coverUrl": "https://covers.openlibrary.org/b/id/6649194-L.jpg"
+    },
+    {
+      "title": "Devil on My Shoulder",
+      "titleZh": "肩上的恶魔",
+      "author": "Alice Cooper with Daniel Richler",
+      "authorZh": "艾丽丝·库珀与丹尼尔·里奇勒",
+      "year": 2026,
+      "country": "US",
+      "genre": "Non-Fiction",
+      "isbn": "9780306838026",
+      "description": "The Rock and Roll Hall of Fame inductee describes his struggles to overcome his demons.",
+      "descriptionZh": "这位摇滚名人堂入选者讲述了他与心魔作斗争的经历。",
+      "languages": [
+        "English"
+      ],
+      "weeksOnList": 1,
+      "rank": 5,
+      "source": "nyt",
+      "lastUpdated": "2026-10-19"
     }
   ],
-  "lastUpdated": "2026-10-12T18:46:02.197Z",
+  "lastUpdated": "2026-10-19T16:22:47.846Z",
   "sources": [
     "NYT Books API",
     "OpenLibrary"
